@@ -1,0 +1,137 @@
+{
+ "version": "1.0.0",
+ "note": "Every route the clone serves, each mapped exactly once. '*' is the fallback for unknown paths.",
+ "routes": [
+  {
+   "route": "/",
+   "template": "home",
+   "evidence": {
+    "root": "project",
+    "file": "src/App.jsx",
+    "lines": "30",
+    "tag": "path === '/'"
+   }
+  },
+  {
+   "route": "/about",
+   "template": "about",
+   "evidence": {
+    "root": "project",
+    "file": "src/App.jsx",
+    "lines": "30",
+    "tag": "path === '/about'"
+   }
+  },
+  {
+   "route": "/project/6aefb39eda2cd8ea85237d26",
+   "template": "project-detail",
+   "evidence": {
+    "root": "project",
+    "file": "src/data/projects.json",
+    "lines": "3",
+    "tag": "\"id\": \"6aefb39eda2cd8ea85237d26\""
+   }
+  },
+  {
+   "route": "/project/6a873e144aea474cdeae7a76",
+   "template": "project-detail",
+   "evidence": {
+    "root": "project",
+    "file": "src/data/projects.json",
+    "lines": "24",
+    "tag": "\"id\": \"6a873e144aea474cdeae7a76\""
+   }
+  },
+  {
+   "route": "/project/6a873ba44aea474cdeae7a75",
+   "template": "project-detail",
+   "evidence": {
+    "root": "project",
+    "file": "src/data/projects.json",
+    "lines": "44",
+    "tag": "\"id\": \"6a873ba44aea474cdeae7a75\""
+   }
+  },
+  {
+   "route": "/project/6a738fe5c50ff327148b02f9",
+   "template": "project-detail",
+   "evidence": {
+    "root": "project",
+    "file": "src/data/projects.json",
+    "lines": "65",
+    "tag": "\"id\": \"6a738fe5c50ff327148b02f9\""
+   }
+  },
+  {
+   "route": "/project/6930b50f931d3caa254b3237",
+   "template": "project-detail",
+   "evidence": {
+    "root": "project",
+    "file": "src/data/projects.json",
+    "lines": "89",
+    "tag": "\"id\": \"6930b50f931d3caa254b3237\""
+   }
+  },
+  {
+   "route": "/project/69300cd7a94f6af6c6b7d9d8",
+   "template": "project-detail",
+   "evidence": {
+    "root": "project",
+    "file": "src/data/projects.json",
+    "lines": "112",
+    "tag": "\"id\": \"69300cd7a94f6af6c6b7d9d8\""
+   }
+  },
+  {
+   "route": "/project/692fa8ade953917a4953f016",
+   "template": "project-detail",
+   "evidence": {
+    "root": "project",
+    "file": "src/data/projects.json",
+    "lines": "136",
+    "tag": "\"id\": \"692fa8ade953917a4953f016\""
+   }
+  },
+  {
+   "route": "/project/692fa503b4aaa1dd44f7665c",
+   "template": "project-detail",
+   "evidence": {
+    "root": "project",
+    "file": "src/data/projects.json",
+    "lines": "157",
+    "tag": "\"id\": \"692fa503b4aaa1dd44f7665c\""
+   }
+  },
+  {
+   "route": "/project/692f9a5d6a4755436ddef92b",
+   "template": "project-detail",
+   "evidence": {
+    "root": "project",
+    "file": "src/data/projects.json",
+    "lines": "180",
+    "tag": "\"id\": \"692f9a5d6a4755436ddef92b\""
+   }
+  },
+  {
+   "route": "/project/692f8cfc17ad2ca258e981de",
+   "template": "project-detail",
+   "evidence": {
+    "root": "project",
+    "file": "src/data/projects.json",
+    "lines": "199",
+    "tag": "\"id\": \"692f8cfc17ad2ca258e981de\""
+   }
+  },
+  {
+   "route": "*",
+   "template": "not-found",
+   "evidence": {
+    "root": "project",
+    "file": "src/App.jsx",
+    "lines": "45",
+    "tag": ") : (",
+    "note": "every path other than /, /about, /project/:id renders NotFound (live site answers 404)"
+   }
+  }
+ ]
+}

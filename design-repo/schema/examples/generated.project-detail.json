@@ -1,0 +1,125 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "generated",
+ "template": "project-detail",
+ "route": "/project/almanac",
+ "theme": "dark",
+ "meta": {
+  "title": "Saltmarsh Almanac, lettering",
+  "description": "Cover lettering and chapter marks for a fictional nature almanac."
+ },
+ "runtimeLayers": [
+  "utility.page-transition",
+  "utility.overlay-backdrop",
+  "utility.kinetic-cursor"
+ ],
+ "nodes": [
+  {
+   "section": "shell.navbar",
+   "content": {
+    "ownerName": "Mara Lindqvist",
+    "occupation": "Type Illustrator",
+    "location": "Harbor City",
+    "contactLinks": [
+     {
+      "label": "Email me",
+      "href": "mailto:hello@studio.example",
+      "kind": "copy-email"
+     },
+     {
+      "label": "Sketchbook",
+      "href": "https://sketchbook.example/mara",
+      "kind": "social"
+     }
+    ],
+    "profileLinkLabel": "Profile"
+   },
+   "motion": {
+    "pattern": "staggered-fade-up",
+    "reducedMotionFallback": "opacity-fade"
+   }
+  },
+  {
+   "section": "project.header",
+   "content": {
+    "title": "Saltmarsh Almanac",
+    "description": "A fictional almanac needed a title that felt hand-cut from reeds.\n\nEach chapter mark reuses the same three strokes, so the set reads as one family from spine to index.",
+    "tags": [
+     "lettering",
+     "book cover"
+    ]
+   },
+   "motion": {
+    "pattern": "word-reveal",
+    "reducedMotionFallback": "opacity-fade"
+   },
+   "tokens": {
+    "textColor": "text.overlay",
+    "typeScale": "typography.size.project-title"
+   }
+  },
+  {
+   "section": "project.media-stage",
+   "content": {
+    "media": [
+     {
+      "asset": {
+       "assetRole": "project.cover-generated",
+       "src": "generated://cover/almanac",
+       "alt": "Almanac cover"
+      },
+      "kind": "image"
+     },
+     {
+      "asset": {
+       "assetRole": "project.gallery-generated",
+       "src": "generated://gallery/almanac-1",
+       "alt": "Chapter marks"
+      },
+      "kind": "image"
+     },
+     {
+      "asset": {
+       "assetRole": "project.video-generated",
+       "src": "generated://video/almanac-loop",
+       "alt": "Animated title"
+      },
+      "kind": "video"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "plane-focus-stage",
+    "reducedMotionFallback": "crossfade-stage"
+   }
+  },
+  {
+   "section": "project.meta",
+   "content": {
+    "yearLabel": "Year",
+    "year": "2024",
+    "toolsLabel": "Media",
+    "tools": "Pencil, vector"
+   },
+   "motion": {
+    "pattern": "word-reveal",
+    "reducedMotionFallback": "opacity-fade"
+   }
+  },
+  {
+   "section": "project.footer-bar",
+   "content": {
+    "hint": "Wheel to browse",
+    "tags": [
+     "lettering",
+     "book cover"
+    ],
+    "mediaCount": 3
+   },
+   "motion": {
+    "pattern": "opacity-hover",
+    "reducedMotionFallback": "opacity-hover"
+   }
+  }
+ ]
+}

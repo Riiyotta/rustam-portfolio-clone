@@ -1,0 +1,54 @@
+{
+ "id": "utility.toast",
+ "version": "1.0.0",
+ "title": "Toast",
+ "source": {
+  "id": "app:toaster",
+  "root": "project",
+  "file": "src/App.jsx",
+  "lines": "51",
+  "tag": "<Toaster position=\"top-center\" toastOptions={toastOptions} />"
+ },
+ "semantic": {
+  "id": "utility.toast",
+  "category": "UTILITY",
+  "purpose": "Confirmation toast host (copy-email feedback)."
+ },
+ "retrievalEligible": false,
+ "retrievalIneligibleReason": "Success/error feedback that appears for a moment after copying; Runtime UI that exists only during interaction or loading; it carries no page content and must never be retrieved as a section to compose.",
+ "content": {
+  "fields": {}
+ },
+ "constraints": {},
+ "responsive": {
+  "desktop": "Top-centre fixed host.",
+  "mobile": "Same.",
+  "breakpoint": null
+ },
+ "motion": {
+  "patterns": [
+   "none"
+  ],
+  "default": "none",
+  "reducedMotionFallback": "none",
+  "sourceImplementsFallback": true
+ },
+ "generatedAssetRoles": [],
+ "referenceAssetRoles": [],
+ "tokens": [
+  "surface.toast",
+  "text.on-toast"
+ ],
+ "composes": [],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/App.jsx",
+   "lines": "17",
+   "tag": "const toastOptions = {"
+  }
+ ],
+ "measured": {
+  "note": "Fixed host with no content at rest."
+ }
+}

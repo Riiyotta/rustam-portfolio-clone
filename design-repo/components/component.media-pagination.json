@@ -1,0 +1,21 @@
+{
+ "id": "component.media-pagination",
+ "kind": "component",
+ "version": "1.0.0",
+ "description": "Row of pagination numbers for the media stage.",
+ "composes": [
+  "primitive.pagination-number"
+ ],
+ "props": [
+  "count",
+  "current"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/272.js",
+   "lines": "1116-1156",
+   "tag": "\"aria-label\": \"Project media navigation\","
+  }
+ ]
+}

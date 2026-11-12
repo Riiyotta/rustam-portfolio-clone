@@ -1,0 +1,94 @@
+{
+ "version": "1.0.0",
+ "approvedThemes": [
+  "dark"
+ ],
+ "slots": {
+  "textColor": {
+   "prefixes": [
+    "text."
+   ],
+   "type": "color"
+  },
+  "surface": {
+   "prefixes": [
+    "surface."
+   ],
+   "type": "color"
+  },
+  "border": {
+   "prefixes": [
+    "border.",
+    "focus."
+   ],
+   "type": "color"
+  },
+  "fontFamily": {
+   "prefixes": [
+    "typography.family."
+   ],
+   "type": "fontFamily"
+  },
+  "typeScale": {
+   "prefixes": [
+    "typography.size.",
+    "component.navbar.",
+    "component.overlay.",
+    "component.cursor."
+   ],
+   "type": "fontSize"
+  },
+  "fontWeight": {
+   "prefixes": [
+    "typography.weight."
+   ],
+   "type": "fontWeight"
+  },
+  "spacing": {
+   "prefixes": [
+    "spacing."
+   ],
+   "type": "dimension"
+  },
+  "motionEasing": {
+   "prefixes": [
+    "motion.easing."
+   ],
+   "type": null
+  }
+ },
+ "restrictedTokens": {
+  "rule": "Tokens marked restricted (internal shader constants) are never valid in a PageSpec.",
+  "prefixes": [
+   "color.gl."
+  ]
+ },
+ "rawValueRestrictions": {
+  "color": "no #hex, rgb(), hsl(), oklch() or named colours in token slots",
+  "spacing": "no px/rem/em/% literals: use spacing.* tokens",
+  "fontFamily": "only typography.family.* tokens (Satoshi stack, UI stack, digits stack)"
+ },
+ "catalogCategories": [
+  "border",
+  "breakpoint",
+  "color",
+  "component",
+  "effect",
+  "focus",
+  "layout",
+  "motion",
+  "opacity",
+  "radius",
+  "spacing",
+  "surface",
+  "text",
+  "typography"
+ ],
+ "approvedFontFamilies": [
+  "Arial",
+  "Satoshi",
+  "ui-sans-serif"
+ ],
+ "overrides": "PageSpec nodes may carry an optional `tokens` object (slot -> token id). There is no other style override mechanism; section contracts own all other styling.",
+ "enforcedBy": "schema/semantic_validate.py::TOKEN_POLICY"
+}

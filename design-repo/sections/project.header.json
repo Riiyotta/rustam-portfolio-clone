@@ -1,0 +1,91 @@
+{
+ "id": "project.header",
+ "version": "1.0.0",
+ "title": "Project header",
+ "source": {
+  "id": "module-5272:fn-N-header",
+  "root": "project",
+  "file": "src/engine/chunks/272.js",
+  "lines": "987-1027",
+  "tag": "\"absolute left-[5%] top-[7%] z-30 w-[88%] md:left-[3.5%] md:top-[27%] md:w-[20.5%]\","
+ },
+ "semantic": {
+  "id": "project.header",
+  "category": "PROJECT_DETAIL",
+  "purpose": "Project title and its descriptive text."
+ },
+ "retrievalEligible": true,
+ "content": {
+  "fields": {
+   "title": {
+    "type": "text",
+    "maxWords": 5,
+    "required": true
+   },
+   "description": {
+    "type": "text",
+    "maxWords": 70,
+    "required": true
+   },
+   "tags": {
+    "type": "list",
+    "of": {
+     "type": "text",
+     "maxWords": 2
+    },
+    "maxItems": 5
+   }
+  }
+ },
+ "constraints": {
+  "onePerPage": true
+ },
+ "responsive": {
+  "desktop": "Left text column (left 3.5%, top 27%, width 20.5%): title clamp(22px,1.45vw,27px) bold uppercase, description clamp(15px,1.05vw,18px) leading 1.55 at 78% (smaller under 800/650px tall viewports).",
+  "mobile": "In-flow article header: title clamp(31px,8vw,54px) bold uppercase, tags joined with ' / ' below in 10px UI-stack caps.",
+  "breakpoint": "{breakpoint.lg}"
+ },
+ "motion": {
+  "patterns": [
+   "word-reveal"
+  ],
+  "default": "word-reveal",
+  "reducedMotionFallback": "opacity-fade",
+  "sourceImplementsFallback": true
+ },
+ "generatedAssetRoles": [
+  "copy.original"
+ ],
+ "referenceAssetRoles": [],
+ "tokens": [
+  "typography.size.project-title",
+  "typography.size.body-overlay",
+  "text.overlay",
+  "text.overlay-muted"
+ ],
+ "composes": [
+  "primitive.word-reveal-text"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/924.js",
+   "lines": "469",
+   "tag": "children: f.join(\" / \"),"
+  }
+ ],
+ "measured": {
+  "1440x900": {
+   "heightPx": 372,
+   "widthPx": 295,
+   "inFlow": false,
+   "position": "absolute"
+  },
+  "390x844": {
+   "heightPx": 68,
+   "widthPx": 351,
+   "inFlow": true,
+   "position": "static"
+  }
+ }
+}

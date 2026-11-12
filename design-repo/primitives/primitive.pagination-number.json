@@ -1,0 +1,21 @@
+{
+ "id": "primitive.pagination-number",
+ "kind": "primitive",
+ "version": "1.0.0",
+ "description": "Numeric button, 30% opacity unless current; 300ms opacity transition; 1px focus outline.",
+ "props": [
+  "index",
+  "current"
+ ],
+ "motionPatterns": [
+  "opacity-hover"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/272.js",
+   "lines": "1132",
+   "tag": "\"aria-label\": \"Show project media \".concat(t + 1),"
+  }
+ ]
+}

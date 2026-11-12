@@ -1,0 +1,108 @@
+{
+ "id": "portfolio.work-index",
+ "version": "1.0.0",
+ "title": "Work index",
+ "source": {
+  "id": "module-5272:fn-f-gallery",
+  "root": "project",
+  "file": "src/engine/chunks/272.js",
+  "lines": "45-822",
+  "tag": "function f(e) {"
+ },
+ "semantic": {
+  "id": "portfolio.work-index",
+  "category": "PORTFOLIO",
+  "purpose": "Index of all projects; each item opens that project's detail."
+ },
+ "retrievalEligible": true,
+ "content": {
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 3
+   },
+   "items": {
+    "type": "list",
+    "minItems": 1,
+    "maxItems": 12,
+    "required": true,
+    "of": {
+     "title": {
+      "type": "text",
+      "maxWords": 5
+     },
+     "href": {
+      "type": "link"
+     },
+     "cover": {
+      "type": "asset"
+     }
+    }
+   }
+  }
+ },
+ "constraints": {
+  "onePerPage": true
+ },
+ "responsive": {
+  "desktop": "Full-viewport WebGL strip behind everything: one textured plane per project, heights cycled [0.14,0.18,0.13,0.16,0.15,0.19] x viewport height, gap 1.2vw, repeated infinitely, wheel-driven; hover focuses one plane and shows its title next to the cursor.",
+  "mobile": "In-flow 'Selected Work:' section: 2-column grid, 12px/32px gaps, 4:3 cover + 12px uppercase title per card.",
+  "breakpoint": "{breakpoint.lg}"
+ },
+ "motion": {
+  "patterns": [
+   "gallery-strip-scroll",
+   "hover-focus-blur"
+  ],
+  "default": "gallery-strip-scroll",
+  "reducedMotionFallback": "static-strip",
+  "sourceImplementsFallback": false
+ },
+ "generatedAssetRoles": [
+  "project.cover-generated",
+  "media.placeholder",
+  "copy.original"
+ ],
+ "referenceAssetRoles": [
+  "project.cover-source"
+ ],
+ "tokens": [
+  "layout.gallery.plane-heights",
+  "layout.gallery.plane-gap",
+  "layout.grid.mobile-work",
+  "typography.size.mobile-card-title"
+ ],
+ "composes": [
+  "primitive.media-plane",
+  "component.work-card"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/272.js",
+   "lines": "43",
+   "tag": "let h = [0.14, 0.18, 0.13, 0.16, 0.15, 0.19],"
+  },
+  {
+   "root": "project",
+   "file": "src/engine/chunks/924.js",
+   "lines": "357",
+   "tag": "children: \"Selected Work:\","
+  }
+ ],
+ "measured": {
+  "1440x900": {
+   "heightPx": 900,
+   "widthPx": 1440,
+   "inFlow": false,
+   "position": "absolute"
+  },
+  "390x844": {
+   "heightPx": 989,
+   "widthPx": 351,
+   "inFlow": true,
+   "position": "static"
+  }
+ },
+ "notes": "Desktop height equals the viewport because the strip is a full-viewport canvas layer; the planes themselves are 13-19% of viewport height."
+}

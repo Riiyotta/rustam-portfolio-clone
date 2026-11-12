@@ -1,0 +1,132 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "generated",
+ "template": "about",
+ "route": "/about",
+ "theme": "dark",
+ "meta": {
+  "title": "About Mara Lindqvist",
+  "description": "Practice, process and the kinds of lettering commissions taken on."
+ },
+ "runtimeLayers": [
+  "utility.preloader",
+  "utility.kinetic-cursor"
+ ],
+ "nodes": [
+  {
+   "section": "shell.navbar",
+   "content": {
+    "ownerName": "Mara Lindqvist",
+    "occupation": "Type Illustrator",
+    "location": "Harbor City",
+    "contactLinks": [
+     {
+      "label": "Email me",
+      "href": "mailto:hello@studio.example",
+      "kind": "copy-email"
+     },
+     {
+      "label": "Sketchbook",
+      "href": "https://sketchbook.example/mara",
+      "kind": "social"
+     }
+    ],
+    "profileLinkLabel": "Profile"
+   },
+   "motion": {
+    "pattern": "staggered-fade-up",
+    "reducedMotionFallback": "opacity-fade"
+   }
+  },
+  {
+   "section": "about.profile-header",
+   "content": {
+    "title": "MARA LINDQVIST",
+    "intro": "An illustrator who draws letters before setting them.",
+    "description": "Most commissions start as pencil roughs and end as vector marks, animated titles or painted signs."
+   },
+   "motion": {
+    "pattern": "word-reveal",
+    "reducedMotionFallback": "opacity-fade"
+   }
+  },
+  {
+   "section": "about.media-stage",
+   "content": {
+    "media": [
+     {
+      "asset": {
+       "assetRole": "person.portrait-fictional",
+       "src": "generated://portrait/fictional-illustrator-4x5",
+       "alt": "Fictional illustrator at a drawing desk"
+      },
+      "kind": "image"
+     },
+     {
+      "asset": {
+       "assetRole": "discipline.media-generated",
+       "src": "generated://discipline/lettering",
+       "alt": "Hand lettering sample"
+      },
+      "kind": "image"
+     },
+     {
+      "asset": {
+       "assetRole": "media.placeholder",
+       "src": "placeholder://media/16x9",
+       "alt": "Placeholder"
+      },
+      "kind": "video"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "plane-focus-stage",
+    "reducedMotionFallback": "crossfade-stage"
+   }
+  },
+  {
+   "section": "about.discipline-list",
+   "content": {
+    "items": [
+     {
+      "label": "Lettering",
+      "summary": "Custom letterforms for covers, labels and titles.",
+      "media": {
+       "assetRole": "discipline.media-generated",
+       "src": "generated://discipline/lettering",
+       "alt": "Lettering"
+      }
+     },
+     {
+      "label": "Signage",
+      "summary": "Painted and printed signs for small shops.",
+      "media": {
+       "assetRole": "media.placeholder",
+       "src": "placeholder://media/4x3",
+       "alt": "Signage placeholder"
+      }
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "opacity-hover",
+    "reducedMotionFallback": "opacity-hover"
+   }
+  },
+  {
+   "section": "about.footer-meta",
+   "content": {
+    "hint": "Click the image to continue",
+    "facts": [
+     "Harbor City",
+     "Since 2015"
+    ]
+   },
+   "motion": {
+    "pattern": "word-reveal",
+    "reducedMotionFallback": "opacity-fade"
+   }
+  }
+ ]
+}

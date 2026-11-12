@@ -1,0 +1,423 @@
+{
+ "motion": {
+  "easing": {
+   "reveal": {
+    "$type": "cubicBezier",
+    "$value": [
+     0.16,
+     1,
+     0.3,
+     1
+    ],
+    "$description": "Primary reveal/entrance curve (words, navbar, overlays, 404 arrow).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "2332",
+      "tag": "let ee = [0.16, 1, 0.3, 1],"
+     },
+     {
+      "root": "project",
+      "file": "src/engine/chunks/layout.js",
+      "lines": "35",
+      "tag": "let s = [0.16, 1, 0.3, 1],"
+     }
+    ]
+   },
+   "preloader-exit": {
+    "$type": "cubicBezier",
+    "$value": [
+     0.76,
+     0,
+     0.24,
+     1
+    ],
+    "$description": "Preloader slide-out.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/924.js",
+      "lines": "876",
+      "tag": "let p = [0.76, 0, 0.24, 1];"
+     }
+    ]
+   },
+   "standard": {
+    "$type": "cubicBezier",
+    "$value": [
+     0.4,
+     0,
+     0.2,
+     1
+    ],
+    "$description": "Default CSS transition curve (opacity hovers).",
+    "evidence": [
+     {
+      "root": "repo",
+      "file": "extraction/evidence/site.pretty.css",
+      "lines": "72",
+      "tag": "--ease-in-out:cubic-bezier(.4,0,.2,1)"
+     }
+    ]
+   },
+   "expo-out": {
+    "$type": "string",
+    "$value": "expo.out",
+    "$description": "Cursor entry/press tween curve.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "1183",
+      "tag": "ease: \"expo.out\","
+     }
+    ]
+   },
+   "cosine-in-out": {
+    "$type": "string",
+    "$value": "-(cos(pi*t)-1)/2",
+    "$description": "Page-transition progress curve.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/layout.js",
+      "lines": "330",
+      "tag": "f = -(Math.cos(Math.PI * d) - 1) / 2,"
+     }
+    ]
+   }
+  },
+  "duration": {
+   "instant": {
+    "$type": "duration",
+    "$value": "150ms",
+    "$description": "Reduced-motion exit.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "1997",
+      "tag": "exit: { opacity: 0, transition: { duration: 0.15 } },"
+     }
+    ]
+   },
+   "fast": {
+    "$type": "duration",
+    "$value": "200ms",
+    "$description": "Reduced-motion fades; hover-title container fade.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "888",
+      "tag": "visible: { opacity: 1, transition: { duration: 0.2 } },"
+     }
+    ]
+   },
+   "hover": {
+    "$type": "duration",
+    "$value": "300ms",
+    "$description": "Link/pagination opacity transitions.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "1136",
+      "tag": "transition-opacity duration-300 ease-in-out"
+     }
+    ]
+   },
+   "exit": {
+    "$type": "duration",
+    "$value": "350ms",
+    "$description": "Hero intro exit.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "2339",
+      "tag": "exit: { opacity: 0, transition: { duration: 0.35, ease: ee } },"
+     }
+    ]
+   },
+   "cursor-entry": {
+    "$type": "duration",
+    "$value": "420ms",
+    "$description": "Cursor entry tween.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "1182",
+      "tag": "duration: 0.42,"
+     }
+    ]
+   },
+   "menu": {
+    "$type": "duration",
+    "$value": "500ms",
+    "$description": "About discipline menu opacity transition.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "2150",
+      "tag": "transition-opacity duration-500 ease-in-out"
+     }
+    ]
+   },
+   "transition-leave": {
+    "$type": "duration",
+    "$value": "680ms",
+    "$description": "WebGL page transition, leaving phase.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/layout.js",
+      "lines": "328",
+      "tag": "let s = \"entering\" === e ? 0.82 : 0.68,"
+     }
+    ]
+   },
+   "word": {
+    "$type": "duration",
+    "$value": "700ms",
+    "$description": "Word reveal in overlays.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "883",
+      "tag": "transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] },"
+     }
+    ]
+   },
+   "about-swap": {
+    "$type": "duration",
+    "$value": "750ms",
+    "$description": "About content cross-fade.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "1987",
+      "tag": "transition: { opacity: { duration: 0.75, ease: H } },"
+     }
+    ]
+   },
+   "transition-enter": {
+    "$type": "duration",
+    "$value": "820ms",
+    "$description": "WebGL page transition, entering phase.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/layout.js",
+      "lines": "328",
+      "tag": "let s = \"entering\" === e ? 0.82 : 0.68,"
+     }
+    ]
+   },
+   "entrance": {
+    "$type": "duration",
+    "$value": "850ms",
+    "$description": "Navbar entrance; hero word reveal; preloader slide-out.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/layout.js",
+      "lines": "42",
+      "tag": "transition: { duration: 0.85, delay: t, ease: s },"
+     }
+    ]
+   },
+   "digits-loop": {
+    "$type": "duration",
+    "$value": "6.5s",
+    "$description": "404 digits float loop.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/notfound.js",
+      "lines": "144",
+      "tag": "r = (t % 6.5) / 6.5,"
+     }
+    ]
+   }
+  },
+  "stagger": {
+   "letters-menu": {
+    "$type": "duration",
+    "$value": "12ms",
+    "$description": "About menu label words.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "2155",
+      "tag": "stagger: 0.012,"
+     }
+    ]
+   },
+   "body": {
+    "$type": "duration",
+    "$value": "15ms",
+    "$description": "Overlay body words (default).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "895",
+      "tag": "stagger: l = 0.015,"
+     }
+    ]
+   },
+   "intro-note": {
+    "$type": "duration",
+    "$value": "18ms",
+    "$description": "Intro note words.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "2528",
+      "tag": "stagger: 0.018,"
+     }
+    ]
+   },
+   "title": {
+    "$type": "duration",
+    "$value": "25ms",
+    "$description": "Overlay titles.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "996",
+      "tag": "stagger: 0.025,"
+     }
+    ]
+   },
+   "overlay-groups": {
+    "$type": "duration",
+    "$value": "35ms",
+    "$description": "Overlay group stagger.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "873",
+      "tag": "visible: { transition: { delayChildren: 0, staggerChildren: 0.035 } },"
+     }
+    ]
+   },
+   "hero-words": {
+    "$type": "duration",
+    "$value": "45ms",
+    "$description": "Hero heading words.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "2419",
+      "tag": "stagger: 0.045,"
+     }
+    ]
+   },
+   "hero-first-line": {
+    "$type": "duration",
+    "$value": "60ms",
+    "$description": "Hero first line words.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "2411",
+      "tag": "stagger: 0.06,"
+     }
+    ]
+   },
+   "navbar-columns": {
+    "$type": "duration",
+    "$value": "80ms",
+    "$description": "Navbar column entrance delays step (0, 0.08 ... 0.32s).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/layout.js",
+      "lines": "129",
+      "tag": "delay: 0.08,"
+     }
+    ]
+   },
+   "hero-lines": {
+    "$type": "duration",
+    "$value": "120ms",
+    "$description": "Hero heading lines.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "2401",
+      "tag": "visible: { transition: { staggerChildren: 0.12 } },"
+     }
+    ]
+   }
+  },
+  "damping": {
+   "scroll": {
+    "$type": "number",
+    "$value": 9,
+    "$description": "Wheel-driven strip scroll damping factor.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "301",
+      "tag": "(D.current = c.cj9.damp(D.current, n.current, 9, el))));"
+     }
+    ]
+   },
+   "hover": {
+    "$type": "number",
+    "$value": 5.5,
+    "$description": "Plane hover damping.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "395-401",
+      "tag": "d = c.cj9.damp("
+     }
+    ]
+   },
+   "blur": {
+    "$type": "number",
+    "$value": 7,
+    "$description": "Unfocused-plane blur damping.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "540",
+      "tag": ": c.cj9.damp(h.uBlur.value, x, 7, el)),"
+     }
+    ]
+   },
+   "cursor-follow": {
+    "$type": "number",
+    "$value": 10,
+    "$description": "Cursor follow: 1 - exp(-10 dt).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "1286",
+      "tag": "a = o ? 1 : 1 - Math.exp(-10 * l),"
+     }
+    ]
+   }
+  }
+ }
+}

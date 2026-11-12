@@ -1,0 +1,54 @@
+{
+ "id": "utility.page-transition",
+ "version": "1.0.0",
+ "title": "Page transition",
+ "source": {
+  "id": "module-7689:transition-canvas",
+  "root": "project",
+  "file": "src/engine/chunks/layout.js",
+  "lines": "250-280",
+  "tag": "    7689: (n, e, t) => {"
+ },
+ "semantic": {
+  "id": "utility.page-transition",
+  "category": "UTILITY",
+  "purpose": "Full-screen WebGL wipe between routes."
+ },
+ "retrievalEligible": false,
+ "retrievalIneligibleReason": "Route-change overlay visible for under a second; Runtime UI that exists only during interaction or loading; it carries no page content and must never be retrieved as a section to compose.",
+ "content": {
+  "fields": {}
+ },
+ "constraints": {},
+ "responsive": {
+  "desktop": "Covers the viewport during route changes.",
+  "mobile": "Same.",
+  "breakpoint": null
+ },
+ "motion": {
+  "patterns": [
+   "page-transition-wipe"
+  ],
+  "default": "page-transition-wipe",
+  "reducedMotionFallback": "instant-route-change",
+  "sourceImplementsFallback": true
+ },
+ "generatedAssetRoles": [],
+ "referenceAssetRoles": [],
+ "tokens": [
+  "color.gl.transition-a",
+  "color.gl.transition-b"
+ ],
+ "composes": [],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/layout.js",
+   "lines": "376",
+   "tag": "\" pointer-events-none fixed inset-0 z-[99999] overflow-hidden \","
+  }
+ ],
+ "measured": {
+  "note": "Transient overlay (fixed, full viewport) during navigation only."
+ }
+}

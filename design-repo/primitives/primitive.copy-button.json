@@ -1,0 +1,22 @@
+{
+ "id": "primitive.copy-button",
+ "kind": "primitive",
+ "version": "1.0.0",
+ "description": "Button that copies a contact string to the clipboard and swaps its label for idle / copied / failed states (resets after 2.2s).",
+ "props": [
+  "label",
+  "copiedLabel",
+  "failedLabel"
+ ],
+ "motionPatterns": [
+  "opacity-hover"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/924.js",
+   "lines": "257-267",
+   "tag": "await navigator.clipboard.writeText("
+  }
+ ]
+}

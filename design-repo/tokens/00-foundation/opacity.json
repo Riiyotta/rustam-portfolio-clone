@@ -1,0 +1,204 @@
+{
+ "opacity": {
+  "100": {
+   "$type": "number",
+   "$value": 1,
+   "$description": "Active item / full emphasis.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1138",
+     "tag": "\"text-[#e7e3dd] opacity-100\""
+    }
+   ]
+  },
+  "97": {
+   "$type": "number",
+   "$value": 0.97,
+   "$description": "Overlay backdrop opacity.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "845",
+     "tag": "bg-[#0e0d0c]/97"
+    }
+   ]
+  },
+  "90": {
+   "$type": "number",
+   "$value": 0.9,
+   "$description": "Meta values (year/tools), mobile body text.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1045",
+     "tag": "font-medium leading-[1.3] text-[#e7e3dd]/90"
+    }
+   ]
+  },
+  "85": {
+   "$type": "number",
+   "$value": 0.85,
+   "$description": "Mobile project description.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "522",
+     "tag": "text-[17px] leading-[1.45] text-[#e7e3dd]/85"
+    }
+   ]
+  },
+  "80": {
+   "$type": "number",
+   "$value": 0.8,
+   "$description": "Overlay intro/body copy and micro labels.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "2102",
+     "tag": "leading-[1.55] text-[#e7e3dd]/80 lg:block"
+    }
+   ]
+  },
+  "78": {
+   "$type": "number",
+   "$value": 0.78,
+   "$description": "Project description on desktop.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1007",
+     "tag": "leading-[1.55] text-[#e7e3dd]/78"
+    }
+   ]
+  },
+  "65": {
+   "$type": "number",
+   "$value": 0.65,
+   "$description": "Mobile about discipline label.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "2193",
+     "tag": "tracking-[0.08em] text-[#e7e3dd]/65"
+    }
+   ]
+  },
+  "60": {
+   "$type": "number",
+   "$value": 0.6,
+   "$description": "404 body copy (white at 60%).",
+   "evidence": [
+    {
+     "root": "repo",
+     "file": "extraction/evidence/site.pretty.css",
+     "lines": "51",
+     "tag": ".text-white\\/60 {"
+    },
+    {
+     "root": "project",
+     "file": "src/components/NotFound.jsx",
+     "lines": "13",
+     "tag": "text-white/60"
+    }
+   ]
+  },
+  "55": {
+   "$type": "number",
+   "$value": 0.55,
+   "$description": "Overlay mobile meta labels.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1071",
+     "tag": "tracking-[0.2em] text-[#e7e3dd]/55"
+    }
+   ]
+  },
+  "50": {
+   "$type": "number",
+   "$value": 0.5,
+   "$description": "Link hover opacity (navbar, footer links).",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/layout.js",
+     "lines": "173",
+     "tag": "transition-opacity duration-300 hover:opacity-50"
+    }
+   ]
+  },
+  "45": {
+   "$type": "number",
+   "$value": 0.45,
+   "$description": "Overlay mobile description label.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1026",
+     "tag": "tracking-[0.2em] text-[#e7e3dd]/45"
+    }
+   ]
+  },
+  "40": {
+   "$type": "number",
+   "$value": 0.4,
+   "$description": "Separator slash in about footer meta.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "2236",
+     "tag": "\"hidden opacity-40 md:inline\""
+    }
+   ]
+  },
+  "30": {
+   "$type": "number",
+   "$value": 0.3,
+   "$description": "Inactive pagination number / inactive discipline menu item.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1139",
+     "tag": "opacity-30 hover:opacity-100"
+    },
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "2151",
+     "tag": "style: { opacity: l === t ? 1 : 0.3 }"
+    }
+   ]
+  },
+  "20": {
+   "$type": "number",
+   "$value": 0.2,
+   "$description": "Hairline border above mobile project meta; preloader ghost wordmark.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "509",
+     "tag": "border-t border-[#e7e3dd]/20"
+    },
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "974",
+     "tag": "className: \"text-[#e7e3dd]/20\""
+    }
+   ]
+  }
+ }
+}

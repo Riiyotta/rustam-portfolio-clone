@@ -1,0 +1,283 @@
+{
+ "version": "1.0.0",
+ "note": "Motion patterns observed in the source. reducedMotionFallback is pinned in schema/semantic_validate.py (MOTION_FALLBACKS). sourceImplementsFallback=false means the source itself has no reduced-motion branch for that pattern; the fallback is then a requirement for generated pages, not a description of the source.",
+ "fallbacks": [
+  "crossfade-stage",
+  "instant-hide",
+  "instant-route-change",
+  "instant-show",
+  "no-blur-highlight",
+  "none",
+  "opacity-fade",
+  "opacity-hover",
+  "snap-follow",
+  "static-digits",
+  "static-strip"
+ ],
+ "patterns": {
+  "word-reveal": {
+   "description": "Each word rises from 115% below its own clipped line box while fading in and un-blurring 3px to 0, staggered per word.",
+   "timing": {
+    "duration": "{motion.duration.word}",
+    "easing": "{motion.easing.reveal}",
+    "stagger": "{motion.stagger.body}"
+   },
+   "reducedMotionFallback": "opacity-fade",
+   "sourceImplementsFallback": true,
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "890-929",
+     "tag": "function k(e) {"
+    },
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "920",
+     "tag": "variants: a ? C : P,"
+    }
+   ]
+  },
+  "staggered-fade-up": {
+   "description": "Navbar columns fade in from 14px below, 0.85s reveal curve, delays 0/0.08/0.16/0.24/0.32s.",
+   "timing": {
+    "duration": "{motion.duration.entrance}",
+    "easing": "{motion.easing.reveal}",
+    "stagger": "{motion.stagger.navbar-columns}"
+   },
+   "reducedMotionFallback": "opacity-fade",
+   "sourceImplementsFallback": false,
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/layout.js",
+     "lines": "40-43",
+     "tag": "initial: { opacity: 0, y: 14 },"
+    }
+   ]
+  },
+  "gallery-strip-scroll": {
+   "description": "Infinite horizontal strip of textured planes; the wheel moves a damped target (damping 9); planes bend toward the pointer and at the viewport edges.",
+   "timing": {
+    "damping": "{motion.damping.scroll}"
+   },
+   "reducedMotionFallback": "static-strip",
+   "sourceImplementsFallback": false,
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "301",
+     "tag": "(D.current = c.cj9.damp(D.current, n.current, 9, el))));"
+    },
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "806",
+     "tag": "uniform float uTime, uHover, uWorldScale, uEdgeBend"
+    }
+   ]
+  },
+  "hover-focus-blur": {
+   "description": "Hovering a plane focuses it; the other planes blur and darken by 60% (damping 5.5 hover, 7 blur) and the hover-title follows the plane.",
+   "timing": {
+    "damping": "{motion.damping.hover}"
+   },
+   "reducedMotionFallback": "no-blur-highlight",
+   "sourceImplementsFallback": false,
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "540",
+     "tag": ": c.cj9.damp(h.uBlur.value, x, 7, el)),"
+    },
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "395-401",
+     "tag": "d = c.cj9.damp("
+    }
+   ]
+  },
+  "plane-focus-stage": {
+   "description": "Opening a project morphs the chosen plane into a centred stage with backdrop fade; clicks/wheel step through media; pagination jumps.",
+   "timing": {
+    "easing": "{motion.easing.reveal}"
+   },
+   "reducedMotionFallback": "crossfade-stage",
+   "sourceImplementsFallback": false,
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "806",
+     "tag": "uTransitionBend, uMorph"
+    },
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "955-1155",
+     "tag": "function N(e) {"
+    }
+   ]
+  },
+  "kinetic-cursor": {
+   "description": "Custom cursor label (RETURN / NEXT) follows the pointer with 1-exp(-10dt) lerp, tilts with velocity up to 2.5deg, enters with a 0.42s expo-out tween and scales to 0.82 when pressed. Only on hover-capable fine pointers.",
+   "timing": {
+    "duration": "{motion.duration.cursor-entry}",
+    "easing": "{motion.easing.expo-out}",
+    "damping": "{motion.damping.cursor-follow}"
+   },
+   "reducedMotionFallback": "snap-follow",
+   "sourceImplementsFallback": true,
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1286",
+     "tag": "a = o ? 1 : 1 - Math.exp(-10 * l),"
+    },
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1197",
+     "tag": "\"(prefers-reduced-motion: reduce)\","
+    }
+   ]
+  },
+  "page-transition-wipe": {
+   "description": "Full-screen WebGL wipe between routes: entering 0.82s, leaving 0.68s, cosine ease-in-out; colours depend on destination.",
+   "timing": {
+    "duration": "{motion.duration.transition-enter}",
+    "easing": "{motion.easing.cosine-in-out}"
+   },
+   "reducedMotionFallback": "instant-route-change",
+   "sourceImplementsFallback": true,
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/layout.js",
+     "lines": "328",
+     "tag": "let s = \"entering\" === e ? 0.82 : 0.68,"
+    },
+    {
+     "root": "project",
+     "file": "src/engine/chunks/layout.js",
+     "lines": "425",
+     "tag": "if (l) return void t.push(n);"
+    }
+   ]
+  },
+  "preloader-wipe": {
+   "description": "Wordmark shown as a 20% ghost with a clip-path reveal driven by load progress, then the cover slides up 100% over 0.85s on the exit curve.",
+   "timing": {
+    "duration": "{motion.duration.entrance}",
+    "easing": "{motion.easing.preloader-exit}"
+   },
+   "reducedMotionFallback": "instant-hide",
+   "sourceImplementsFallback": false,
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "876",
+     "tag": "let p = [0.76, 0, 0.24, 1];"
+    },
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "936",
+     "tag": "(h.current.style.clipPath = \"inset(0 \".concat("
+    }
+   ]
+  },
+  "opacity-hover": {
+   "description": "Links and buttons drop to 50% opacity (300ms) on hover; pagination numbers rise from 30% to 100%.",
+   "timing": {
+    "duration": "{motion.duration.hover}",
+    "easing": "{motion.easing.standard}"
+   },
+   "reducedMotionFallback": "opacity-hover",
+   "sourceImplementsFallback": true,
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/layout.js",
+     "lines": "173",
+     "tag": "transition-opacity duration-300 hover:opacity-50"
+    }
+   ]
+  },
+  "content-crossfade": {
+   "description": "About content swaps with a 0.75s opacity cross-fade (0.45s out) when the discipline changes.",
+   "timing": {
+    "duration": "{motion.duration.about-swap}",
+    "easing": "{motion.easing.reveal}"
+   },
+   "reducedMotionFallback": "opacity-fade",
+   "sourceImplementsFallback": true,
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1987",
+     "tag": "transition: { opacity: { duration: 0.75, ease: H } },"
+    },
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "2055",
+     "tag": "d = u ? _ : G;"
+    }
+   ]
+  },
+  "floating-digits": {
+   "description": "Three canvas-textured digits float and sway on a 6.5s loop behind the 404 message.",
+   "timing": {
+    "duration": "{motion.duration.digits-loop}"
+   },
+   "reducedMotionFallback": "static-digits",
+   "sourceImplementsFallback": false,
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/notfound.js",
+     "lines": "144",
+     "tag": "r = (t % 6.5) / 6.5,"
+    }
+   ]
+  },
+  "backdrop-fade": {
+   "description": "Overlay backdrop (97% ink, 24px blur) fades in under project/about overlays.",
+   "timing": {
+    "duration": "{motion.duration.word}"
+   },
+   "reducedMotionFallback": "instant-show",
+   "sourceImplementsFallback": false,
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "845",
+     "tag": "pointer-events-none fixed inset-0 z-[15] bg-[#0e0d0c]/97 backdrop-blur-[24px] opacity-0"
+    }
+   ]
+  },
+  "none": {
+   "description": "No motion.",
+   "timing": {},
+   "reducedMotionFallback": "none",
+   "sourceImplementsFallback": true,
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/components/NotFound.jsx",
+     "lines": "11",
+     "tag": "<h1 className=\"sr-only\">404</h1>"
+    }
+   ]
+  }
+ }
+}

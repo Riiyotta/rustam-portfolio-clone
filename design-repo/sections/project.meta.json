@@ -1,0 +1,90 @@
+{
+ "id": "project.meta",
+ "version": "1.0.0",
+ "title": "Project facts",
+ "source": {
+  "id": "module-5272:fn-N-meta",
+  "root": "project",
+  "file": "src/engine/chunks/272.js",
+  "lines": "1035-1059",
+  "tag": "\"absolute bottom-[26%] right-[3.8%] hidden w-[18.5%] flex-col items-start gap-6 md:flex\","
+ },
+ "semantic": {
+  "id": "project.meta",
+  "category": "PROJECT_DETAIL",
+  "purpose": "Year and tools of the project (mobile also repeats the description here)."
+ },
+ "retrievalEligible": true,
+ "content": {
+  "fields": {
+   "yearLabel": {
+    "type": "text",
+    "maxWords": 1
+   },
+   "year": {
+    "type": "year",
+    "required": true
+   },
+   "toolsLabel": {
+    "type": "text",
+    "maxWords": 1
+   },
+   "tools": {
+    "type": "text",
+    "maxWords": 4,
+    "required": true
+   }
+  }
+ },
+ "constraints": {
+  "onePerPage": true
+ },
+ "responsive": {
+  "desktop": "Right column (right 3.8%, bottom 26%, width 18.5%): 10px UI-stack labels with 0.18em tracking above clamp(16px,1.1vw,19px) medium values at 90%.",
+  "mobile": "Grid below the media after a 20%-opacity hairline: 'About the project:' description spanning both columns, then Year and Tools.",
+  "breakpoint": "{breakpoint.md}"
+ },
+ "motion": {
+  "patterns": [
+   "word-reveal"
+  ],
+  "default": "word-reveal",
+  "reducedMotionFallback": "opacity-fade",
+  "sourceImplementsFallback": true
+ },
+ "generatedAssetRoles": [
+  "copy.original"
+ ],
+ "referenceAssetRoles": [],
+ "tokens": [
+  "typography.size.micro",
+  "typography.size.menu-item",
+  "typography.tracking.label-wider",
+  "border.hairline"
+ ],
+ "composes": [
+  "component.label-value"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/924.js",
+   "lines": "518",
+   "tag": "children: \"About the project:\","
+  }
+ ],
+ "measured": {
+  "1440x900": {
+   "heightPx": 120,
+   "widthPx": 266,
+   "inFlow": false,
+   "position": "absolute"
+  },
+  "390x844": {
+   "heightPx": 462,
+   "widthPx": 351,
+   "inFlow": true,
+   "position": "static"
+  }
+ }
+}

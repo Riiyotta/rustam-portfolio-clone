@@ -1,0 +1,240 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "reference",
+ "template": "about",
+ "route": "/about",
+ "theme": "dark",
+ "meta": {
+  "title": "Rustam Kerimov | Portfolio",
+  "description": "Graphic designer, Rustam Kerimov's portfolio"
+ },
+ "runtimeLayers": [
+  "utility.preloader",
+  "utility.page-transition",
+  "utility.overlay-backdrop",
+  "utility.kinetic-cursor",
+  "utility.toast"
+ ],
+ "nodes": [
+  {
+   "section": "shell.navbar",
+   "content": {
+    "ownerName": "Rustam Kerimov",
+    "occupation": "Graphic Designer",
+    "location": "Oslo, Norway",
+    "contactLinks": [
+     {
+      "label": "Copy Email",
+      "href": "mailto:rustam-98@hotmail.com",
+      "kind": "copy-email"
+     },
+     {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/kerimov.designs/",
+      "kind": "social"
+     },
+     {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/rustam-kerimov-75bb5a331/",
+      "kind": "social"
+     }
+    ],
+    "profileLinkLabel": "About me"
+   },
+   "motion": {
+    "pattern": "staggered-fade-up",
+    "reducedMotionFallback": "opacity-fade"
+   }
+  },
+  {
+   "section": "about.profile-header",
+   "content": {
+    "title": "RUSTAM KERIMOV",
+    "intro": "A graphic designer exploring visual identities, typography and motion.",
+    "description": "Creating distinctive visual experiences across branding, editorial design, art direction and animation."
+   },
+   "motion": {
+    "pattern": "word-reveal",
+    "reducedMotionFallback": "opacity-fade"
+   }
+  },
+  {
+   "section": "about.media-stage",
+   "content": {
+    "media": [
+     {
+      "asset": {
+       "assetRole": "person.portrait-source",
+       "src": "/rk-portrait.jpg",
+       "alt": "Profile"
+      },
+      "kind": "image"
+     },
+     {
+      "asset": {
+       "assetRole": "discipline.media-source",
+       "src": "/visual-identity.jpg",
+       "alt": "Visual Identities"
+      },
+      "kind": "image"
+     },
+     {
+      "asset": {
+       "assetRole": "discipline.media-source",
+       "src": "/logo-design.jpg",
+       "alt": "Logo Design"
+      },
+      "kind": "image"
+     },
+     {
+      "asset": {
+       "assetRole": "discipline.media-source",
+       "src": "/art-direction.jpg",
+       "alt": "Art Direction"
+      },
+      "kind": "image"
+     },
+     {
+      "asset": {
+       "assetRole": "discipline.media-source",
+       "src": "/bylarm-new.mp4",
+       "alt": "Motion & Animation"
+      },
+      "kind": "video"
+     },
+     {
+      "asset": {
+       "assetRole": "discipline.media-source",
+       "src": "/editorial-design.jpg",
+       "alt": "Editorial Design"
+      },
+      "kind": "image"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "plane-focus-stage",
+    "reducedMotionFallback": "crossfade-stage"
+   }
+  },
+  {
+   "section": "about.discipline-list",
+   "content": {
+    "items": [
+     {
+      "label": "Profile",
+      "summary": "A graphic designer exploring visual identities, typography, art direction and motion.",
+      "media": {
+       "assetRole": "person.portrait-source",
+       "src": "/rk-portrait.jpg",
+       "alt": "Profile"
+      }
+     },
+     {
+      "label": "Visual Identities",
+      "summary": "Creating distinctive visual identities through typography, color and considered design systems.",
+      "media": {
+       "assetRole": "discipline.media-source",
+       "src": "/visual-identity.jpg",
+       "alt": "Visual Identities"
+      }
+     },
+     {
+      "label": "Logo Design",
+      "summary": "Creating distinctive and memorable logos through shape, typography and visual exploration.",
+      "media": {
+       "assetRole": "discipline.media-source",
+       "src": "/logo-design.jpg",
+       "alt": "Logo Design"
+      }
+     },
+     {
+      "label": "Art Direction",
+      "summary": "Shaping creative ideas through imagery, typography and a considered visual direction.",
+      "media": {
+       "assetRole": "discipline.media-source",
+       "src": "/art-direction.jpg",
+       "alt": "Art Direction"
+      }
+     },
+     {
+      "label": "Motion & Animation",
+      "summary": "Bringing design to life through movement, rhythm, animation and visual storytelling.",
+      "media": {
+       "assetRole": "discipline.media-source",
+       "src": "/bylarm-new.mp4",
+       "alt": "Motion & Animation"
+      }
+     },
+     {
+      "label": "Editorial Design",
+      "summary": "Creating expressive editorial experiences through typography, imagery and considered composition.",
+      "media": {
+       "assetRole": "discipline.media-source",
+       "src": "/editorial-design.jpg",
+       "alt": "Editorial Design"
+      }
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "opacity-hover",
+    "reducedMotionFallback": "opacity-hover"
+   }
+  },
+  {
+   "section": "about.footer-meta",
+   "content": {
+    "hint": "Scroll or click to explore",
+    "facts": [
+     "Oslo, Norway",
+     "Age: 27"
+    ]
+   },
+   "motion": {
+    "pattern": "word-reveal",
+    "reducedMotionFallback": "opacity-fade"
+   }
+  },
+  {
+   "section": "shell.footer-contact",
+   "content": {
+    "servicesHeading": "Services:",
+    "services": [
+     "Visual Identities",
+     "Logo Design",
+     "Art Direction",
+     "Motion & Animation",
+     "Editorial Design"
+    ],
+    "connectHeading": "Connect:",
+    "contactLinks": [
+     {
+      "label": "Copy Email",
+      "href": "mailto:rustam-98@hotmail.com",
+      "kind": "copy-email"
+     },
+     {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/kerimov.designs/",
+      "kind": "social"
+     },
+     {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/rustam-kerimov-75bb5a331/",
+      "kind": "social"
+     }
+    ],
+    "creditLabel": "Design / Development:",
+    "credit": {
+     "label": "Jonas Nygaard",
+     "href": "https://www.jonasnygaard.com"
+    }
+   },
+   "motion": {
+    "pattern": "opacity-hover",
+    "reducedMotionFallback": "opacity-hover"
+   }
+  }
+ ]
+}

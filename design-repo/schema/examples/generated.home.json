@@ -1,0 +1,161 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "generated",
+ "template": "home",
+ "route": "/",
+ "theme": "dark",
+ "meta": {
+  "title": "Mara Lindqvist, type illustrator",
+  "description": "Lettering, book covers and wayfinding drawn by hand and set in motion."
+ },
+ "runtimeLayers": [
+  "utility.preloader",
+  "utility.page-transition",
+  "utility.hover-title"
+ ],
+ "nodes": [
+  {
+   "section": "shell.navbar",
+   "content": {
+    "ownerName": "Mara Lindqvist",
+    "occupation": "Type Illustrator",
+    "location": "Harbor City",
+    "contactLinks": [
+     {
+      "label": "Email me",
+      "href": "mailto:hello@studio.example",
+      "kind": "copy-email"
+     },
+     {
+      "label": "Sketchbook",
+      "href": "https://sketchbook.example/mara",
+      "kind": "social"
+     }
+    ],
+    "profileLinkLabel": "Profile"
+   },
+   "motion": {
+    "pattern": "staggered-fade-up",
+    "reducedMotionFallback": "opacity-fade"
+   },
+   "tokens": {
+    "textColor": "text.primary",
+    "fontFamily": "typography.family.display"
+   }
+  },
+  {
+   "section": "hero.intro",
+   "content": {
+    "headingLines": [
+     "LETTERS DRAWN SLOWLY,",
+     "SET IN MOTION."
+    ],
+    "portrait": {
+     "assetRole": "person.portrait-fictional",
+     "src": "generated://portrait/fictional-illustrator-4x5",
+     "alt": "Illustrated self-portrait of a fictional illustrator"
+    },
+    "profileHref": "/about"
+   },
+   "motion": {
+    "pattern": "word-reveal",
+    "reducedMotionFallback": "opacity-fade"
+   },
+   "tokens": {
+    "typeScale": "typography.size.hero-display",
+    "spacing": "spacing.8"
+   }
+  },
+  {
+   "section": "content.intro-note",
+   "content": {
+    "text": "Browse the drawings and commissions below. New lettering briefs are welcome from spring onward; a short note with your timeline is the best start."
+   },
+   "motion": {
+    "pattern": "word-reveal",
+    "reducedMotionFallback": "opacity-fade"
+   }
+  },
+  {
+   "section": "portfolio.work-index",
+   "content": {
+    "heading": "Recent work",
+    "items": [
+     {
+      "title": "Saltmarsh Almanac",
+      "href": "/project/almanac",
+      "cover": {
+       "assetRole": "project.cover-generated",
+       "src": "generated://cover/almanac",
+       "alt": "Saltmarsh Almanac cover"
+      }
+     },
+     {
+      "title": "Lantern Market",
+      "href": "/project/lantern",
+      "cover": {
+       "assetRole": "project.cover-generated",
+       "src": "generated://cover/lantern",
+       "alt": "Lantern Market cover"
+      }
+     },
+     {
+      "title": "Quiet Ferry",
+      "href": "/project/ferry",
+      "cover": {
+       "assetRole": "project.cover-generated",
+       "src": "generated://cover/ferry",
+       "alt": "Quiet Ferry cover"
+      }
+     },
+     {
+      "title": "Paper Orchard",
+      "href": "/project/orchard",
+      "cover": {
+       "assetRole": "project.cover-generated",
+       "src": "generated://cover/orchard",
+       "alt": "Paper Orchard cover"
+      }
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "gallery-strip-scroll",
+    "reducedMotionFallback": "static-strip"
+   }
+  },
+  {
+   "section": "shell.footer-contact",
+   "content": {
+    "servicesHeading": "Practice",
+    "services": [
+     "Lettering",
+     "Book covers",
+     "Signage"
+    ],
+    "connectHeading": "Reach",
+    "contactLinks": [
+     {
+      "label": "Email me",
+      "href": "mailto:hello@studio.example",
+      "kind": "copy-email"
+     },
+     {
+      "label": "Sketchbook",
+      "href": "https://sketchbook.example/mara",
+      "kind": "social"
+     }
+    ],
+    "creditLabel": "Site by",
+    "credit": {
+     "label": "Northwind Web",
+     "href": "https://northwind.example"
+    }
+   },
+   "motion": {
+    "pattern": "opacity-hover",
+    "reducedMotionFallback": "opacity-hover"
+   }
+  }
+ ]
+}

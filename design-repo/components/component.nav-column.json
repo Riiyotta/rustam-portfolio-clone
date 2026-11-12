@@ -1,0 +1,24 @@
+{
+ "id": "component.nav-column",
+ "kind": "component",
+ "version": "1.0.0",
+ "description": "One navbar column: label + value or a stack of links, entering with a staggered fade-up.",
+ "composes": [
+  "component.label-value",
+  "primitive.text-link",
+  "primitive.copy-button"
+ ],
+ "props": [
+  "label",
+  "value",
+  "links"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/layout.js",
+   "lines": "136-140",
+   "tag": "children: \"occupation:\","
+  }
+ ]
+}

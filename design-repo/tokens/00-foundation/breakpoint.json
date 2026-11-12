@@ -1,0 +1,127 @@
+{
+ "breakpoint": {
+  "xs": {
+   "$type": "dimension",
+   "$value": "390px",
+   "$description": "Custom min-width query present in the stylesheet.",
+   "evidence": [
+    {
+     "root": "repo",
+     "file": "extraction/evidence/site.pretty.css",
+     "lines": "84",
+     "tag": "@media (min-width:390px)"
+    }
+   ]
+  },
+  "sm": {
+   "$type": "dimension",
+   "$value": "640px",
+   "$description": "40rem.",
+   "evidence": [
+    {
+     "root": "repo",
+     "file": "extraction/evidence/site.pretty.css",
+     "lines": "79",
+     "tag": "@media (min-width:40rem)"
+    }
+   ]
+  },
+  "md": {
+   "$type": "dimension",
+   "$value": "768px",
+   "$description": "48rem: overlay detail switches from stacked mobile meta to side columns.",
+   "evidence": [
+    {
+     "root": "repo",
+     "file": "extraction/evidence/site.pretty.css",
+     "lines": "80",
+     "tag": "@media (min-width:48rem)"
+    }
+   ]
+  },
+  "lg": {
+   "$type": "dimension",
+   "$value": "1024px",
+   "$description": "64rem: the layout switch. Below it (matchMedia max-width 1023px) the page renders the scrolling list layout; at and above it the single-viewport WebGL scene.",
+   "evidence": [
+    {
+     "root": "repo",
+     "file": "extraction/evidence/site.pretty.css",
+     "lines": "81",
+     "tag": "@media (min-width:64rem)"
+    },
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "798",
+     "tag": "window.matchMedia(\"(max-width: 1023px)\")"
+    }
+   ]
+  },
+  "xl": {
+   "$type": "dimension",
+   "$value": "1280px",
+   "$description": "80rem.",
+   "evidence": [
+    {
+     "root": "repo",
+     "file": "extraction/evidence/site.pretty.css",
+     "lines": "82",
+     "tag": "@media (min-width:80rem)"
+    }
+   ]
+  },
+  "2xl": {
+   "$type": "dimension",
+   "$value": "1536px",
+   "$description": "96rem.",
+   "evidence": [
+    {
+     "root": "repo",
+     "file": "extraction/evidence/site.pretty.css",
+     "lines": "83",
+     "tag": "@media (min-width:96rem)"
+    }
+   ]
+  },
+  "short-800": {
+   "$type": "dimension",
+   "$value": "800px",
+   "$description": "max-height query: overlay description shrinks to 15px.",
+   "evidence": [
+    {
+     "root": "repo",
+     "file": "extraction/evidence/site.pretty.css",
+     "lines": "86",
+     "tag": "@media (max-height:800px)"
+    }
+   ]
+  },
+  "short-650": {
+   "$type": "dimension",
+   "$value": "650px",
+   "$description": "max-height query: overlay description shrinks to 14px.",
+   "evidence": [
+    {
+     "root": "repo",
+     "file": "extraction/evidence/site.pretty.css",
+     "lines": "85",
+     "tag": "@media (max-height:650px)"
+    }
+   ]
+  },
+  "short-desktop-680": {
+   "$type": "dimension",
+   "$value": "680px",
+   "$description": "(min-width:1024px) and (max-height:680px): intro note hidden.",
+   "evidence": [
+    {
+     "root": "repo",
+     "file": "extraction/evidence/site.pretty.css",
+     "lines": "87",
+     "tag": "@media (min-width:1024px) and (max-height:680px)"
+    }
+   ]
+  }
+ }
+}

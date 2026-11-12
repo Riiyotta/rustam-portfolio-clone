@@ -1,0 +1,121 @@
+{
+ "id": "shell.navbar",
+ "version": "1.0.0",
+ "title": "Site navbar",
+ "source": {
+  "id": "module-5883:navbar",
+  "root": "project",
+  "file": "src/engine/chunks/layout.js",
+  "lines": "95-235",
+  "tag": "\"aria-label\": \"Main navigation\","
+ },
+ "semantic": {
+  "id": "shell.navbar",
+  "category": "SHELL",
+  "purpose": "Fixed identity bar: owner name, occupation, location, contact links and the profile toggle."
+ },
+ "retrievalEligible": true,
+ "content": {
+  "fields": {
+   "ownerName": {
+    "type": "text",
+    "maxWords": 3,
+    "required": true
+   },
+   "occupation": {
+    "type": "text",
+    "maxWords": 3,
+    "required": true
+   },
+   "location": {
+    "type": "text",
+    "maxWords": 3,
+    "required": true
+   },
+   "contactLinks": {
+    "type": "list",
+    "of": {
+     "label": {
+      "type": "text",
+      "maxWords": 2
+     },
+     "href": {
+      "type": "link"
+     },
+     "kind": {
+      "type": "enum",
+      "values": [
+       "copy-email",
+       "social",
+       "external",
+       "internal"
+      ]
+     }
+    },
+    "maxItems": 3
+   },
+   "profileLinkLabel": {
+    "type": "text",
+    "maxWords": 2,
+    "required": true
+   }
+  }
+ },
+ "constraints": {
+  "onePerPage": true,
+  "mustBeFirst": true
+ },
+ "responsive": {
+  "desktop": "Fixed, transparent, 5 columns (Name:/occupation:/Location:/Connect:/Profile:) justified across the width, side gutter 3.1%, top 18px; labels 14px, values clamp(15px,1.1vw,20px) medium.",
+  "mobile": "Below 1024px only the name (left) and an 'About me' / 'Back' toggle (right) remain; gutter 5%, top 24px.",
+  "breakpoint": "{breakpoint.lg}"
+ },
+ "motion": {
+  "patterns": [
+   "staggered-fade-up",
+   "opacity-hover"
+  ],
+  "default": "staggered-fade-up",
+  "reducedMotionFallback": "opacity-fade",
+  "sourceImplementsFallback": false
+ },
+ "generatedAssetRoles": [
+  "link.placeholder-url",
+  "copy.original"
+ ],
+ "referenceAssetRoles": [],
+ "tokens": [
+  "text.primary",
+  "component.navbar.label-size",
+  "component.navbar.value-size",
+  "typography.family.display",
+  "motion.easing.reveal"
+ ],
+ "composes": [
+  "component.nav-column",
+  "primitive.copy-button",
+  "primitive.text-link"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/layout.js",
+   "lines": "97",
+   "tag": "fixed inset-x-0 top-0 z-[100] w-full bg-transparent px-[5%] pb-4 pt-6"
+  }
+ ],
+ "measured": {
+  "1440x900": {
+   "heightPx": 94,
+   "widthPx": 1440,
+   "inFlow": false,
+   "position": "fixed"
+  },
+  "390x844": {
+   "heightPx": 58,
+   "widthPx": 390,
+   "inFlow": false,
+   "position": "fixed"
+  }
+ }
+}

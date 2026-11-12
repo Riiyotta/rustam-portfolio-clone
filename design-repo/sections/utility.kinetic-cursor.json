@@ -1,0 +1,62 @@
+{
+ "id": "utility.kinetic-cursor",
+ "version": "1.0.0",
+ "title": "Kinetic cursor",
+ "source": {
+  "id": "module-5272:fn-I-cursor",
+  "root": "project",
+  "file": "src/engine/chunks/272.js",
+  "lines": "1155-1475",
+  "tag": "      function I(e) {"
+ },
+ "semantic": {
+  "id": "utility.kinetic-cursor",
+  "category": "UTILITY",
+  "purpose": "Pointer-following label (RETURN / NEXT) inside open overlays."
+ },
+ "retrievalEligible": false,
+ "retrievalIneligibleReason": "Interaction affordance that follows the pointer; Runtime UI that exists only during interaction or loading; it carries no page content and must never be retrieved as a section to compose.",
+ "content": {
+  "fields": {}
+ },
+ "constraints": {},
+ "responsive": {
+  "desktop": "Only with hover-capable fine pointers; replaces the system cursor over overlays.",
+  "mobile": "Not rendered.",
+  "breakpoint": null
+ },
+ "motion": {
+  "patterns": [
+   "kinetic-cursor"
+  ],
+  "default": "kinetic-cursor",
+  "reducedMotionFallback": "snap-follow",
+  "sourceImplementsFallback": true
+ },
+ "generatedAssetRoles": [],
+ "referenceAssetRoles": [],
+ "tokens": [
+  "component.cursor.label-size",
+  "component.cursor.press-scale"
+ ],
+ "composes": [],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/272.js",
+   "lines": "1168",
+   "tag": "useState)(\"RETURN\")"
+  }
+ ],
+ "measured": {
+  "1440x900": {
+   "heightPx": 14,
+   "widthPx": 66,
+   "inFlow": false,
+   "position": "absolute"
+  },
+  "390x844": {
+   "present": false
+  }
+ }
+}

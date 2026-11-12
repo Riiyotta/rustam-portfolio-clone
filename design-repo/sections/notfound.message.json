@@ -1,0 +1,92 @@
+{
+ "id": "notfound.message",
+ "version": "1.0.0",
+ "title": "404 message",
+ "source": {
+  "id": "component-NotFound:message",
+  "root": "project",
+  "file": "src/components/NotFound.jsx",
+  "lines": "10-41",
+  "tag": "<section className=\" absolute left-10 bottom-6 z-10 max-w-3xl text-left\">"
+ },
+ "semantic": {
+  "id": "notfound.message",
+  "category": "NOTICE",
+  "purpose": "Tells the visitor the page does not exist and links back to the portfolio."
+ },
+ "retrievalEligible": true,
+ "content": {
+  "fields": {
+   "heading": {
+    "type": "text",
+    "maxWords": 6,
+    "required": true
+   },
+   "body": {
+    "type": "text",
+    "maxWords": 20,
+    "required": true
+   },
+   "backLinkLabel": {
+    "type": "text",
+    "maxWords": 4,
+    "required": true
+   },
+   "backHref": {
+    "type": "link",
+    "required": true
+   }
+  }
+ },
+ "constraints": {
+  "onePerPage": true,
+  "mustBeLast": true
+ },
+ "responsive": {
+  "desktop": "Bottom-left block (left 40px, bottom 24px, max 48rem): 48px semibold heading, 20px body at 60% white, heavy uppercase arrow link.",
+  "mobile": "Same block; heading 30px, body 18px.",
+  "breakpoint": "{breakpoint.md}"
+ },
+ "motion": {
+  "patterns": [
+   "opacity-hover"
+  ],
+  "default": "opacity-hover",
+  "reducedMotionFallback": "opacity-hover",
+  "sourceImplementsFallback": true
+ },
+ "generatedAssetRoles": [
+  "copy.original"
+ ],
+ "referenceAssetRoles": [],
+ "tokens": [
+  "typography.size.notfound-heading",
+  "typography.size.notfound-body",
+  "typography.weight.black"
+ ],
+ "composes": [
+  "primitive.arrow-link"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/App.jsx",
+   "lines": "30",
+   "tag": "const isKnownRoute"
+  }
+ ],
+ "measured": {
+  "1440x900": {
+   "heightPx": 226,
+   "widthPx": 576,
+   "inFlow": false,
+   "position": "absolute"
+  },
+  "390x844": {
+   "heightPx": 242,
+   "widthPx": 350,
+   "inFlow": false,
+   "position": "absolute"
+  }
+ }
+}

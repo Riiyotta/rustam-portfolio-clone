@@ -1,0 +1,231 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "reference",
+ "template": "home",
+ "route": "/",
+ "theme": "dark",
+ "meta": {
+  "title": "Rustam Kerimov | Portfolio",
+  "description": "Graphic designer, Rustam Kerimov's portfolio"
+ },
+ "runtimeLayers": [
+  "utility.preloader",
+  "utility.page-transition",
+  "utility.overlay-backdrop",
+  "utility.hover-title",
+  "utility.toast"
+ ],
+ "nodes": [
+  {
+   "section": "shell.navbar",
+   "content": {
+    "ownerName": "Rustam Kerimov",
+    "occupation": "Graphic Designer",
+    "location": "Oslo, Norway",
+    "contactLinks": [
+     {
+      "label": "Copy Email",
+      "href": "mailto:rustam-98@hotmail.com",
+      "kind": "copy-email"
+     },
+     {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/kerimov.designs/",
+      "kind": "social"
+     },
+     {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/rustam-kerimov-75bb5a331/",
+      "kind": "social"
+     }
+    ],
+    "profileLinkLabel": "About me"
+   },
+   "motion": {
+    "pattern": "staggered-fade-up",
+    "reducedMotionFallback": "opacity-fade"
+   },
+   "tokens": {
+    "textColor": "text.primary",
+    "fontFamily": "typography.family.display",
+    "typeScale": "component.navbar.value-size"
+   }
+  },
+  {
+   "section": "hero.intro",
+   "content": {
+    "headingLines": [
+     "GRAPHIC DESIGNER",
+     "CRAFTING VISUAL IDENTITIES,",
+     "TYPOGRAPHY AND MOTION."
+    ],
+    "portrait": {
+     "assetRole": "person.portrait-source",
+     "src": "/rk-portrait.jpg",
+     "alt": "Portrait of Rustam Kerimov"
+    },
+    "profileHref": "/about"
+   },
+   "motion": {
+    "pattern": "word-reveal",
+    "reducedMotionFallback": "opacity-fade"
+   },
+   "tokens": {
+    "typeScale": "typography.size.hero-display",
+    "fontWeight": "typography.weight.bold"
+   }
+  },
+  {
+   "section": "content.intro-note",
+   "content": {
+    "text": "Take a look at my selected projects below to see what I've been working on. I'm always open to new projects, fresh ideas and creative collaborations, so feel free to get in touch."
+   },
+   "motion": {
+    "pattern": "word-reveal",
+    "reducedMotionFallback": "opacity-fade"
+   }
+  },
+  {
+   "section": "portfolio.work-index",
+   "content": {
+    "heading": "Selected Work:",
+    "items": [
+     {
+      "title": "MORI",
+      "href": "/project/6aefb39eda2cd8ea85237d26",
+      "cover": {
+       "assetRole": "project.cover-source",
+       "src": "/projects/hhEReYBoKW7E5BE4kTgAVnR4kGt6IMCgHSD7P03iBYhv8WpU",
+       "alt": "MORI"
+      }
+     },
+     {
+      "title": "Kistefos museum",
+      "href": "/project/6a873e144aea474cdeae7a76",
+      "cover": {
+       "assetRole": "project.cover-source",
+       "src": "/projects/hhEReYBoKW7EH7i9h9ulfTjnvbaISupmyGMYxJ0XVOFed2Ro",
+       "alt": "Kistefos museum"
+      }
+     },
+     {
+      "title": "AURELIS CAPITAL",
+      "href": "/project/6a873ba44aea474cdeae7a75",
+      "cover": {
+       "assetRole": "project.cover-source",
+       "src": "/projects/hhEReYBoKW7E4A7TwKqrMpV2FiNYjAHrbl0Lu7ofRmKPzctG",
+       "alt": "AURELIS CAPITAL"
+      }
+     },
+     {
+      "title": "Posters Bundle #1",
+      "href": "/project/6a738fe5c50ff327148b02f9",
+      "cover": {
+       "assetRole": "project.cover-source",
+       "src": "/projects/hhEReYBoKW7EiycGPXl3RkZzoVOUsyLqc1CtrbAMdQg57S0J",
+       "alt": "Posters Bundle #1"
+      }
+     },
+     {
+      "title": "Art Exhibition",
+      "href": "/project/6930b50f931d3caa254b3237",
+      "cover": {
+       "assetRole": "project.cover-source",
+       "src": "/projects/hhEReYBoKW7E100yHri5B7hDQMkp8HYt36EgPZsab4rIw2UJ",
+       "alt": "Art Exhibition"
+      }
+     },
+     {
+      "title": "Drømmenes Melodi",
+      "href": "/project/69300cd7a94f6af6c6b7d9d8",
+      "cover": {
+       "assetRole": "project.cover-source",
+       "src": "/projects/hhEReYBoKW7EZwp7ENbKdDiQygG582jmUrOVIokluEpAPfYb",
+       "alt": "Drømmenes Melodi"
+      }
+     },
+     {
+      "title": "Echo Festival",
+      "href": "/project/692fa8ade953917a4953f016",
+      "cover": {
+       "assetRole": "project.cover-source",
+       "src": "/projects/hhEReYBoKW7EW8CLnbmulIZ2Kxpg50MU9NShHBGPrOX6RJTv",
+       "alt": "Echo Festival"
+      }
+     },
+     {
+      "title": "Breen Bygg & Service",
+      "href": "/project/692fa503b4aaa1dd44f7665c",
+      "cover": {
+       "assetRole": "project.cover-source",
+       "src": "/projects/hhEReYBoKW7E3cgwU148h6PEaXw9oNC517nyuvqMHUgIcAxi",
+       "alt": "Breen Bygg & Service"
+      }
+     },
+     {
+      "title": "i-D Magazine",
+      "href": "/project/692f9a5d6a4755436ddef92b",
+      "cover": {
+       "assetRole": "project.cover-source",
+       "src": "/projects/hhEReYBoKW7EjkmXGBLB5L2TcOwzdZvUqSCtf3jakReblpQ9",
+       "alt": "i-D Magazine"
+      }
+     },
+     {
+      "title": "Maltesers Package",
+      "href": "/project/692f8cfc17ad2ca258e981de",
+      "cover": {
+       "assetRole": "project.cover-source",
+       "src": "/projects/hhEReYBoKW7EEuHL2V3KOptlQqnGojvkmW3JHgRKTNbxaSrM",
+       "alt": "Maltesers Package"
+      }
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "gallery-strip-scroll",
+    "reducedMotionFallback": "static-strip"
+   }
+  },
+  {
+   "section": "shell.footer-contact",
+   "content": {
+    "servicesHeading": "Services:",
+    "services": [
+     "Visual Identities",
+     "Logo Design",
+     "Art Direction",
+     "Motion & Animation",
+     "Editorial Design"
+    ],
+    "connectHeading": "Connect:",
+    "contactLinks": [
+     {
+      "label": "Copy Email",
+      "href": "mailto:rustam-98@hotmail.com",
+      "kind": "copy-email"
+     },
+     {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/kerimov.designs/",
+      "kind": "social"
+     },
+     {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/rustam-kerimov-75bb5a331/",
+      "kind": "social"
+     }
+    ],
+    "creditLabel": "Design / Development:",
+    "credit": {
+     "label": "Jonas Nygaard",
+     "href": "https://www.jonasnygaard.com"
+    }
+   },
+   "motion": {
+    "pattern": "opacity-hover",
+    "reducedMotionFallback": "opacity-hover"
+   }
+  }
+ ]
+}

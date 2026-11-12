@@ -1,0 +1,21 @@
+{
+ "id": "primitive.text-link",
+ "kind": "primitive",
+ "version": "1.0.0",
+ "description": "Plain text link/button that drops to 50% opacity on hover (300ms).",
+ "props": [
+  "label",
+  "href"
+ ],
+ "motionPatterns": [
+  "opacity-hover"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/layout.js",
+   "lines": "190",
+   "tag": "\"whitespace-nowrap transition-opacity duration-300 hover:opacity-50\","
+  }
+ ]
+}

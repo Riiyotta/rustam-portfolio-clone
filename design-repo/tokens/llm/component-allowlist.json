@@ -1,0 +1,490 @@
+{
+ "version": "1.0.0",
+ "note": "Closed list of every contract an AI may compose or configure. verify_all.py checks parity with the contract files both ways and that retrievalEligible matches the contracts and the pin.",
+ "nodeSettableProperties": [
+  "section",
+  "variant",
+  "content",
+  "motion",
+  "tokens"
+ ],
+ "entries": [
+  {
+   "id": "shell.navbar",
+   "kind": "section",
+   "file": "sections/shell.navbar.json",
+   "retrievalEligible": true,
+   "contentFields": [
+    "contactLinks",
+    "location",
+    "occupation",
+    "ownerName",
+    "profileLinkLabel"
+   ],
+   "motionPatterns": [
+    "staggered-fade-up",
+    "opacity-hover"
+   ],
+   "generatedAssetRoles": [
+    "link.placeholder-url",
+    "copy.original"
+   ]
+  },
+  {
+   "id": "hero.intro",
+   "kind": "section",
+   "file": "sections/hero.intro.json",
+   "retrievalEligible": true,
+   "contentFields": [
+    "headingLines",
+    "portrait",
+    "profileHref"
+   ],
+   "motionPatterns": [
+    "word-reveal"
+   ],
+   "generatedAssetRoles": [
+    "person.portrait-fictional",
+    "media.placeholder",
+    "copy.original"
+   ]
+  },
+  {
+   "id": "content.intro-note",
+   "kind": "section",
+   "file": "sections/content.intro-note.json",
+   "retrievalEligible": true,
+   "contentFields": [
+    "text"
+   ],
+   "motionPatterns": [
+    "word-reveal"
+   ],
+   "generatedAssetRoles": [
+    "copy.original"
+   ]
+  },
+  {
+   "id": "portfolio.work-index",
+   "kind": "section",
+   "file": "sections/portfolio.work-index.json",
+   "retrievalEligible": true,
+   "contentFields": [
+    "heading",
+    "items"
+   ],
+   "motionPatterns": [
+    "gallery-strip-scroll",
+    "hover-focus-blur"
+   ],
+   "generatedAssetRoles": [
+    "project.cover-generated",
+    "media.placeholder",
+    "copy.original"
+   ]
+  },
+  {
+   "id": "shell.footer-contact",
+   "kind": "section",
+   "file": "sections/shell.footer-contact.json",
+   "retrievalEligible": true,
+   "contentFields": [
+    "connectHeading",
+    "contactLinks",
+    "credit",
+    "creditLabel",
+    "services",
+    "servicesHeading"
+   ],
+   "motionPatterns": [
+    "opacity-hover"
+   ],
+   "generatedAssetRoles": [
+    "link.placeholder-url",
+    "copy.original"
+   ]
+  },
+  {
+   "id": "project.header",
+   "kind": "section",
+   "file": "sections/project.header.json",
+   "retrievalEligible": true,
+   "contentFields": [
+    "description",
+    "tags",
+    "title"
+   ],
+   "motionPatterns": [
+    "word-reveal"
+   ],
+   "generatedAssetRoles": [
+    "copy.original"
+   ]
+  },
+  {
+   "id": "project.media-stage",
+   "kind": "section",
+   "file": "sections/project.media-stage.json",
+   "retrievalEligible": true,
+   "contentFields": [
+    "media"
+   ],
+   "motionPatterns": [
+    "plane-focus-stage"
+   ],
+   "generatedAssetRoles": [
+    "project.cover-generated",
+    "project.gallery-generated",
+    "project.video-generated",
+    "media.placeholder"
+   ]
+  },
+  {
+   "id": "project.meta",
+   "kind": "section",
+   "file": "sections/project.meta.json",
+   "retrievalEligible": true,
+   "contentFields": [
+    "tools",
+    "toolsLabel",
+    "year",
+    "yearLabel"
+   ],
+   "motionPatterns": [
+    "word-reveal"
+   ],
+   "generatedAssetRoles": [
+    "copy.original"
+   ]
+  },
+  {
+   "id": "project.footer-bar",
+   "kind": "section",
+   "file": "sections/project.footer-bar.json",
+   "retrievalEligible": true,
+   "contentFields": [
+    "hint",
+    "mediaCount",
+    "tags"
+   ],
+   "motionPatterns": [
+    "opacity-hover"
+   ],
+   "generatedAssetRoles": [
+    "copy.original"
+   ]
+  },
+  {
+   "id": "about.profile-header",
+   "kind": "section",
+   "file": "sections/about.profile-header.json",
+   "retrievalEligible": true,
+   "contentFields": [
+    "description",
+    "intro",
+    "title"
+   ],
+   "motionPatterns": [
+    "word-reveal",
+    "content-crossfade"
+   ],
+   "generatedAssetRoles": [
+    "person.portrait-fictional",
+    "media.placeholder",
+    "copy.original"
+   ]
+  },
+  {
+   "id": "about.media-stage",
+   "kind": "section",
+   "file": "sections/about.media-stage.json",
+   "retrievalEligible": true,
+   "contentFields": [
+    "media"
+   ],
+   "motionPatterns": [
+    "plane-focus-stage"
+   ],
+   "generatedAssetRoles": [
+    "person.portrait-fictional",
+    "discipline.media-generated",
+    "media.placeholder"
+   ]
+  },
+  {
+   "id": "about.discipline-list",
+   "kind": "section",
+   "file": "sections/about.discipline-list.json",
+   "retrievalEligible": true,
+   "contentFields": [
+    "items"
+   ],
+   "motionPatterns": [
+    "opacity-hover"
+   ],
+   "generatedAssetRoles": [
+    "discipline.media-generated",
+    "person.portrait-fictional",
+    "media.placeholder",
+    "copy.original"
+   ]
+  },
+  {
+   "id": "about.footer-meta",
+   "kind": "section",
+   "file": "sections/about.footer-meta.json",
+   "retrievalEligible": true,
+   "contentFields": [
+    "facts",
+    "hint"
+   ],
+   "motionPatterns": [
+    "word-reveal"
+   ],
+   "generatedAssetRoles": [
+    "copy.original"
+   ]
+  },
+  {
+   "id": "notfound.digits-scene",
+   "kind": "section",
+   "file": "sections/notfound.digits-scene.json",
+   "retrievalEligible": true,
+   "contentFields": [
+    "digits"
+   ],
+   "motionPatterns": [
+    "floating-digits"
+   ],
+   "generatedAssetRoles": [
+    "scene.procedural-digits"
+   ]
+  },
+  {
+   "id": "notfound.message",
+   "kind": "section",
+   "file": "sections/notfound.message.json",
+   "retrievalEligible": true,
+   "contentFields": [
+    "backHref",
+    "backLinkLabel",
+    "body",
+    "heading"
+   ],
+   "motionPatterns": [
+    "opacity-hover"
+   ],
+   "generatedAssetRoles": [
+    "copy.original"
+   ]
+  },
+  {
+   "id": "utility.preloader",
+   "kind": "section",
+   "file": "sections/utility.preloader.json",
+   "retrievalEligible": false,
+   "contentFields": [],
+   "motionPatterns": [
+    "preloader-wipe"
+   ],
+   "generatedAssetRoles": [
+    "brand.wordmark-placeholder"
+   ]
+  },
+  {
+   "id": "utility.kinetic-cursor",
+   "kind": "section",
+   "file": "sections/utility.kinetic-cursor.json",
+   "retrievalEligible": false,
+   "contentFields": [],
+   "motionPatterns": [
+    "kinetic-cursor"
+   ],
+   "generatedAssetRoles": []
+  },
+  {
+   "id": "utility.page-transition",
+   "kind": "section",
+   "file": "sections/utility.page-transition.json",
+   "retrievalEligible": false,
+   "contentFields": [],
+   "motionPatterns": [
+    "page-transition-wipe"
+   ],
+   "generatedAssetRoles": []
+  },
+  {
+   "id": "utility.overlay-backdrop",
+   "kind": "section",
+   "file": "sections/utility.overlay-backdrop.json",
+   "retrievalEligible": false,
+   "contentFields": [],
+   "motionPatterns": [
+    "backdrop-fade"
+   ],
+   "generatedAssetRoles": []
+  },
+  {
+   "id": "utility.hover-title",
+   "kind": "section",
+   "file": "sections/utility.hover-title.json",
+   "retrievalEligible": false,
+   "contentFields": [],
+   "motionPatterns": [
+    "hover-focus-blur"
+   ],
+   "generatedAssetRoles": []
+  },
+  {
+   "id": "utility.toast",
+   "kind": "section",
+   "file": "sections/utility.toast.json",
+   "retrievalEligible": false,
+   "contentFields": [],
+   "motionPatterns": [
+    "none"
+   ],
+   "generatedAssetRoles": []
+  },
+  {
+   "id": "component.discipline-menu",
+   "kind": "component",
+   "file": "components/component.discipline-menu.json",
+   "props": [
+    "items",
+    "current"
+   ]
+  },
+  {
+   "id": "component.label-value",
+   "kind": "component",
+   "file": "components/component.label-value.json",
+   "props": [
+    "label",
+    "value"
+   ]
+  },
+  {
+   "id": "component.media-pagination",
+   "kind": "component",
+   "file": "components/component.media-pagination.json",
+   "props": [
+    "count",
+    "current"
+   ]
+  },
+  {
+   "id": "component.nav-column",
+   "kind": "component",
+   "file": "components/component.nav-column.json",
+   "props": [
+    "label",
+    "value",
+    "links"
+   ]
+  },
+  {
+   "id": "component.split-heading",
+   "kind": "component",
+   "file": "components/component.split-heading.json",
+   "props": [
+    "lines"
+   ]
+  },
+  {
+   "id": "component.work-card",
+   "kind": "component",
+   "file": "components/component.work-card.json",
+   "props": [
+    "title",
+    "href",
+    "cover"
+   ]
+  },
+  {
+   "id": "primitive.arrow-link",
+   "kind": "primitive",
+   "file": "primitives/primitive.arrow-link.json",
+   "props": [
+    "label",
+    "href"
+   ]
+  },
+  {
+   "id": "primitive.copy-button",
+   "kind": "primitive",
+   "file": "primitives/primitive.copy-button.json",
+   "props": [
+    "label",
+    "copiedLabel",
+    "failedLabel"
+   ]
+  },
+  {
+   "id": "primitive.image-frame",
+   "kind": "primitive",
+   "file": "primitives/primitive.image-frame.json",
+   "props": [
+    "assetRole",
+    "src",
+    "alt",
+    "aspectRatio"
+   ]
+  },
+  {
+   "id": "primitive.media-plane",
+   "kind": "primitive",
+   "file": "primitives/primitive.media-plane.json",
+   "props": [
+    "assetRole",
+    "src"
+   ]
+  },
+  {
+   "id": "primitive.micro-label",
+   "kind": "primitive",
+   "file": "primitives/primitive.micro-label.json",
+   "props": [
+    "text"
+   ]
+  },
+  {
+   "id": "primitive.pagination-number",
+   "kind": "primitive",
+   "file": "primitives/primitive.pagination-number.json",
+   "props": [
+    "index",
+    "current"
+   ]
+  },
+  {
+   "id": "primitive.text-link",
+   "kind": "primitive",
+   "file": "primitives/primitive.text-link.json",
+   "props": [
+    "label",
+    "href"
+   ]
+  },
+  {
+   "id": "primitive.video-frame",
+   "kind": "primitive",
+   "file": "primitives/primitive.video-frame.json",
+   "props": [
+    "assetRole",
+    "src",
+    "label"
+   ]
+  },
+  {
+   "id": "primitive.word-reveal-text",
+   "kind": "primitive",
+   "file": "primitives/primitive.word-reveal-text.json",
+   "props": [
+    "text",
+    "stagger",
+    "delay"
+   ]
+  }
+ ]
+}

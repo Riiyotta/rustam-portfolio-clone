@@ -1,0 +1,765 @@
+{
+ "version": "1.0.0",
+ "note": "Citation trail for every decision. Paths with root=project resolve against the project folder that contains design-repo/ (src/, public/, index.html); verify_all.py checks them when that folder is present and warns (does not fail) when design-repo is used alone.",
+ "sourceProject": {
+  "kind": "local replica of a live personal portfolio (Vite + React app running the original's application modules)",
+  "routesServed": [
+   "/",
+   "/about",
+   "/project/:id",
+   "* (404)"
+  ],
+  "projects": 10,
+  "projectImages": 63,
+  "projectVideos": 8,
+  "nonProjectVideos": 1,
+  "fonts": [
+   "Satoshi Regular 400",
+   "Medium 500",
+   "Bold 700",
+   "Black 900 (self-hosted woff2)"
+  ],
+  "groundwork": "No IA/CLONE_SPEC/QA/asset-manifest groundwork existed when this build started; an ia.json/IA.md appeared in the project root during the build (concurrent pass) and was cross-checked, see iaCrossCheck. Everything here was derived from src/ and fresh browser measurement."
+ },
+ "sourceFiles": {
+  "src/engine/chunks/272.js": {
+   "lines": 3496,
+   "sha256": "06c31008aa13377ee18433fa49e4db84437026fb46bea32f7acae2974f50406a"
+  },
+  "src/engine/chunks/924.js": {
+   "lines": 1092,
+   "sha256": "14061445ed95a94942502612e175e0e4e397685164e60e14d0be070ad8d3eb62"
+  },
+  "src/engine/chunks/layout.js": {
+   "lines": 491,
+   "sha256": "f0bc7e86b54ddd940cb289a9ecf5cbd8b1ffff983347037605b1d486c6677e87"
+  },
+  "src/engine/chunks/notfound.js": {
+   "lines": 193,
+   "sha256": "8fb68c0e0964732cdc4a71e058e77a2276fc4281e332bf5d25867192982270b5"
+  },
+  "src/components/NotFound.jsx": {
+   "lines": 41,
+   "sha256": "0707f067888d2ba741d1c5076ddee6bbe02eca3d3a33d07b43eee5f78bc39d36"
+  },
+  "src/App.jsx": {
+   "lines": 55,
+   "sha256": "fa7caf53a7f68a4d32b302aeddaa50066b4980069f272bd055323b04e8386fce"
+  },
+  "src/data/projects.json": {
+   "lines": 218,
+   "sha256": "ef4a8a690e055816486046c091e2eba4ca1d9bbbc9c7acf8b4ca82e99247cf55"
+  },
+  "index.html": {
+   "lines": 18,
+   "sha256": "e946477f69bf1e934422cbf0d405f38e5509fc442c8c60288a1b9b9102a31656"
+  }
+ },
+ "cssExcerpt": {
+  "source": "src/styles/site.css",
+  "sourceSha256": "47d487a01fad704d667e29cda08aed734f098568d93870a3e6adad220650a57c",
+  "excerpt": "extraction/evidence/site.pretty.css",
+  "excerptSha256": "d7d135bb311f61915d72c3924e354200d49ee2d6c06f6442708fc9d145027321",
+  "why": "src/styles/site.css is a single minified line; citations point at the tracked prettified excerpt instead, and the source is pinned by hash."
+ },
+ "copyBudgets": {
+  "method": "maxWords = measured maximum in the source rounded up (extraction/build_repo.py: budget())",
+  "measuredMaxWords": {
+   "project.title": 4,
+   "project.description": 64,
+   "project.tools": 2,
+   "project.tag": 2,
+   "project.tags": 4,
+   "project.media": 9,
+   "about.title": 3,
+   "about.intro": 12,
+   "about.description": 18,
+   "about.mobile": 11,
+   "about.label": 3,
+   "about.items": 6,
+   "hero.line": 3,
+   "intro.note": 33,
+   "notfound.heading": 4,
+   "notfound.body": 17,
+   "mobile.service.description": 21
+  }
+ },
+ "sectionHeights": {
+  "1440x900": {
+   "viewport": "1440x900",
+   "tool": "extraction/measure_sections.mjs",
+   "source": "extraction/measurements/clone-sections.json",
+   "measuredAt": "2026-11-12",
+   "target": "clone (local dev server); live site re-measured for reconciliation, see reconciliation",
+   "templates": {
+    "home": {
+     "route": "/",
+     "documentHeightPx": 900,
+     "sections": {
+      "shell.navbar": {
+       "heightPx": 94,
+       "inFlow": false,
+       "position": "fixed",
+       "category": "SHELL"
+      },
+      "hero.intro": {
+       "heightPx": 240,
+       "inFlow": false,
+       "position": "absolute",
+       "category": "HERO"
+      },
+      "content.intro-note": {
+       "heightPx": 99,
+       "inFlow": false,
+       "position": "absolute",
+       "category": "CONTENT"
+      },
+      "portfolio.work-index": {
+       "heightPx": 900,
+       "inFlow": false,
+       "position": "absolute",
+       "category": "PORTFOLIO"
+      },
+      "shell.footer-contact": {
+       "present": false,
+       "category": "SHELL",
+       "reason": "not rendered at this width (responsive variant)"
+      }
+     },
+     "inFlowContentSections": 0
+    },
+    "about": {
+     "route": "/about",
+     "documentHeightPx": 900,
+     "sections": {
+      "shell.navbar": {
+       "heightPx": 94,
+       "inFlow": false,
+       "position": "fixed",
+       "category": "SHELL"
+      },
+      "about.profile-header": {
+       "heightPx": 190,
+       "inFlow": false,
+       "position": "absolute",
+       "category": "PROFILE"
+      },
+      "about.media-stage": {
+       "heightPx": 900,
+       "inFlow": false,
+       "position": "absolute",
+       "category": "MEDIA"
+      },
+      "about.discipline-list": {
+       "heightPx": 134,
+       "inFlow": false,
+       "position": "absolute",
+       "category": "PROFILE"
+      },
+      "about.footer-meta": {
+       "heightPx": 14,
+       "inFlow": false,
+       "position": "absolute",
+       "category": "PROFILE"
+      },
+      "shell.footer-contact": {
+       "present": false,
+       "category": "SHELL",
+       "reason": "not rendered at this width (responsive variant)"
+      }
+     },
+     "inFlowContentSections": 0
+    },
+    "project-detail": {
+     "route": "/project/6aefb39eda2cd8ea85237d26",
+     "documentHeightPx": 900,
+     "sections": {
+      "shell.navbar": {
+       "heightPx": 94,
+       "inFlow": false,
+       "position": "fixed",
+       "category": "SHELL"
+      },
+      "project.header": {
+       "heightPx": 372,
+       "inFlow": false,
+       "position": "absolute",
+       "category": "PROJECT_DETAIL"
+      },
+      "project.media-stage": {
+       "heightPx": 900,
+       "inFlow": false,
+       "position": "absolute",
+       "category": "MEDIA"
+      },
+      "project.meta": {
+       "heightPx": 120,
+       "inFlow": false,
+       "position": "absolute",
+       "category": "PROJECT_DETAIL"
+      },
+      "project.footer-bar": {
+       "heightPx": 33,
+       "inFlow": false,
+       "position": "absolute",
+       "category": "NAVIGATION"
+      },
+      "shell.footer-contact": {
+       "present": false,
+       "category": "SHELL",
+       "reason": "not rendered at this width (responsive variant)"
+      }
+     },
+     "inFlowContentSections": 0
+    },
+    "not-found": {
+     "route": "/this-route-does-not-exist",
+     "documentHeightPx": 900,
+     "sections": {
+      "shell.navbar": {
+       "heightPx": 94,
+       "inFlow": false,
+       "position": "fixed",
+       "category": "SHELL"
+      },
+      "notfound.digits-scene": {
+       "heightPx": 900,
+       "inFlow": false,
+       "position": "absolute",
+       "category": "MEDIA"
+      },
+      "notfound.message": {
+       "heightPx": 226,
+       "inFlow": false,
+       "position": "absolute",
+       "category": "NOTICE"
+      }
+     },
+     "inFlowContentSections": 0
+    }
+   },
+   "inFlowNote": "At 1440px every section is an absolutely/fixed positioned layer of one 100svh stage (documentHeight = 900), so each page has 0 in-flow content sections and the >50%/>60% share rule is skipped (fewer than 3 in-flow sections). HERO thresholds still apply."
+  }
+ },
+ "sectionHeightsMobile": {
+  "390x844": {
+   "viewport": "390x844",
+   "templates": {
+    "home": {
+     "route": "/",
+     "documentHeightPx": 1928,
+     "sections": {
+      "shell.navbar": {
+       "heightPx": 58,
+       "inFlow": false,
+       "position": "fixed",
+       "category": "SHELL"
+      },
+      "hero.intro": {
+       "heightPx": 459,
+       "inFlow": true,
+       "position": "static",
+       "category": "HERO"
+      },
+      "content.intro-note": {
+       "present": false,
+       "category": "CONTENT",
+       "reason": "not rendered at this width (responsive variant)"
+      },
+      "portfolio.work-index": {
+       "heightPx": 989,
+       "inFlow": true,
+       "position": "static",
+       "category": "PORTFOLIO"
+      },
+      "shell.footer-contact": {
+       "heightPx": 345,
+       "inFlow": true,
+       "position": "static",
+       "category": "SHELL"
+      }
+     },
+     "inFlowContentSections": 2,
+     "shares": {
+      "hero.intro": 0.238,
+      "portfolio.work-index": 0.513
+     }
+    },
+    "about": {
+     "route": "/about",
+     "documentHeightPx": 4149,
+     "sections": {
+      "shell.navbar": {
+       "heightPx": 58,
+       "inFlow": false,
+       "position": "fixed",
+       "category": "SHELL"
+      },
+      "about.profile-header": {
+       "heightPx": 967,
+       "inFlow": true,
+       "position": "relative",
+       "category": "PROFILE"
+      },
+      "about.media-stage": {
+       "present": false,
+       "category": "MEDIA",
+       "reason": "not rendered at this width (responsive variant)"
+      },
+      "about.discipline-list": {
+       "heightPx": 2677,
+       "inFlow": true,
+       "position": "static",
+       "category": "PROFILE"
+      },
+      "about.footer-meta": {
+       "present": false,
+       "category": "PROFILE",
+       "reason": "not rendered at this width (responsive variant)"
+      },
+      "shell.footer-contact": {
+       "heightPx": 345,
+       "inFlow": true,
+       "position": "static",
+       "category": "SHELL"
+      }
+     },
+     "inFlowContentSections": 2,
+     "shares": {
+      "about.profile-header": 0.233,
+      "about.discipline-list": 0.645
+     }
+    },
+    "project-detail": {
+     "route": "/project/6aefb39eda2cd8ea85237d26",
+     "documentHeightPx": 3294,
+     "sections": {
+      "shell.navbar": {
+       "heightPx": 58,
+       "inFlow": false,
+       "position": "fixed",
+       "category": "SHELL"
+      },
+      "project.header": {
+       "heightPx": 68,
+       "inFlow": true,
+       "position": "static",
+       "category": "PROJECT_DETAIL"
+      },
+      "project.media-stage": {
+       "heightPx": 2139,
+       "inFlow": true,
+       "position": "static",
+       "category": "MEDIA"
+      },
+      "project.meta": {
+       "heightPx": 462,
+       "inFlow": true,
+       "position": "static",
+       "category": "PROJECT_DETAIL"
+      },
+      "project.footer-bar": {
+       "present": false,
+       "category": "NAVIGATION",
+       "reason": "not rendered at this width (responsive variant)"
+      },
+      "shell.footer-contact": {
+       "heightPx": 345,
+       "inFlow": true,
+       "position": "static",
+       "category": "SHELL"
+      }
+     },
+     "inFlowContentSections": 3,
+     "shares": {
+      "project.header": 0.021,
+      "project.media-stage": 0.649,
+      "project.meta": 0.14
+     }
+    },
+    "not-found": {
+     "route": "/this-route-does-not-exist",
+     "documentHeightPx": 844,
+     "sections": {
+      "shell.navbar": {
+       "heightPx": 58,
+       "inFlow": false,
+       "position": "fixed",
+       "category": "SHELL"
+      },
+      "notfound.digits-scene": {
+       "heightPx": 844,
+       "inFlow": false,
+       "position": "absolute",
+       "category": "MEDIA"
+      },
+      "notfound.message": {
+       "heightPx": 242,
+       "inFlow": false,
+       "position": "absolute",
+       "category": "NOTICE"
+      }
+     },
+     "inFlowContentSections": 0,
+     "shares": {}
+    }
+   },
+   "note": "Informational only: the wrapper gate is pinned to 1440px. At 390px the layout is an in-flow list; shares above 0.6 come from repeated-item lists (6 discipline blocks, stacked project media), not from a whole-page section."
+  }
+ },
+ "tabletCheck": {
+  "viewport": "1024x768",
+  "source": "extraction/measurements/clone-sections-1024.json",
+  "result": "1024px renders the desktop stage (the layout switch is max-width 1023px)",
+  "templates": {
+   "home": {
+    "documentHeightPx": 768,
+    "sections": {
+     "shell.navbar": 91,
+     "hero.intro": 188,
+     "content.intro-note": 99,
+     "portfolio.work-index": 768,
+     "utility.overlay-backdrop": 768
+    }
+   },
+   "about": {
+    "documentHeightPx": 768,
+    "sections": {
+     "shell.navbar": 91,
+     "about.profile-header": 228,
+     "about.media-stage": 768,
+     "about.discipline-list": 134,
+     "about.footer-meta": 14,
+     "utility.overlay-backdrop": 768,
+     "utility.kinetic-cursor": 14
+    }
+   },
+   "project-detail": {
+    "documentHeightPx": 768,
+    "sections": {
+     "shell.navbar": 91,
+     "project.header": 396,
+     "project.media-stage": 768,
+     "project.meta": 120,
+     "project.footer-bar": 31,
+     "utility.overlay-backdrop": 768,
+     "utility.kinetic-cursor": 14
+    }
+   },
+   "not-found": {
+    "documentHeightPx": 768,
+    "sections": {
+     "shell.navbar": 91,
+     "notfound.digits-scene": 768,
+     "notfound.message": 226
+    }
+   }
+  }
+ },
+ "reconciliation": {
+  "source": "extraction/measurements/live-sections.json",
+  "method": "same finders, live site vs clone",
+  "rows": {
+   "1440x900:home": {
+    "shell.navbar": {
+     "liveHeightPx": 94,
+     "cloneHeightPx": 94,
+     "deltaPx": 0
+    },
+    "hero.intro": {
+     "liveHeightPx": 240,
+     "cloneHeightPx": 240,
+     "deltaPx": 0
+    },
+    "content.intro-note": {
+     "liveHeightPx": 99,
+     "cloneHeightPx": 99,
+     "deltaPx": 0
+    },
+    "portfolio.work-index": {
+     "liveHeightPx": 900,
+     "cloneHeightPx": 900,
+     "deltaPx": 0
+    },
+    "utility.overlay-backdrop": {
+     "liveHeightPx": 900,
+     "cloneHeightPx": 900,
+     "deltaPx": 0
+    }
+   },
+   "1440x900:about": {
+    "shell.navbar": {
+     "liveHeightPx": 94,
+     "cloneHeightPx": 94,
+     "deltaPx": 0
+    },
+    "about.profile-header": {
+     "liveHeightPx": 190,
+     "cloneHeightPx": 190,
+     "deltaPx": 0
+    },
+    "about.media-stage": {
+     "liveHeightPx": 900,
+     "cloneHeightPx": 900,
+     "deltaPx": 0
+    },
+    "about.discipline-list": {
+     "liveHeightPx": 134,
+     "cloneHeightPx": 134,
+     "deltaPx": 0
+    },
+    "about.footer-meta": {
+     "liveHeightPx": 14,
+     "cloneHeightPx": 14,
+     "deltaPx": 0
+    },
+    "utility.overlay-backdrop": {
+     "liveHeightPx": 900,
+     "cloneHeightPx": 900,
+     "deltaPx": 0
+    },
+    "utility.kinetic-cursor": {
+     "liveHeightPx": 14,
+     "cloneHeightPx": 14,
+     "deltaPx": 0
+    }
+   },
+   "1440x900:project-detail": {
+    "shell.navbar": {
+     "liveHeightPx": 94,
+     "cloneHeightPx": 94,
+     "deltaPx": 0
+    },
+    "project.header": {
+     "liveHeightPx": 372,
+     "cloneHeightPx": 372,
+     "deltaPx": 0
+    },
+    "project.media-stage": {
+     "liveHeightPx": 900,
+     "cloneHeightPx": 900,
+     "deltaPx": 0
+    },
+    "project.meta": {
+     "liveHeightPx": 120,
+     "cloneHeightPx": 120,
+     "deltaPx": 0
+    },
+    "project.footer-bar": {
+     "liveHeightPx": 33,
+     "cloneHeightPx": 33,
+     "deltaPx": 0
+    },
+    "utility.overlay-backdrop": {
+     "liveHeightPx": 900,
+     "cloneHeightPx": 900,
+     "deltaPx": 0
+    },
+    "utility.kinetic-cursor": {
+     "liveHeightPx": 14,
+     "cloneHeightPx": 14,
+     "deltaPx": 0
+    }
+   },
+   "1440x900:not-found": {
+    "shell.navbar": {
+     "liveHeightPx": 94,
+     "cloneHeightPx": 94,
+     "deltaPx": 0
+    },
+    "notfound.digits-scene": {
+     "liveHeightPx": 900,
+     "cloneHeightPx": 900,
+     "deltaPx": 0
+    },
+    "notfound.message": {
+     "liveHeightPx": 226,
+     "cloneHeightPx": 226,
+     "deltaPx": 0
+    }
+   },
+   "390x844:home": {
+    "shell.navbar": {
+     "liveHeightPx": 58,
+     "cloneHeightPx": 58,
+     "deltaPx": 0
+    },
+    "hero.intro": {
+     "liveHeightPx": 459,
+     "cloneHeightPx": 459,
+     "deltaPx": 0
+    },
+    "portfolio.work-index": {
+     "liveHeightPx": 989,
+     "cloneHeightPx": 989,
+     "deltaPx": 0
+    },
+    "shell.footer-contact": {
+     "liveHeightPx": 345,
+     "cloneHeightPx": 345,
+     "deltaPx": 0
+    }
+   },
+   "390x844:about": {
+    "shell.navbar": {
+     "liveHeightPx": 58,
+     "cloneHeightPx": 58,
+     "deltaPx": 0
+    },
+    "about.profile-header": {
+     "liveHeightPx": 967,
+     "cloneHeightPx": 967,
+     "deltaPx": 0
+    },
+    "about.discipline-list": {
+     "liveHeightPx": 2677,
+     "cloneHeightPx": 2677,
+     "deltaPx": 0
+    },
+    "shell.footer-contact": {
+     "liveHeightPx": 345,
+     "cloneHeightPx": 345,
+     "deltaPx": 0
+    }
+   },
+   "390x844:project-detail": {
+    "shell.navbar": {
+     "liveHeightPx": 58,
+     "cloneHeightPx": 58,
+     "deltaPx": 0
+    },
+    "project.header": {
+     "liveHeightPx": 68,
+     "cloneHeightPx": 68,
+     "deltaPx": 0
+    },
+    "project.media-stage": {
+     "liveHeightPx": 2139,
+     "cloneHeightPx": 2139,
+     "deltaPx": 0
+    },
+    "project.meta": {
+     "liveHeightPx": 462,
+     "cloneHeightPx": 462,
+     "deltaPx": 0
+    },
+    "shell.footer-contact": {
+     "liveHeightPx": 345,
+     "cloneHeightPx": 345,
+     "deltaPx": 0
+    }
+   },
+   "390x844:not-found": {
+    "shell.navbar": {
+     "liveHeightPx": 58,
+     "cloneHeightPx": 58,
+     "deltaPx": 0
+    },
+    "notfound.digits-scene": {
+     "liveHeightPx": 844,
+     "cloneHeightPx": 844,
+     "deltaPx": 0
+    },
+    "notfound.message": {
+     "liveHeightPx": 242,
+     "cloneHeightPx": 242,
+     "deltaPx": 0
+    }
+   }
+  }
+ },
+ "computedStyleHistogram1440": {
+  "source": "extraction/measurements/clone-sections.json",
+  "note": "Visible-element counts across the 4 templates; tokens were cross-checked against these.",
+  "histogram": {
+   "textColor": {
+    "rgb(235, 232, 228)": 91,
+    "rgb(231, 227, 221)": 23,
+    "oklab(0.917283 0.00186393 0.008986 / 0.8)": 33,
+    "rgb(255, 255, 255)": 2,
+    "oklab(0.917283 0.00186393 0.008986 / 0.78)": 56,
+    "oklab(0.917283 0.00186393 0.008986 / 0.9)": 3,
+    "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)": 1
+   },
+   "background": {
+    "rgb(14, 16, 12)": 4,
+    "oklab(0.159862 0.00102171 0.00248303 / 0.97)": 3
+   },
+   "fontFamily": {
+    "Satoshi, Arial, Helvetica, sans-serif": 196,
+    "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"": 13
+   },
+   "fontSize": {
+    "14px": 20,
+    "15.84px": 28,
+    "17px": 33,
+    "30.96px": 8,
+    "24.48px": 2,
+    "15.552px": 21,
+    "16px": 16,
+    "10px": 14,
+    "11px": 1,
+    "22px": 1,
+    "15.12px": 56,
+    "16.56px": 6,
+    "48px": 1,
+    "20px": 1,
+    "18px": 1
+   },
+   "fontWeight": {
+    "400": 112,
+    "500": 83,
+    "700": 12,
+    "600": 1,
+    "900": 1
+   }
+  }
+ },
+ "parity": {
+  "harness": "extraction/parity/parity.mjs",
+  "results": [
+   "extraction/parity/results-run1.json",
+   "extraction/parity/results-run2.json"
+  ],
+  "gate": 0.8,
+  "exceptions": [],
+  "diagnosis": {
+   "mobile-390-home/portfolio.work-index": "lowest region score (about 0.90): live and clone captures are visually identical (same layout, crop and order); the residual is per-pixel noise inside the project photographs, i.e. the live site serves differently encoded image files than the local copies. Not a layout difference; above the 0.80 gate, no exception needed.",
+   "not-found/notfound.digits-scene": "about 0.98: the digits float on a continuous 6.5s loop driven by elapsed time, so two captures land on slightly different phases.",
+   "method": "captures were inspected side by side; videos frozen on frame 0 on both sides; interaction coordinates target the gallery strip (y 800 of 900) so hover and open-project reach the real states"
+  }
+ },
+ "iaCrossCheck": {
+  "source": "ia.json / IA.md / matrix.csv in the project root (written by a concurrent ia-builder pass while this repo was being built; read-only here)",
+  "evidence": [
+   {
+    "root": "project",
+    "file": "ia.json",
+    "lines": "7",
+    "tag": "\"totalRoutes\": 13"
+   },
+   {
+    "root": "project",
+    "file": "ia.json",
+    "lines": "8",
+    "tag": "\"totalTemplates\": 4"
+   }
+  ],
+  "agrees": [
+   "13 routes, 4 templates (home, about, project-detail, not-found)",
+   "desktop overlays render over the still-mounted, blurred work strip",
+   "runtime UI set: preloader, page transition, toast, overlay backdrop, kinetic cursor, hover title",
+   "footer exists only below 1024px"
+  ],
+  "differsOnPurpose": [
+   "the IA lists mobile-only DOM variants as their own sections (work.grid, project.mobile-*, profile.mobile-*); here they are the responsive variants of one semantic section each, because they serve the same purpose (BASELINE R6: different DOM is not a different purpose)",
+   "the IA splits the home opener into headline / portrait link / statement; here headline + portrait form the HERO and the statement is content.intro-note (it renders separately, desktop-only, with its own timing)"
+  ]
+ },
+ "decisions": {
+  "category": "portfolio (one person's work index, project pages, profile; no pricing, sign-up, accounts or checkout)",
+  "templates": "4 page shapes; desktop and mobile are responsive variants of the same templates",
+  "darkOnly": "single dark theme; no light theme or theme toggle exists",
+  "fontBueno": "the source tags display text with a font class that the stylesheet never defines, so it inherits html's Satoshi stack; recorded as typography.family.display"
+ }
+}

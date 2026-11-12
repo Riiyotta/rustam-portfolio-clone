@@ -1,0 +1,22 @@
+{
+ "id": "primitive.video-frame",
+ "kind": "primitive",
+ "version": "1.0.0",
+ "description": "Muted, looping, inline, non-interactive video with black letterbox.",
+ "props": [
+  "assetRole",
+  "src",
+  "label"
+ ],
+ "motionPatterns": [
+  "none"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/924.js",
+   "lines": "492",
+   "tag": "pointer-events-none block h-auto w-full bg-black"
+  }
+ ]
+}

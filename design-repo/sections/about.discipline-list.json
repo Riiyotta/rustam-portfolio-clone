@@ -1,0 +1,97 @@
+{
+ "id": "about.discipline-list",
+ "version": "1.0.0",
+ "title": "Discipline list",
+ "source": {
+  "id": "module-5272:fn-V-menu",
+  "root": "project",
+  "file": "src/engine/chunks/272.js",
+  "lines": "2136-2166",
+  "tag": "\"pointer-events-auto absolute bottom-[5%] right-[3.1%] hidden w-[22%] text-right lg:block\","
+ },
+ "semantic": {
+  "id": "about.discipline-list",
+  "category": "PROFILE",
+  "purpose": "The designer's disciplines/services; selecting one swaps header and media."
+ },
+ "retrievalEligible": true,
+ "content": {
+  "fields": {
+   "items": {
+    "type": "list",
+    "minItems": 2,
+    "maxItems": 8,
+    "required": true,
+    "of": {
+     "label": {
+      "type": "text",
+      "maxWords": 4
+     },
+     "summary": {
+      "type": "text",
+      "maxWords": 25
+     },
+     "media": {
+      "type": "asset"
+     }
+    }
+   }
+  }
+ },
+ "constraints": {
+  "onePerPage": true
+ },
+ "responsive": {
+  "desktop": "Right-aligned menu at bottom 5%, right 3.1%: clamp(16px,1.1vw,19px) medium, inactive items at 30%.",
+  "mobile": "'Services:' heading, then one block per discipline (title, media, description) 80px apart.",
+  "breakpoint": "{breakpoint.lg}"
+ },
+ "motion": {
+  "patterns": [
+   "opacity-hover"
+  ],
+  "default": "opacity-hover",
+  "reducedMotionFallback": "opacity-hover",
+  "sourceImplementsFallback": true
+ },
+ "generatedAssetRoles": [
+  "discipline.media-generated",
+  "person.portrait-fictional",
+  "media.placeholder",
+  "copy.original"
+ ],
+ "referenceAssetRoles": [
+  "discipline.media-source",
+  "person.portrait-source"
+ ],
+ "tokens": [
+  "typography.size.menu-item",
+  "text.overlay"
+ ],
+ "composes": [
+  "component.discipline-menu"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/924.js",
+   "lines": "626",
+   "tag": "className: \"space-y-20\","
+  }
+ ],
+ "measured": {
+  "1440x900": {
+   "heightPx": 134,
+   "widthPx": 317,
+   "inFlow": false,
+   "position": "absolute"
+  },
+  "390x844": {
+   "heightPx": 2677,
+   "widthPx": 351,
+   "inFlow": true,
+   "position": "static"
+  }
+ },
+ "notes": "On mobile this list holds 64.5% of the measured 390px page (6 stacked discipline blocks). The wrapper gate is pinned to 1440px, where the list is an absolutely positioned menu; the mobile share is recorded as information in extraction/measured-values.json."
+}

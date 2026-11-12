@@ -1,0 +1,90 @@
+{
+ "theme": "dark",
+ "$description": "The site is dark-only: there is no light theme, no theme toggle and no prefers-color-scheme rule in the source. Every semantic token resolves here.",
+ "evidence": [
+  {
+   "root": "repo",
+   "file": "extraction/evidence/site.pretty.css",
+   "lines": "42",
+   "tag": ".bg-dark {"
+  },
+  {
+   "root": "repo",
+   "file": "extraction/evidence/site.pretty.css",
+   "lines": "45",
+   "tag": ".text-color {"
+  }
+ ],
+ "resolves": {
+  "border.hairline": {
+   "value": "#e7e3dd",
+   "opacity": 0.2
+  },
+  "component.cursor.label-size": {
+   "value": "14px"
+  },
+  "component.cursor.max-tilt": {
+   "value": 2.5
+  },
+  "component.cursor.press-scale": {
+   "value": 0.82
+  },
+  "component.navbar.label-size": {
+   "value": "0.875rem"
+  },
+  "component.navbar.link-hover-opacity": {
+   "value": 0.5
+  },
+  "component.navbar.value-size": {
+   "value": "clamp(15px, 1.1vw, 20px)"
+  },
+  "component.overlay.body-size": {
+   "value": "clamp(15px, 1.05vw, 18px)"
+  },
+  "component.overlay.pagination-inactive-opacity": {
+   "value": 0.3
+  },
+  "component.overlay.title-size": {
+   "value": "clamp(22px, 1.45vw, 27px)"
+  },
+  "focus.outline": {
+   "value": "#e7e3dd"
+  },
+  "surface.backdrop": {
+   "value": "#0e0d0c",
+   "opacity": 0.97
+  },
+  "surface.media-placeholder": {
+   "value": "#1e211b"
+  },
+  "surface.page": {
+   "value": "#0e100c"
+  },
+  "surface.page-mobile": {
+   "value": "#0b0c09"
+  },
+  "surface.toast": {
+   "value": "#ecebeb"
+  },
+  "text.inverse-blend": {
+   "value": "#ffffff"
+  },
+  "text.on-toast": {
+   "value": "#1c1a17"
+  },
+  "text.overlay": {
+   "value": "#e7e3dd"
+  },
+  "text.overlay-muted": {
+   "value": "#e7e3dd",
+   "opacity": 0.8
+  },
+  "text.overlay-subtle": {
+   "value": "#e7e3dd",
+   "opacity": 0.55
+  },
+  "text.primary": {
+   "value": "#ebe8e4"
+  }
+ }
+}

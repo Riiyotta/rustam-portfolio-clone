@@ -1,0 +1,186 @@
+{
+ "spacing": {
+  "base": {
+   "$type": "dimension",
+   "$value": "0.25rem",
+   "$description": "Spacing unit; all utility spacing is a multiple of it.",
+   "evidence": [
+    {
+     "root": "repo",
+     "file": "extraction/evidence/site.pretty.css",
+     "lines": "75",
+     "tag": "--spacing:.25rem"
+    }
+   ]
+  },
+  "1": {
+   "$type": "dimension",
+   "$value": "4px",
+   "$description": "Media nav button horizontal padding; tight gaps.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1136",
+     "tag": "shrink-0 border-0 bg-transparent px-1 py-2"
+    }
+   ]
+  },
+  "2": {
+   "$type": "dimension",
+   "$value": "8px",
+   "$description": "Footer grid gap (mobile), pagination vertical padding.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1090",
+     "tag": "grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,1fr)] items-end gap-2"
+    }
+   ]
+  },
+  "3": {
+   "$type": "dimension",
+   "$value": "12px",
+   "$description": "Label-to-value gap; mobile card grid column gap; media stack gap.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1043",
+     "tag": "\"mb-3 font-sans text-[10px] font-medium  tracking-[0.18em]"
+    }
+   ]
+  },
+  "5": {
+   "$type": "dimension",
+   "$value": "20px",
+   "$description": "About title to body; mobile grid gaps.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "2102",
+     "tag": "mt-5 hidden font-bueno"
+    }
+   ]
+  },
+  "6": {
+   "$type": "dimension",
+   "$value": "24px",
+   "$description": "Meta column gap; paragraph gap in about body.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1035",
+     "tag": "hidden w-[18.5%] flex-col items-start gap-6 md:flex"
+    }
+   ]
+  },
+  "7": {
+   "$type": "dimension",
+   "$value": "28px",
+   "$description": "About footer gap (desktop).",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "2209",
+     "tag": "lg:flex lg:items-end lg:gap-7"
+    }
+   ]
+  },
+  "8": {
+   "$type": "dimension",
+   "$value": "32px",
+   "$description": "Title to description (>=768px); mobile card row gap.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1004",
+     "tag": "mt-8 hidden md:block lg:mt-11"
+    }
+   ]
+  },
+  "11": {
+   "$type": "dimension",
+   "$value": "44px",
+   "$description": "Title to description at >=1024px.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1004",
+     "tag": "lg:mt-11"
+    }
+   ]
+  },
+  "12": {
+   "$type": "dimension",
+   "$value": "48px",
+   "$description": "Mobile meta block top margin.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "509",
+     "tag": "mt-12 grid grid-cols-2 gap-x-5 gap-y-9"
+    }
+   ]
+  },
+  "16": {
+   "$type": "dimension",
+   "$value": "64px",
+   "$description": "Mobile section spacing (hero top, work list top, footer top).",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "429",
+     "tag": "className: \"mt-16 sm:mt-20\""
+    }
+   ]
+  },
+  "20": {
+   "$type": "dimension",
+   "$value": "80px",
+   "$description": "Mobile discipline stack gap.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "626",
+     "tag": "className: \"space-y-20\""
+    }
+   ]
+  },
+  "24": {
+   "$type": "dimension",
+   "$value": "96px",
+   "$description": "Mobile services block top margin.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "618",
+     "tag": "className: \"mt-24\""
+    }
+   ]
+  },
+  "nav-offset-mobile": {
+   "$type": "dimension",
+   "$value": "72px",
+   "$description": "Top padding of the mobile layout under the fixed navbar.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "742",
+     "tag": "pt-[72px]"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "id": "utility.hover-title",
+ "version": "1.0.0",
+ "title": "Hover title follower",
+ "source": {
+  "id": "module-5272:fn-w-title",
+  "root": "project",
+  "file": "src/engine/chunks/272.js",
+  "lines": "848-868",
+  "tag": "      function w(e) {"
+ },
+ "semantic": {
+  "id": "utility.hover-title",
+  "category": "UTILITY",
+  "purpose": "Project title that follows the hovered gallery plane."
+ },
+ "retrievalEligible": false,
+ "retrievalIneligibleReason": "Hover-only label duplicating the project title; Runtime UI that exists only during interaction or loading; it carries no page content and must never be retrieved as a section to compose.",
+ "content": {
+  "fields": {}
+ },
+ "constraints": {},
+ "responsive": {
+  "desktop": "Absolutely positioned per frame from the plane's projected corner; 11-16px.",
+  "mobile": "Not rendered.",
+  "breakpoint": null
+ },
+ "motion": {
+  "patterns": [
+   "hover-focus-blur"
+  ],
+  "default": "hover-focus-blur",
+  "reducedMotionFallback": "no-blur-highlight",
+  "sourceImplementsFallback": false
+ },
+ "generatedAssetRoles": [],
+ "referenceAssetRoles": [],
+ "tokens": [
+  "typography.size.hover-title",
+  "text.inverse-blend"
+ ],
+ "composes": [],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/272.js",
+   "lines": "21",
+   "tag": "function v(e, t, n, r, i) {"
+  }
+ ],
+ "measured": {
+  "note": "Hidden (opacity 0) until a plane is hovered; no box at rest."
+ }
+}

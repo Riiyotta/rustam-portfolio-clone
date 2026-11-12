@@ -1,0 +1,93 @@
+{
+ "id": "about.profile-header",
+ "version": "1.0.0",
+ "title": "Profile header",
+ "source": {
+  "id": "module-5272:fn-V-header",
+  "root": "project",
+  "file": "src/engine/chunks/272.js",
+  "lines": "2072-2122",
+  "tag": "\"absolute left-[5%] top-[10%] w-[90%] lg:left-[3.5%] lg:top-[27%] lg:w-[21%]\","
+ },
+ "semantic": {
+  "id": "about.profile-header",
+  "category": "PROFILE",
+  "purpose": "Who the designer is (Profile entry) or what the selected discipline is: title, intro and description."
+ },
+ "retrievalEligible": true,
+ "content": {
+  "fields": {
+   "title": {
+    "type": "text",
+    "maxWords": 4,
+    "required": true
+   },
+   "intro": {
+    "type": "text",
+    "maxWords": 15,
+    "required": true
+   },
+   "description": {
+    "type": "text",
+    "maxWords": 20,
+    "required": true
+   }
+  }
+ },
+ "constraints": {
+  "onePerPage": true
+ },
+ "responsive": {
+  "desktop": "Left column (left 3.5%, top 27%, width 21%): title clamp(20px,1.7vw,32px) bold uppercase (smaller when >15 chars), intro + description clamp(15px,1.08vw,19px) at 80%.",
+  "mobile": "Full-bleed portrait 75svh (min 430px, max 820px) with a 2-line display title overlapping its bottom edge, then the bio paragraphs and a location line.",
+  "breakpoint": "{breakpoint.lg}"
+ },
+ "motion": {
+  "patterns": [
+   "word-reveal",
+   "content-crossfade"
+  ],
+  "default": "word-reveal",
+  "reducedMotionFallback": "opacity-fade",
+  "sourceImplementsFallback": true
+ },
+ "generatedAssetRoles": [
+  "person.portrait-fictional",
+  "media.placeholder",
+  "copy.original"
+ ],
+ "referenceAssetRoles": [
+  "person.portrait-source"
+ ],
+ "tokens": [
+  "typography.size.about-title",
+  "typography.size.body-about",
+  "text.overlay",
+  "text.overlay-muted"
+ ],
+ "composes": [
+  "primitive.word-reveal-text"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/924.js",
+   "lines": "582",
+   "tag": "text: \"Behind\\nThe Work.\","
+  }
+ ],
+ "measured": {
+  "1440x900": {
+   "heightPx": 190,
+   "widthPx": 302,
+   "inFlow": false,
+   "position": "absolute"
+  },
+  "390x844": {
+   "heightPx": 967,
+   "widthPx": 390,
+   "inFlow": true,
+   "position": "relative"
+  }
+ }
+}

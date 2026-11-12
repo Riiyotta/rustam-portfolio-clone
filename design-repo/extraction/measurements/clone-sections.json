@@ -1,0 +1,669 @@
+{
+ "tool": "extraction/measure_sections.mjs",
+ "baseUrl": "http://localhost:5190",
+ "measuredAt": "2026-11-12",
+ "viewports": {
+  "1440x900": {
+   "home": {
+    "route": "/",
+    "sections": {
+     "shell.navbar": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 94,
+      "position": "fixed",
+      "inFlow": false
+     },
+     "hero.intro": {
+      "present": true,
+      "x": 45,
+      "y": 150,
+      "width": 1351,
+      "height": 240,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "content.intro-note": {
+      "present": true,
+      "x": 993,
+      "y": 580,
+      "width": 418,
+      "height": 99,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "portfolio.work-index": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "shell.footer-contact": {
+      "present": false
+     },
+     "utility.overlay-backdrop": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "position": "fixed",
+      "inFlow": false
+     },
+     "utility.hover-title": {
+      "present": false
+     }
+    },
+    "documentHeight": 900,
+    "histogram": {
+     "textColor": {
+      "rgb(235, 232, 228)": 53
+     },
+     "background": {
+      "rgb(14, 16, 12)": 1,
+      "oklab(0.159862 0.00102171 0.00248303 / 0.97)": 1
+     },
+     "fontFamily": {
+      "Satoshi, Arial, Helvetica, sans-serif": 53
+     },
+     "fontSize": {
+      "14px": 5,
+      "15.84px": 7,
+      "17px": 33,
+      "30.96px": 8
+     },
+     "fontWeight": {
+      "400": 33,
+      "500": 12,
+      "700": 8
+     }
+    }
+   },
+   "about": {
+    "route": "/about",
+    "sections": {
+     "shell.navbar": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 94,
+      "position": "fixed",
+      "inFlow": false
+     },
+     "about.profile-header": {
+      "present": true,
+      "x": 50,
+      "y": 243,
+      "width": 302,
+      "height": 190,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "about.media-stage": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "about.discipline-list": {
+      "present": true,
+      "x": 1079,
+      "y": 721,
+      "width": 317,
+      "height": 134,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "about.footer-meta": {
+      "present": true,
+      "x": 76,
+      "y": 841,
+      "width": 403,
+      "height": 14,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "shell.footer-contact": {
+      "present": false
+     },
+     "utility.overlay-backdrop": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "position": "fixed",
+      "inFlow": false
+     },
+     "utility.kinetic-cursor": {
+      "present": true,
+      "x": -233,
+      "y": -207,
+      "width": 66,
+      "height": 14,
+      "position": "absolute",
+      "inFlow": false
+     }
+    },
+    "documentHeight": 900,
+    "histogram": {
+     "textColor": {
+      "rgb(235, 232, 228)": 12,
+      "rgb(231, 227, 221)": 14,
+      "oklab(0.917283 0.00186393 0.008986 / 0.8)": 31
+     },
+     "background": {
+      "rgb(14, 16, 12)": 1,
+      "oklab(0.159862 0.00102171 0.00248303 / 0.97)": 1
+     },
+     "fontFamily": {
+      "Satoshi, Arial, Helvetica, sans-serif": 47,
+      "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"": 10
+     },
+     "fontSize": {
+      "14px": 5,
+      "15.84px": 7,
+      "24.48px": 2,
+      "15.552px": 21,
+      "16px": 12,
+      "10px": 10
+     },
+     "fontWeight": {
+      "400": 21,
+      "500": 34,
+      "700": 2
+     }
+    }
+   },
+   "project-detail": {
+    "route": "/project/6aefb39eda2cd8ea85237d26",
+    "sections": {
+     "shell.navbar": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 94,
+      "position": "fixed",
+      "inFlow": false
+     },
+     "project.header": {
+      "present": true,
+      "x": 50,
+      "y": 243,
+      "width": 295,
+      "height": 372,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "project.media-stage": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "project.meta": {
+      "present": true,
+      "x": 1119,
+      "y": 546,
+      "width": 266,
+      "height": 120,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "project.footer-bar": {
+      "present": true,
+      "x": 76,
+      "y": 822,
+      "width": 1306,
+      "height": 33,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "shell.footer-contact": {
+      "present": false
+     },
+     "utility.overlay-backdrop": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "position": "fixed",
+      "inFlow": false
+     },
+     "utility.kinetic-cursor": {
+      "present": true,
+      "x": -233,
+      "y": -207,
+      "width": 66,
+      "height": 14,
+      "position": "absolute",
+      "inFlow": false
+     }
+    },
+    "documentHeight": 900,
+    "histogram": {
+     "textColor": {
+      "rgb(235, 232, 228)": 12,
+      "rgb(255, 255, 255)": 1,
+      "rgb(231, 227, 221)": 9,
+      "oklab(0.917283 0.00186393 0.008986 / 0.78)": 56,
+      "oklab(0.917283 0.00186393 0.008986 / 0.9)": 3,
+      "oklab(0.917283 0.00186393 0.008986 / 0.8)": 2
+     },
+     "background": {
+      "rgb(14, 16, 12)": 1,
+      "oklab(0.159862 0.00102171 0.00248303 / 0.97)": 1
+     },
+     "fontFamily": {
+      "Satoshi, Arial, Helvetica, sans-serif": 80,
+      "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"": 3
+     },
+     "fontSize": {
+      "14px": 5,
+      "15.84px": 7,
+      "11px": 1,
+      "22px": 1,
+      "15.12px": 56,
+      "10px": 4,
+      "16px": 3,
+      "16.56px": 6
+     },
+     "fontWeight": {
+      "400": 56,
+      "500": 25,
+      "700": 2
+     }
+    }
+   },
+   "not-found": {
+    "route": "/this-route-does-not-exist",
+    "sections": {
+     "shell.navbar": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 94,
+      "position": "fixed",
+      "inFlow": false
+     },
+     "notfound.digits-scene": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "notfound.message": {
+      "present": true,
+      "x": 40,
+      "y": 650,
+      "width": 576,
+      "height": 226,
+      "position": "absolute",
+      "inFlow": false
+     }
+    },
+    "documentHeight": 900,
+    "histogram": {
+     "textColor": {
+      "rgb(235, 232, 228)": 14,
+      "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)": 1,
+      "rgb(255, 255, 255)": 1
+     },
+     "background": {
+      "rgb(14, 16, 12)": 1
+     },
+     "fontFamily": {
+      "Satoshi, Arial, Helvetica, sans-serif": 16
+     },
+     "fontSize": {
+      "14px": 5,
+      "15.84px": 7,
+      "16px": 1,
+      "48px": 1,
+      "20px": 1,
+      "18px": 1
+     },
+     "fontWeight": {
+      "400": 2,
+      "500": 12,
+      "600": 1,
+      "900": 1
+     }
+    }
+   }
+  },
+  "390x844": {
+   "home": {
+    "route": "/",
+    "sections": {
+     "shell.navbar": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 58,
+      "position": "fixed",
+      "inFlow": false
+     },
+     "hero.intro": {
+      "present": true,
+      "x": 20,
+      "y": 72,
+      "width": 351,
+      "height": 459,
+      "position": "static",
+      "inFlow": true
+     },
+     "content.intro-note": {
+      "present": false
+     },
+     "portfolio.work-index": {
+      "present": true,
+      "x": 20,
+      "y": 595,
+      "width": 351,
+      "height": 989,
+      "position": "static",
+      "inFlow": true
+     },
+     "shell.footer-contact": {
+      "present": true,
+      "x": 20,
+      "y": 1583,
+      "width": 351,
+      "height": 345,
+      "position": "static",
+      "inFlow": true
+     },
+     "utility.overlay-backdrop": {
+      "present": false
+     },
+     "utility.hover-title": {
+      "present": false
+     }
+    },
+    "documentHeight": 1928,
+    "histogram": {
+     "textColor": {
+      "rgb(235, 232, 228)": 2,
+      "rgb(231, 227, 221)": 31
+     },
+     "background": {
+      "rgb(14, 16, 12)": 1,
+      "rgb(11, 12, 9)": 1,
+      "rgb(30, 33, 27)": 10
+     },
+     "fontFamily": {
+      "Satoshi, Arial, Helvetica, sans-serif": 33
+     },
+     "fontSize": {
+      "15px": 12,
+      "28.47px": 8,
+      "16px": 2,
+      "12px": 10,
+      "13px": 1
+     },
+     "fontWeight": {
+      "400": 1,
+      "500": 23,
+      "700": 9
+     }
+    }
+   },
+   "about": {
+    "route": "/about",
+    "sections": {
+     "shell.navbar": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 58,
+      "position": "fixed",
+      "inFlow": false
+     },
+     "about.profile-header": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 967,
+      "position": "relative",
+      "inFlow": true
+     },
+     "about.media-stage": {
+      "present": false
+     },
+     "about.discipline-list": {
+      "present": true,
+      "x": 20,
+      "y": 1063,
+      "width": 351,
+      "height": 2677,
+      "position": "static",
+      "inFlow": true
+     },
+     "about.footer-meta": {
+      "present": false
+     },
+     "shell.footer-contact": {
+      "present": true,
+      "x": 20,
+      "y": 3804,
+      "width": 351,
+      "height": 345,
+      "position": "static",
+      "inFlow": true
+     },
+     "utility.overlay-backdrop": {
+      "present": false
+     },
+     "utility.kinetic-cursor": {
+      "present": false
+     }
+    },
+    "documentHeight": 4149,
+    "histogram": {
+     "textColor": {
+      "rgb(235, 232, 228)": 2,
+      "rgb(231, 227, 221)": 21,
+      "oklab(0.917283 0.00186393 0.008986 / 0.9)": 8
+     },
+     "background": {
+      "rgb(14, 16, 12)": 1,
+      "rgb(11, 12, 9)": 1,
+      "rgb(30, 33, 27)": 5
+     },
+     "fontFamily": {
+      "Satoshi, Arial, Helvetica, sans-serif": 30,
+      "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"": 1
+     },
+     "fontSize": {
+      "15px": 12,
+      "24px": 3,
+      "19.5px": 2,
+      "11px": 1,
+      "18px": 1,
+      "20px": 5,
+      "17.55px": 5,
+      "13px": 1,
+      "16px": 1
+     },
+     "fontWeight": {
+      "400": 9,
+      "500": 13,
+      "700": 9
+     }
+    }
+   },
+   "project-detail": {
+    "route": "/project/6aefb39eda2cd8ea85237d26",
+    "sections": {
+     "shell.navbar": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 58,
+      "position": "fixed",
+      "inFlow": false
+     },
+     "project.header": {
+      "present": true,
+      "x": 20,
+      "y": 128,
+      "width": 351,
+      "height": 68,
+      "position": "static",
+      "inFlow": true
+     },
+     "project.media-stage": {
+      "present": true,
+      "x": 20,
+      "y": 236,
+      "width": 351,
+      "height": 2139,
+      "position": "static",
+      "inFlow": true
+     },
+     "project.meta": {
+      "present": true,
+      "x": 20,
+      "y": 2423,
+      "width": 351,
+      "height": 462,
+      "position": "static",
+      "inFlow": true
+     },
+     "project.footer-bar": {
+      "present": false
+     },
+     "shell.footer-contact": {
+      "present": true,
+      "x": 20,
+      "y": 2950,
+      "width": 351,
+      "height": 345,
+      "position": "static",
+      "inFlow": true
+     },
+     "utility.overlay-backdrop": {
+      "present": false
+     },
+     "utility.kinetic-cursor": {
+      "present": false
+     }
+    },
+    "documentHeight": 3294,
+    "histogram": {
+     "textColor": {
+      "rgb(235, 232, 228)": 2,
+      "rgb(231, 227, 221)": 16,
+      "oklab(0.917283 0.00186393 0.008986 / 0.9)": 3,
+      "oklab(0.917283 0.00186393 0.008986 / 0.85)": 1
+     },
+     "background": {
+      "rgb(14, 16, 12)": 1,
+      "rgb(11, 12, 9)": 1,
+      "rgb(30, 33, 27)": 5,
+      "rgb(0, 0, 0)": 1
+     },
+     "fontFamily": {
+      "Satoshi, Arial, Helvetica, sans-serif": 19,
+      "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"": 3
+     },
+     "fontSize": {
+      "15px": 12,
+      "31.2px": 1,
+      "10px": 3,
+      "12px": 1,
+      "17px": 1,
+      "16px": 3,
+      "13px": 1
+     },
+     "fontWeight": {
+      "400": 7,
+      "500": 14,
+      "700": 1
+     }
+    }
+   },
+   "not-found": {
+    "route": "/this-route-does-not-exist",
+    "sections": {
+     "shell.navbar": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 58,
+      "position": "fixed",
+      "inFlow": false
+     },
+     "notfound.digits-scene": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 844,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "notfound.message": {
+      "present": true,
+      "x": 40,
+      "y": 578,
+      "width": 350,
+      "height": 242,
+      "position": "absolute",
+      "inFlow": false
+     }
+    },
+    "documentHeight": 844,
+    "histogram": {
+     "textColor": {
+      "rgb(235, 232, 228)": 4,
+      "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)": 1,
+      "rgb(255, 255, 255)": 1
+     },
+     "background": {
+      "rgb(14, 16, 12)": 1
+     },
+     "fontFamily": {
+      "Satoshi, Arial, Helvetica, sans-serif": 6
+     },
+     "fontSize": {
+      "15px": 2,
+      "16px": 1,
+      "30px": 1,
+      "18px": 2
+     },
+     "fontWeight": {
+      "400": 2,
+      "500": 2,
+      "600": 1,
+      "900": 1
+     }
+    }
+   }
+  }
+ }
+}

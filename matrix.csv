@@ -1,0 +1,30 @@
+section,category,templates,routes,Home (work index),About (profile overlay),Project detail (overlay),Not found (404)
+shell.navbar,SHELL,4,13,x,x,x,x
+utility.page-transition,UTILITY,4,13,x,x,x,x
+utility.toast,UTILITY,4,13,x,x,x,x
+utility.preloader,UTILITY,3,12,x,x,x,
+work.strip-webgl,WORK,3,12,x,x,x,
+shell.footer-mobile,SHELL,3,12,x,x,x,
+utility.overlay-backdrop,UTILITY,2,11,,x,x,
+utility.kinetic-cursor,UTILITY,2,11,,x,x,
+project.header,PROJECT,1,10,,,x,
+project.media-stage,PROJECT,1,10,,,x,
+project.meta,PROJECT,1,10,,,x,
+project.footer-bar,PROJECT,1,10,,,x,
+project.mobile-header,PROJECT,1,10,,,x,
+project.mobile-media,PROJECT,1,10,,,x,
+project.mobile-details,PROJECT,1,10,,,x,
+intro.headline,INTRO,1,1,x,,,
+intro.portrait-link,INTRO,1,1,x,,,
+intro.statement,INTRO,1,1,x,,,
+utility.hover-title,UTILITY,1,1,x,,,
+work.grid,WORK,1,1,x,,,
+profile.header,PROFILE,1,1,,x,,
+profile.media-stage,PROFILE,1,1,,x,,
+profile.discipline-list,PROFILE,1,1,,x,,
+profile.footer-bar,PROFILE,1,1,,x,,
+profile.mobile-intro,PROFILE,1,1,,x,,
+profile.services-mobile,PROFILE,1,1,,x,,
+error.digits-scene,ERROR,1,1,,,,x
+error.message,ERROR,1,1,,,,x
+ROUTE COUNT,,,13,1,1,10,1

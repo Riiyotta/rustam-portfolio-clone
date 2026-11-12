@@ -1,0 +1,73 @@
+{
+ "id": "notfound.digits-scene",
+ "version": "1.0.0",
+ "title": "404 digits scene",
+ "source": {
+  "id": "module-9812:floating-digits",
+  "root": "project",
+  "file": "src/engine/chunks/notfound.js",
+  "lines": "53-93",
+  "tag": "    9812: (e, t, n) => {"
+ },
+ "semantic": {
+  "id": "notfound.digits-scene",
+  "category": "MEDIA",
+  "purpose": "Decorative full-viewport scene of floating status-code digits."
+ },
+ "retrievalEligible": true,
+ "content": {
+  "fields": {
+   "digits": {
+    "type": "digits",
+    "required": true
+   }
+  }
+ },
+ "constraints": {
+  "onePerPage": true
+ },
+ "responsive": {
+  "desktop": "Full-viewport canvas behind the message.",
+  "mobile": "Same, scaled to the viewport.",
+  "breakpoint": null
+ },
+ "motion": {
+  "patterns": [
+   "floating-digits"
+  ],
+  "default": "floating-digits",
+  "reducedMotionFallback": "static-digits",
+  "sourceImplementsFallback": false
+ },
+ "generatedAssetRoles": [
+  "scene.procedural-digits"
+ ],
+ "referenceAssetRoles": [],
+ "tokens": [
+  "typography.family.digits",
+  "motion.duration.digits-loop"
+ ],
+ "composes": [],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/components/NotFound.jsx",
+   "lines": "9",
+   "tag": "<FloatingDigits />"
+  }
+ ],
+ "measured": {
+  "1440x900": {
+   "heightPx": 900,
+   "widthPx": 1440,
+   "inFlow": false,
+   "position": "absolute"
+  },
+  "390x844": {
+   "heightPx": 844,
+   "widthPx": 390,
+   "inFlow": false,
+   "position": "absolute"
+  }
+ }
+}

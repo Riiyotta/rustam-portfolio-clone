@@ -1,0 +1,104 @@
+{
+ "id": "project.media-stage",
+ "version": "1.0.0",
+ "title": "Project media stage",
+ "source": {
+  "id": "module-5272:gallery-vertex-shader-morph",
+  "root": "project",
+  "file": "src/engine/chunks/272.js",
+  "lines": "806",
+  "tag": "uTransitionBend, uMorph"
+ },
+ "semantic": {
+  "id": "project.media-stage",
+  "category": "MEDIA",
+  "purpose": "The project's images and video, viewed one at a time (desktop) or stacked (mobile)."
+ },
+ "retrievalEligible": true,
+ "content": {
+  "fields": {
+   "media": {
+    "type": "list",
+    "minItems": 1,
+    "maxItems": 11,
+    "required": true,
+    "of": {
+     "asset": {
+      "type": "asset"
+     },
+     "kind": {
+      "type": "enum",
+      "values": [
+       "image",
+       "video"
+      ]
+     }
+    }
+   }
+  }
+ },
+ "constraints": {
+  "onePerPage": true
+ },
+ "responsive": {
+  "desktop": "The clicked gallery plane morphs into a centred stage over the backdrop; wheel/click advances media, pagination jumps; cursor shows NEXT/RETURN.",
+  "mobile": "In-flow stack of full-width images (12px apart, placeholder surface) followed by the looping muted video.",
+  "breakpoint": "{breakpoint.lg}"
+ },
+ "motion": {
+  "patterns": [
+   "plane-focus-stage"
+  ],
+  "default": "plane-focus-stage",
+  "reducedMotionFallback": "crossfade-stage",
+  "sourceImplementsFallback": false
+ },
+ "generatedAssetRoles": [
+  "project.cover-generated",
+  "project.gallery-generated",
+  "project.video-generated",
+  "media.placeholder"
+ ],
+ "referenceAssetRoles": [
+  "project.cover-source",
+  "project.gallery-source",
+  "project.video-source"
+ ],
+ "tokens": [
+  "surface.media-placeholder",
+  "surface.backdrop"
+ ],
+ "composes": [
+  "primitive.media-plane",
+  "primitive.image-frame",
+  "primitive.video-frame"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/924.js",
+   "lines": "474",
+   "tag": "className: \"space-y-3\","
+  },
+  {
+   "root": "project",
+   "file": "src/engine/chunks/924.js",
+   "lines": "481",
+   "tag": "alt: \"\".concat(m.title, \" — work \").concat(t + 1),"
+  }
+ ],
+ "measured": {
+  "1440x900": {
+   "heightPx": 900,
+   "widthPx": 1440,
+   "inFlow": false,
+   "position": "absolute"
+  },
+  "390x844": {
+   "heightPx": 2139,
+   "widthPx": 351,
+   "inFlow": true,
+   "position": "static"
+  }
+ }
+}

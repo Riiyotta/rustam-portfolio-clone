@@ -1,0 +1,81 @@
+{
+ "id": "about.footer-meta",
+ "version": "1.0.0",
+ "title": "Profile footer meta",
+ "source": {
+  "id": "module-5272:fn-V-footer",
+  "root": "project",
+  "file": "src/engine/chunks/272.js",
+  "lines": "2209-2259",
+  "tag": "\"absolute bottom-[4%] left-[5%] right-[5%] grid grid-cols-2 items-end gap-2"
+ },
+ "semantic": {
+  "id": "about.footer-meta",
+  "category": "PROFILE",
+  "purpose": "Interaction hint plus short personal facts (location, age)."
+ },
+ "retrievalEligible": true,
+ "content": {
+  "fields": {
+   "hint": {
+    "type": "text",
+    "maxWords": 5,
+    "required": true
+   },
+   "facts": {
+    "type": "list",
+    "of": {
+     "type": "text",
+     "maxWords": 3
+    },
+    "maxItems": 3
+   }
+  }
+ },
+ "constraints": {
+  "onePerPage": true
+ },
+ "responsive": {
+  "desktop": "Bottom-left row (left 5.3%, bottom 5%): hint and facts in 10px UI-stack caps at 80%, facts separated by a 40% slash.",
+  "mobile": "Facts become one line under the mobile bio (11px caps).",
+  "breakpoint": "{breakpoint.lg}"
+ },
+ "motion": {
+  "patterns": [
+   "word-reveal"
+  ],
+  "default": "word-reveal",
+  "reducedMotionFallback": "opacity-fade",
+  "sourceImplementsFallback": true
+ },
+ "generatedAssetRoles": [
+  "copy.original"
+ ],
+ "referenceAssetRoles": [],
+ "tokens": [
+  "typography.size.micro",
+  "typography.tracking.label-wide"
+ ],
+ "composes": [
+  "primitive.micro-label"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/924.js",
+   "lines": "612",
+   "tag": "mt-12 font-sans text-[11px] uppercase tracking-[0.1em]"
+  }
+ ],
+ "measured": {
+  "1440x900": {
+   "heightPx": 14,
+   "widthPx": 403,
+   "inFlow": false,
+   "position": "absolute"
+  },
+  "390x844": {
+   "present": false
+  }
+ }
+}

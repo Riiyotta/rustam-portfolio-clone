@@ -1,0 +1,62 @@
+{
+ "id": "utility.overlay-backdrop",
+ "version": "1.0.0",
+ "title": "Overlay backdrop",
+ "source": {
+  "id": "module-5272:fn-g-backdrop",
+  "root": "project",
+  "file": "src/engine/chunks/272.js",
+  "lines": "837-848",
+  "tag": "      function g(e) {"
+ },
+ "semantic": {
+  "id": "utility.overlay-backdrop",
+  "category": "UTILITY",
+  "purpose": "Blurred dark layer behind project/about overlays."
+ },
+ "retrievalEligible": false,
+ "retrievalIneligibleReason": "Decorative layer whose opacity is animated by the scene; Runtime UI that exists only during interaction or loading; it carries no page content and must never be retrieved as a section to compose.",
+ "content": {
+  "fields": {}
+ },
+ "constraints": {},
+ "responsive": {
+  "desktop": "Fixed full viewport, opacity driven by the scene.",
+  "mobile": "Not rendered (no overlays on mobile).",
+  "breakpoint": null
+ },
+ "motion": {
+  "patterns": [
+   "backdrop-fade"
+  ],
+  "default": "backdrop-fade",
+  "reducedMotionFallback": "instant-show",
+  "sourceImplementsFallback": false
+ },
+ "generatedAssetRoles": [],
+ "referenceAssetRoles": [],
+ "tokens": [
+  "surface.backdrop",
+  "effect.backdrop-blur"
+ ],
+ "composes": [],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/272.js",
+   "lines": "845",
+   "tag": "bg-[#0e0d0c]/97 backdrop-blur-[24px] opacity-0"
+  }
+ ],
+ "measured": {
+  "1440x900": {
+   "heightPx": 900,
+   "widthPx": 1440,
+   "inFlow": false,
+   "position": "fixed"
+  },
+  "390x844": {
+   "present": false
+  }
+ }
+}

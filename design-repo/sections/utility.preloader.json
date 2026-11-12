@@ -1,0 +1,59 @@
+{
+ "id": "utility.preloader",
+ "version": "1.0.0",
+ "title": "Preloader",
+ "source": {
+  "id": "module-4760:preloader",
+  "root": "project",
+  "file": "src/engine/chunks/924.js",
+  "lines": "817-990",
+  "tag": "    4760: (e, t, n) => {"
+ },
+ "semantic": {
+  "id": "utility.preloader",
+  "category": "UTILITY",
+  "purpose": "Load-progress cover with the wordmark reveal."
+ },
+ "retrievalEligible": false,
+ "retrievalIneligibleReason": "Loading cover shown only until assets are ready; Runtime UI that exists only during interaction or loading; it carries no page content and must never be retrieved as a section to compose.",
+ "content": {
+  "fields": {}
+ },
+ "constraints": {},
+ "responsive": {
+  "desktop": "Fixed full-screen cover until WebGL textures are ready, then slides up.",
+  "mobile": "Shown once with threeReady=true (no textures to wait for).",
+  "breakpoint": null
+ },
+ "motion": {
+  "patterns": [
+   "preloader-wipe"
+  ],
+  "default": "preloader-wipe",
+  "reducedMotionFallback": "instant-hide",
+  "sourceImplementsFallback": false
+ },
+ "generatedAssetRoles": [
+  "brand.wordmark-placeholder"
+ ],
+ "referenceAssetRoles": [
+  "brand.wordmark-source"
+ ],
+ "tokens": [
+  "surface.page",
+  "typography.size.preloader-wordmark",
+  "motion.easing.preloader-exit"
+ ],
+ "composes": [],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/924.js",
+   "lines": "783",
+   "tag": "className: \"fixed inset-0 z-[9999] bg-[#0b0c09]\","
+  }
+ ],
+ "measured": {
+  "note": "Transient: removed before measurement settles; full viewport while visible."
+ }
+}

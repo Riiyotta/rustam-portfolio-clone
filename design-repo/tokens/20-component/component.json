@@ -1,0 +1,125 @@
+{
+ "navbar": {
+  "label-size": {
+   "$type": "fontSize",
+   "$value": "{typography.size.nav-label}",
+   "$description": "Column label.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/layout.js",
+     "lines": "117",
+     "tag": "className: \"text-sm\","
+    }
+   ]
+  },
+  "value-size": {
+   "$type": "fontSize",
+   "$value": "{typography.size.nav-value}",
+   "$description": "Column value.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/layout.js",
+     "lines": "101",
+     "tag": "lg:text-[clamp(15px,1.1vw,20px)]"
+    }
+   ]
+  },
+  "link-hover-opacity": {
+   "$type": "number",
+   "$value": "{opacity.50}",
+   "$description": "Link hover.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/layout.js",
+     "lines": "173",
+     "tag": "hover:opacity-50"
+    }
+   ]
+  }
+ },
+ "overlay": {
+  "title-size": {
+   "$type": "fontSize",
+   "$value": "{typography.size.project-title}",
+   "$description": "Overlay title.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "991",
+     "tag": "md:text-[clamp(22px,1.45vw,27px)]"
+    }
+   ]
+  },
+  "body-size": {
+   "$type": "fontSize",
+   "$value": "{typography.size.body-overlay}",
+   "$description": "Overlay body.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1007",
+     "tag": "text-[clamp(15px,1.05vw,18px)]"
+    }
+   ]
+  },
+  "pagination-inactive-opacity": {
+   "$type": "number",
+   "$value": "{opacity.30}",
+   "$description": "Inactive media number.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1139",
+     "tag": "opacity-30 hover:opacity-100"
+    }
+   ]
+  }
+ },
+ "cursor": {
+  "label-size": {
+   "$type": "fontSize",
+   "$value": "{typography.size.cursor-label}",
+   "$description": "Cursor label.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1454",
+     "tag": "text-[14px] font-semibold uppercase leading-none tracking-[0.11em]"
+    }
+   ]
+  },
+  "press-scale": {
+   "$type": "number",
+   "$value": 0.82,
+   "$description": "Scale while pressed.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1365",
+     "tag": "scale: 0.82,"
+    }
+   ]
+  },
+  "max-tilt": {
+   "$type": "number",
+   "$value": 2.5,
+   "$description": "Velocity tilt limit (degrees).",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1296",
+     "tag": "Math.max(-2.5, Math.min(2.5, 0.22 * c + 0.04 * d)),"
+    }
+   ]
+  }
+ }
+}

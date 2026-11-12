@@ -1,0 +1,22 @@
+{
+ "id": "component.work-card",
+ "kind": "component",
+ "version": "1.0.0",
+ "description": "Mobile work card: 4:3 cover + uppercase title, whole card is a link.",
+ "composes": [
+  "primitive.image-frame"
+ ],
+ "props": [
+  "title",
+  "href",
+  "cover"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/924.js",
+   "lines": "367-391",
+   "tag": "ariaLabel: \"View \".concat(e.title),"
+  }
+ ]
+}

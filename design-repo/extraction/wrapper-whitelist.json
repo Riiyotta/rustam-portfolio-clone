@@ -1,0 +1,5 @@
+{
+ "version": "1.0.0",
+ "note": "Reviewed exceptions to the wrapper gate. Each entry: template, section, reviewedBy, justification (>= 30 chars), maxHeightPx (above the measured height). An agent reviewer must write 'agent attestation, not a human sign-off'. No entry is needed today: at 1440px no HERO exceeds 1800px and no page has 3+ in-flow content sections.",
+ "entries": []
+}

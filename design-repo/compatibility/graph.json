@@ -1,0 +1,167 @@
+{
+ "version": "1.0.0",
+ "note": "Rules a JSON Schema cannot express. The validator's RULES table must list exactly these ids with these severities (verify_all.py checks it).",
+ "webglScenePatterns": [
+  "gallery-strip-scroll",
+  "plane-focus-stage",
+  "floating-digits"
+ ],
+ "rules": [
+  {
+   "id": "TEMPLATE_NODE_SEQUENCE",
+   "severity": "error",
+   "rule": "A PageSpec's nodes must be exactly its declared template's node list in order: every required node present, optional nodes only where the template lists them, no others.",
+   "enforcedBy": "schema/semantic_validate.py::TEMPLATE_NODE_SEQUENCE"
+  },
+  {
+   "id": "ROUTE_TEMPLATE_MATCH",
+   "severity": "error",
+   "rule": "The route must match the template's routePattern; the home template only on '/'.",
+   "enforcedBy": "schema/semantic_validate.py::ROUTE_TEMPLATE_MATCH"
+  },
+  {
+   "id": "NAVBAR_FIRST",
+   "severity": "error",
+   "rule": "shell.navbar is the first node on every template.",
+   "enforcedBy": "schema/semantic_validate.py::NAVBAR_FIRST"
+  },
+  {
+   "id": "FOOTER_LAST",
+   "severity": "error",
+   "rule": "shell.footer-contact, when present, is the last node.",
+   "enforcedBy": "schema/semantic_validate.py::FOOTER_LAST"
+  },
+  {
+   "id": "ONE_HERO",
+   "severity": "error",
+   "rule": "At most one HERO node. Exceptions: about, project-detail and not-found have no HERO at all (none required).",
+   "enforcedBy": "schema/semantic_validate.py::ONE_HERO"
+  },
+  {
+   "id": "HERO_HOME_ONLY",
+   "severity": "error",
+   "rule": "hero.intro and content.intro-note appear only on the home template.",
+   "enforcedBy": "schema/semantic_validate.py::HERO_HOME_ONLY"
+  },
+  {
+   "id": "NO_ADJACENT_DUPLICATE",
+   "severity": "error",
+   "rule": "The same section id never appears twice in a row (no template repeats a section).",
+   "enforcedBy": "schema/semantic_validate.py::NO_ADJACENT_DUPLICATE"
+  },
+  {
+   "id": "UTILITY_NOT_A_NODE",
+   "severity": "error",
+   "rule": "Sections with retrievalEligible=false (runtime UI) are never nodes; they may only be listed in runtimeLayers allowed by the template.",
+   "enforcedBy": "schema/semantic_validate.py::UTILITY_NOT_A_NODE"
+  },
+  {
+   "id": "RUNTIME_LAYER_ALLOWED",
+   "severity": "error",
+   "rule": "Every runtimeLayers entry must be allowed by the template.",
+   "enforcedBy": "schema/semantic_validate.py::RUNTIME_LAYER_ALLOWED"
+  },
+  {
+   "id": "MOTION_PATTERN_ALLOWED",
+   "severity": "error",
+   "rule": "A node's motion.pattern must be one of its section contract's patterns.",
+   "enforcedBy": "schema/semantic_validate.py::MOTION_PATTERN_ALLOWED"
+  },
+  {
+   "id": "MOTION_FALLBACK_PINNED",
+   "severity": "error",
+   "rule": "motion.reducedMotionFallback must equal the pinned fallback of the chosen pattern.",
+   "enforcedBy": "schema/semantic_validate.py::MOTION_FALLBACK_PINNED"
+  },
+  {
+   "id": "MOTION_BUDGET_WEBGL",
+   "severity": "warn",
+   "rule": "At most one WebGL scene pattern (gallery-strip-scroll, plane-focus-stage, floating-digits) per page; more is allowed but warned.",
+   "enforcedBy": "schema/semantic_validate.py::MOTION_BUDGET_WEBGL"
+  },
+  {
+   "id": "MAX_WORDS",
+   "severity": "error",
+   "rule": "Every text field respects its section contract's maxWords budget.",
+   "enforcedBy": "schema/semantic_validate.py::MAX_WORDS"
+  },
+  {
+   "id": "ASSET_ROLE_ALLOWED",
+   "severity": "error",
+   "rule": "An asset's role must be a generatedAssetRoles entry of its section in generated mode, or a reference/generated role of the section in reference mode.",
+   "enforcedBy": "schema/semantic_validate.py::ASSET_ROLE_ALLOWED"
+  },
+  {
+   "id": "TOKEN_POLICY",
+   "severity": "error",
+   "rule": "Node token references must exist in the catalog, fit their slot, resolve in the page theme and never be raw values or restricted tokens.",
+   "enforcedBy": "schema/semantic_validate.py::TOKEN_POLICY"
+  },
+  {
+   "id": "GENERATED_MODE_BRAND",
+   "severity": "error",
+   "rule": "Generated pages contain no source brand/wordmark/domain spelling.",
+   "enforcedBy": "schema/semantic_validate.py::GENERATED_MODE_BRAND"
+  },
+  {
+   "id": "GENERATED_MODE_PERSON",
+   "severity": "error",
+   "rule": "Generated pages name no real person from the source (owner, credited developer, artists, contact email, age).",
+   "enforcedBy": "schema/semantic_validate.py::GENERATED_MODE_PERSON"
+  },
+  {
+   "id": "GENERATED_MODE_PROJECT",
+   "severity": "error",
+   "rule": "Generated pages reuse no real project title, client name or project id.",
+   "enforcedBy": "schema/semantic_validate.py::GENERATED_MODE_PROJECT"
+  },
+  {
+   "id": "GENERATED_MODE_COPY",
+   "severity": "error",
+   "rule": "Generated pages reuse no source copy (5-word shingle overlap or equality with any registry string of 3+ words).",
+   "enforcedBy": "schema/semantic_validate.py::GENERATED_MODE_COPY"
+  },
+  {
+   "id": "GENERATED_MODE_CTA",
+   "severity": "error",
+   "rule": "Generated pages reuse no source call-to-action / interaction label.",
+   "enforcedBy": "schema/semantic_validate.py::GENERATED_MODE_CTA"
+  },
+  {
+   "id": "GENERATED_MODE_URL",
+   "severity": "error",
+   "rule": "Generated pages link only to site-relative paths or reserved placeholder domains; no source domain, social profile, email or store link.",
+   "enforcedBy": "schema/semantic_validate.py::GENERATED_MODE_URL"
+  },
+  {
+   "id": "GENERATED_MODE_ASSET",
+   "severity": "error",
+   "rule": "Generated pages use only generation-safe asset roles with placeholder://, generated:// or user-supplied:// sources and no source file names.",
+   "enforcedBy": "schema/semantic_validate.py::GENERATED_MODE_ASSET"
+  },
+  {
+   "id": "GENERATED_MODE_LOGO",
+   "severity": "error",
+   "rule": "Generated pages never use the source wordmark/favicon roles.",
+   "enforcedBy": "schema/semantic_validate.py::GENERATED_MODE_LOGO"
+  },
+  {
+   "id": "RETRIEVAL_PIN",
+   "severity": "error",
+   "rule": "Section contracts and the allowlist must agree with the retrieval pin in code: runtime UI is never retrievable, content sections always are.",
+   "enforcedBy": "schema/semantic_validate.py::RETRIEVAL_PIN"
+  },
+  {
+   "id": "ASSET_AVAILABILITY_PIN",
+   "severity": "error",
+   "rule": "assets/asset-roles.json availability must equal PINNED_AVAILABILITY in code; validation always uses the pinned value.",
+   "enforcedBy": "schema/semantic_validate.py::ASSET_AVAILABILITY_PIN"
+  },
+  {
+   "id": "REFERENCE_ASSET_SOURCE",
+   "severity": "error",
+   "rule": "Reference pages may use reference-only/blocked roles only with site-relative source paths (evidence), never placeholder schemes for source roles.",
+   "enforcedBy": "schema/semantic_validate.py::REFERENCE_ASSET_SOURCE"
+  }
+ ]
+}

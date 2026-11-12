@@ -1,0 +1,206 @@
+{
+ "layout": {
+  "gutter": {
+   "mobile": {
+    "$type": "dimension",
+    "$value": "5%",
+    "$description": "Page side gutter below 1024px (navbar, mobile layout, overlay left edge).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/924.js",
+      "lines": "742",
+      "tag": "className: \"w-full px-[5%] \".concat("
+     }
+    ]
+   },
+   "desktop-nav": {
+    "$type": "dimension",
+    "$value": "3.1%",
+    "$description": "Navbar side gutter and hero left edge at >=1024px.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/layout.js",
+      "lines": "97",
+      "tag": "lg:px-[3.1%]"
+     }
+    ]
+   },
+   "desktop-overlay": {
+    "$type": "dimension",
+    "$value": "3.5%",
+    "$description": "Overlay text column left edge at >=768/1024px.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "987",
+      "tag": "md:left-[3.5%] md:top-[27%] md:w-[20.5%]"
+     }
+    ]
+   },
+   "desktop-footer": {
+    "$type": "dimension",
+    "$value": "5.3%",
+    "$description": "Overlay footer bar left edge.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "1090",
+      "tag": "md:bottom-[5%] md:left-[5.3%] md:right-[4%]"
+     }
+    ]
+   }
+  },
+  "column": {
+   "overlay-text": {
+    "$type": "dimension",
+    "$value": "20.5%",
+    "$description": "Project overlay text column width (about: 21%).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "987",
+      "tag": "md:w-[20.5%]"
+     }
+    ]
+   },
+   "overlay-meta": {
+    "$type": "dimension",
+    "$value": "18.5%",
+    "$description": "Project meta column width (right, bottom 26%).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "1035",
+      "tag": "bottom-[26%] right-[3.8%] hidden w-[18.5%]"
+     }
+    ]
+   },
+   "hero-heading": {
+    "$type": "dimension",
+    "$value": "70%",
+    "$description": "Hero heading block width at >=1024px (top 32%).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "2398",
+      "tag": "lg:left-[3.1%] lg:top-[32%] lg:w-[70%]"
+     }
+    ]
+   },
+   "portrait-thumb": {
+    "$type": "dimension",
+    "$value": "clamp(150px, 12vw, 210px)",
+    "$description": "Portrait thumbnail width (4:5) at >=1024px, top 150px.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "3429",
+      "tag": "lg:top-[150px] lg:w-[clamp(150px,12vw,210px)]"
+     }
+    ]
+   }
+  },
+  "viewport": {
+   "stage": {
+    "$type": "dimension",
+    "$value": "100svh",
+    "$description": "Desktop page is one 100svh stage with no document scroll; the wheel drives the gallery.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "3353",
+      "tag": "\"relative h-svh w-full touch-none overflow-hidden bg-transparent \""
+     }
+    ]
+   }
+  },
+  "gallery": {
+   "plane-heights": {
+    "$type": "list",
+    "$value": [
+     0.14,
+     0.18,
+     0.13,
+     0.16,
+     0.15,
+     0.19
+    ],
+    "$description": "Plane heights as fractions of viewport height, cycled per project.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "43",
+      "tag": "let h = [0.14, 0.18, 0.13, 0.16, 0.15, 0.19],"
+     }
+    ]
+   },
+   "plane-gap": {
+    "$type": "list",
+    "$value": {
+     "desktop": "1.2vw",
+     "touch": "3.5vw"
+    },
+    "$description": "Gap between planes as a fraction of viewport width.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "188",
+      "tag": "let e = N.width * (R ? 0.035 : 0.012),"
+     }
+    ]
+   }
+  },
+  "grid": {
+   "mobile-work": {
+    "$type": "string",
+    "$value": "2 columns, 12px column gap, 32px row gap, 4:3 covers",
+    "$description": "Mobile 'selected work' grid.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/924.js",
+      "lines": "360",
+      "tag": "grid grid-cols-2 items-start gap-x-3 gap-y-8"
+     }
+    ]
+   },
+   "navbar": {
+    "$type": "string",
+    "$value": "5 columns justified space-between (name, occupation, location, connect, profile); 2 below 1024px",
+    "$description": "Navbar columns.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/layout.js",
+      "lines": "100",
+      "tag": "\"flex w-full items-start justify-between gap-x-5 \".concat("
+     }
+    ]
+   },
+   "footer-bar": {
+    "$type": "string",
+    "$value": "3 equal columns: hint | tags | pagination",
+    "$description": "Project footer bar.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "1090",
+      "tag": "grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,1fr)]"
+     }
+    ]
+   }
+  }
+ }
+}

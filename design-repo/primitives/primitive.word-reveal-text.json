@@ -1,0 +1,22 @@
+{
+ "id": "primitive.word-reveal-text",
+ "kind": "primitive",
+ "version": "1.0.0",
+ "description": "Text split into words, each in an overflow-clipped inline box so it can rise into place.",
+ "props": [
+  "text",
+  "stagger",
+  "delay"
+ ],
+ "motionPatterns": [
+  "word-reveal"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/272.js",
+   "lines": "890-929",
+   "tag": "function k(e) {"
+  }
+ ]
+}

@@ -1,0 +1,587 @@
+{
+ "tool": "extraction/parity/parity.mjs",
+ "run": "run1",
+ "date": "2026-11-12",
+ "liveUrl": "https://www.kerimovdesigns.com",
+ "cloneUrl": "local clone dev server",
+ "thresholdPerChannel": 24,
+ "sectionGate": 0.8,
+ "captureState": "videos frozen on frame 0 both sides; preloader gone; fonts ready; fixed settle; no consent banner exists on the live site",
+ "scenarios": {
+  "home": {
+   "viewport": "1440x900",
+   "route": "/",
+   "fullViewportScore": 0.99943,
+   "fullViewportMismatchPct": 0.057,
+   "sectionAverage": 0.99929,
+   "sections": {
+    "shell.navbar": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 94
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "hero.intro": {
+     "box": {
+      "x": 45,
+      "y": 150,
+      "w": 1351,
+      "h": 240
+     },
+     "score": 0.99773,
+     "passesGate": true
+    },
+    "content.intro-note": {
+     "box": {
+      "x": 993,
+      "y": 580,
+      "w": 418,
+      "h": 99
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "portfolio.work-index": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900
+     },
+     "score": 0.99943,
+     "passesGate": true
+    }
+   }
+  },
+  "home-wheel": {
+   "viewport": "1440x900",
+   "route": "/",
+   "fullViewportScore": 0.99937,
+   "fullViewportMismatchPct": 0.063,
+   "sectionAverage": 0.99968,
+   "sections": {
+    "shell.navbar": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 94
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "portfolio.work-index": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900
+     },
+     "score": 0.99937,
+     "passesGate": true
+    }
+   }
+  },
+  "home-hover": {
+   "viewport": "1440x900",
+   "route": "/",
+   "fullViewportScore": 0.99936,
+   "fullViewportMismatchPct": 0.064,
+   "sectionAverage": 0.99968,
+   "sections": {
+    "shell.navbar": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 94
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "portfolio.work-index": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900
+     },
+     "score": 0.99936,
+     "passesGate": true
+    }
+   }
+  },
+  "open-project": {
+   "viewport": "1440x900",
+   "route": "/",
+   "fullViewportScore": 0.99946,
+   "fullViewportMismatchPct": 0.054,
+   "sectionAverage": 0.99844,
+   "sections": {
+    "shell.navbar": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 94
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "project.header": {
+     "box": {
+      "x": 50,
+      "y": 243,
+      "w": 295,
+      "h": 326
+     },
+     "score": 0.99275,
+     "passesGate": true
+    },
+    "project.media-stage": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900
+     },
+     "score": 0.99946,
+     "passesGate": true
+    },
+    "project.meta": {
+     "box": {
+      "x": 1119,
+      "y": 546,
+      "w": 266,
+      "h": 120
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "project.footer-bar": {
+     "box": {
+      "x": 76,
+      "y": 822,
+      "w": 1306,
+      "h": 33
+     },
+     "score": 1,
+     "passesGate": true
+    }
+   }
+  },
+  "about-click": {
+   "viewport": "1440x900",
+   "route": "/",
+   "fullViewportScore": 0.99982,
+   "fullViewportMismatchPct": 0.018,
+   "sectionAverage": 0.99914,
+   "sections": {
+    "shell.navbar": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 94
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "about.profile-header": {
+     "box": {
+      "x": 50,
+      "y": 243,
+      "w": 302,
+      "h": 190
+     },
+     "score": 0.99589,
+     "passesGate": true
+    },
+    "about.media-stage": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900
+     },
+     "score": 0.99982,
+     "passesGate": true
+    },
+    "about.discipline-list": {
+     "box": {
+      "x": 1079,
+      "y": 721,
+      "w": 317,
+      "h": 134
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "about.footer-meta": {
+     "box": {
+      "x": 76,
+      "y": 841,
+      "w": 403,
+      "h": 14
+     },
+     "score": 1,
+     "passesGate": true
+    }
+   }
+  },
+  "about-direct": {
+   "viewport": "1440x900",
+   "route": "/about",
+   "fullViewportScore": 0.99958,
+   "fullViewportMismatchPct": 0.042,
+   "sectionAverage": 0.99802,
+   "sections": {
+    "shell.navbar": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 94
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "about.profile-header": {
+     "box": {
+      "x": 50,
+      "y": 243,
+      "w": 302,
+      "h": 190
+     },
+     "score": 0.99052,
+     "passesGate": true
+    },
+    "about.media-stage": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900
+     },
+     "score": 0.99958,
+     "passesGate": true
+    },
+    "about.discipline-list": {
+     "box": {
+      "x": 1079,
+      "y": 721,
+      "w": 317,
+      "h": 134
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "about.footer-meta": {
+     "box": {
+      "x": 76,
+      "y": 841,
+      "w": 403,
+      "h": 14
+     },
+     "score": 1,
+     "passesGate": true
+    }
+   }
+  },
+  "project-deeplink": {
+   "viewport": "1440x900",
+   "route": "/project/:id",
+   "fullViewportScore": 0.99986,
+   "fullViewportMismatchPct": 0.014,
+   "sectionAverage": 0.99965,
+   "sections": {
+    "shell.navbar": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 94
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "project.header": {
+     "box": {
+      "x": 50,
+      "y": 243,
+      "w": 295,
+      "h": 372
+     },
+     "score": 0.99838,
+     "passesGate": true
+    },
+    "project.media-stage": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900
+     },
+     "score": 0.99986,
+     "passesGate": true
+    },
+    "project.meta": {
+     "box": {
+      "x": 1119,
+      "y": 546,
+      "w": 266,
+      "h": 120
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "project.footer-bar": {
+     "box": {
+      "x": 76,
+      "y": 822,
+      "w": 1306,
+      "h": 33
+     },
+     "score": 1,
+     "passesGate": true
+    }
+   }
+  },
+  "project-media-next": {
+   "viewport": "1440x900",
+   "route": "/project/:id",
+   "fullViewportScore": 0.99981,
+   "fullViewportMismatchPct": 0.019,
+   "sectionAverage": 0.9995,
+   "sections": {
+    "shell.navbar": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 94
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "project.header": {
+     "box": {
+      "x": 50,
+      "y": 243,
+      "w": 295,
+      "h": 372
+     },
+     "score": 0.99771,
+     "passesGate": true
+    },
+    "project.media-stage": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900
+     },
+     "score": 0.99981,
+     "passesGate": true
+    },
+    "project.meta": {
+     "box": {
+      "x": 1119,
+      "y": 546,
+      "w": 266,
+      "h": 120
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "project.footer-bar": {
+     "box": {
+      "x": 76,
+      "y": 822,
+      "w": 1306,
+      "h": 33
+     },
+     "score": 1,
+     "passesGate": true
+    }
+   }
+  },
+  "tablet-1024-home": {
+   "viewport": "1024x768",
+   "route": "/",
+   "fullViewportScore": 0.99963,
+   "fullViewportMismatchPct": 0.037,
+   "sectionAverage": 0.9995,
+   "sections": {
+    "shell.navbar": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1024,
+      "h": 91
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "hero.intro": {
+     "box": {
+      "x": 32,
+      "y": 150,
+      "w": 961,
+      "h": 188
+     },
+     "score": 0.99839,
+     "passesGate": true
+    },
+    "content.intro-note": {
+     "box": {
+      "x": 644,
+      "y": 476,
+      "w": 360,
+      "h": 99
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "portfolio.work-index": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1024,
+      "h": 768
+     },
+     "score": 0.99963,
+     "passesGate": true
+    }
+   }
+  },
+  "mobile-390-home": {
+   "viewport": "390x844",
+   "route": "/",
+   "fullViewportScore": 0.97302,
+   "fullViewportMismatchPct": 2.698,
+   "sectionAverage": 0.96661,
+   "sections": {
+    "shell.navbar": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 58
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "hero.intro": {
+     "box": {
+      "x": 20,
+      "y": 72,
+      "w": 351,
+      "h": 459
+     },
+     "score": 0.99827,
+     "passesGate": true
+    },
+    "portfolio.work-index": {
+     "box": {
+      "x": 20,
+      "y": 595,
+      "w": 351,
+      "h": 249
+     },
+     "score": 0.90157,
+     "passesGate": true
+    }
+   }
+  },
+  "mobile-390-project": {
+   "viewport": "390x844",
+   "route": "/project/:id",
+   "fullViewportScore": 1,
+   "fullViewportMismatchPct": 0,
+   "sectionAverage": 1,
+   "sections": {
+    "shell.navbar": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 58
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "project.header": {
+     "box": {
+      "x": 20,
+      "y": 128,
+      "w": 351,
+      "h": 68
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "project.media-stage": {
+     "box": {
+      "x": 20,
+      "y": 236,
+      "w": 351,
+      "h": 608
+     },
+     "score": 1,
+     "passesGate": true
+    }
+   }
+  },
+  "not-found": {
+   "viewport": "1440x900",
+   "route": "/this-route-does-not-exist",
+   "fullViewportScore": 0.98033,
+   "fullViewportMismatchPct": 1.967,
+   "sectionAverage": 0.99344,
+   "sections": {
+    "shell.navbar": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 94
+     },
+     "score": 1,
+     "passesGate": true
+    },
+    "notfound.digits-scene": {
+     "box": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900
+     },
+     "score": 0.98033,
+     "passesGate": true
+    },
+    "notfound.message": {
+     "box": {
+      "x": 40,
+      "y": 650,
+      "w": 576,
+      "h": 226
+     },
+     "score": 1,
+     "passesGate": true
+    }
+   }
+  }
+ },
+ "summary": {
+  "scenarios": 12,
+  "sectionScores": 46,
+  "minSectionScore": 0.90157,
+  "averageSectionScore": 0.99669,
+  "allSectionsPassGate": true
+ }
+}

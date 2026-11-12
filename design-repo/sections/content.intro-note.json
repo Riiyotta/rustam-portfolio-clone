@@ -1,0 +1,75 @@
+{
+ "id": "content.intro-note",
+ "version": "1.0.0",
+ "title": "Intro note",
+ "source": {
+  "id": "module-5272:fn-es",
+  "root": "project",
+  "file": "src/engine/chunks/272.js",
+  "lines": "2499-2540",
+  "tag": "function es(e) {"
+ },
+ "semantic": {
+  "id": "content.intro-note",
+  "category": "CONTENT",
+  "purpose": "Short first-person invitation to browse the work and get in touch."
+ },
+ "retrievalEligible": true,
+ "content": {
+  "fields": {
+   "text": {
+    "type": "text",
+    "maxWords": 35,
+    "required": true
+   }
+  }
+ },
+ "constraints": {
+  "onePerPage": true,
+  "homeOnly": true
+ },
+ "responsive": {
+  "desktop": "Paragraph anchored to the portrait column (bottom calc(21svh + 32px), shifted 55% left), width clamp(360px,29vw,500px), 17px, leading 1.45. Hidden when the viewport is >=1024px wide and <=680px tall.",
+  "mobile": "Not rendered in the mobile list layout.",
+  "breakpoint": "{breakpoint.lg}"
+ },
+ "motion": {
+  "patterns": [
+   "word-reveal"
+  ],
+  "default": "word-reveal",
+  "reducedMotionFallback": "opacity-fade",
+  "sourceImplementsFallback": true
+ },
+ "generatedAssetRoles": [
+  "copy.original"
+ ],
+ "referenceAssetRoles": [],
+ "tokens": [
+  "typography.size.intro-note",
+  "typography.lineHeight.body-145",
+  "text.primary"
+ ],
+ "composes": [
+  "primitive.word-reveal-text"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/272.js",
+   "lines": "2517",
+   "tag": "lg:top-auto lg:bottom-[calc(21svh+32px)]"
+  }
+ ],
+ "measured": {
+  "1440x900": {
+   "heightPx": 99,
+   "widthPx": 418,
+   "inFlow": false,
+   "position": "absolute"
+  },
+  "390x844": {
+   "present": false
+  }
+ }
+}

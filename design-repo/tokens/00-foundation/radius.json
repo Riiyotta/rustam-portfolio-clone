@@ -1,0 +1,17 @@
+{
+ "radius": {
+  "none": {
+   "$type": "dimension",
+   "$value": "0px",
+   "$description": "No rounded corners anywhere in the rendered UI (images, planes, buttons are square). The stylesheet's only radius utility (rounded-full) is not used by any rendered element.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "421",
+     "tag": "aspect-[4/5] w-full object-cover"
+    }
+   ]
+  }
+ }
+}

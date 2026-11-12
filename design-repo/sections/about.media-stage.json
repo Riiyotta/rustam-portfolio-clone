@@ -1,0 +1,90 @@
+{
+ "id": "about.media-stage",
+ "version": "1.0.0",
+ "title": "Profile media stage",
+ "source": {
+  "id": "module-5272:fn-B-about-scene",
+  "root": "project",
+  "file": "src/engine/chunks/272.js",
+  "lines": "1515-1555",
+  "tag": "      function B(e) {"
+ },
+ "semantic": {
+  "id": "about.media-stage",
+  "category": "MEDIA",
+  "purpose": "Large media for the profile and each discipline, switched by the discipline list or by clicking."
+ },
+ "retrievalEligible": true,
+ "content": {
+  "fields": {
+   "media": {
+    "type": "list",
+    "minItems": 1,
+    "maxItems": 8,
+    "required": true,
+    "of": {
+     "asset": {
+      "type": "asset"
+     },
+     "kind": {
+      "type": "enum",
+      "values": [
+       "image",
+       "video"
+      ]
+     }
+    }
+   }
+  }
+ },
+ "constraints": {
+  "onePerPage": true
+ },
+ "responsive": {
+  "desktop": "WebGL stage over the backdrop; the portrait thumbnail morphs into it on open; clicking over the image advances, elsewhere closes.",
+  "mobile": "No separate stage: each discipline's media sits inside the discipline list.",
+  "breakpoint": "{breakpoint.lg}"
+ },
+ "motion": {
+  "patterns": [
+   "plane-focus-stage"
+  ],
+  "default": "plane-focus-stage",
+  "reducedMotionFallback": "crossfade-stage",
+  "sourceImplementsFallback": false
+ },
+ "generatedAssetRoles": [
+  "person.portrait-fictional",
+  "discipline.media-generated",
+  "media.placeholder"
+ ],
+ "referenceAssetRoles": [
+  "person.portrait-source",
+  "discipline.media-source"
+ ],
+ "tokens": [
+  "surface.backdrop"
+ ],
+ "composes": [
+  "primitive.media-plane"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/272.js",
+   "lines": "1485-1491",
+   "tag": "{ src: \"/rk-portrait.jpg\", discipline: null },"
+  }
+ ],
+ "measured": {
+  "1440x900": {
+   "heightPx": 900,
+   "widthPx": 1440,
+   "inFlow": false,
+   "position": "absolute"
+  },
+  "390x844": {
+   "present": false
+  }
+ }
+}

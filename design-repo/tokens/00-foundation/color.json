@@ -1,0 +1,267 @@
+{
+ "color": {
+  "ink": {
+   "950": {
+    "$type": "color",
+    "$value": "#0b0c09",
+    "$description": "Mobile page surface and the loading cover shown while the desktop scene loads.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/924.js",
+      "lines": "740",
+      "tag": "bg-[#0b0c09] text-[#e7e3dd]"
+     },
+     {
+      "root": "project",
+      "file": "src/engine/chunks/924.js",
+      "lines": "783",
+      "tag": "fixed inset-0 z-[9999] bg-[#0b0c09]"
+     }
+    ]
+   },
+   "900": {
+    "$type": "color",
+    "$value": "#0e100c",
+    "$description": "Page surface (desktop) and preloader surface.",
+    "evidence": [
+     {
+      "root": "repo",
+      "file": "extraction/evidence/site.pretty.css",
+      "lines": "42",
+      "tag": ".bg-dark {"
+     },
+     {
+      "root": "project",
+      "file": "src/engine/chunks/924.js",
+      "lines": "965",
+      "tag": "bg-[#0e100c] text-[#e7e3dd]"
+     }
+    ]
+   },
+   "850": {
+    "$type": "color",
+    "$value": "#0e0d0c",
+    "$description": "Overlay backdrop behind project/about overlays (used at 97% opacity).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "845",
+      "tag": "bg-[#0e0d0c]/97 backdrop-blur-[24px]"
+     }
+    ]
+   },
+   "800": {
+    "$type": "color",
+    "$value": "#1e211b",
+    "$description": "Media placeholder surface behind images/videos while loading (mobile).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/924.js",
+      "lines": "372",
+      "tag": "relative aspect-[4/3] w-full overflow-hidden bg-[#1e211b]"
+     }
+    ]
+   }
+  },
+  "paper": {
+   "100": {
+    "$type": "color",
+    "$value": "#ebe8e4",
+    "$description": "Primary text on the page surface (navbar, hero, intro note).",
+    "evidence": [
+     {
+      "root": "repo",
+      "file": "extraction/evidence/site.pretty.css",
+      "lines": "45",
+      "tag": ".text-color {"
+     }
+    ]
+   },
+   "200": {
+    "$type": "color",
+    "$value": "#e7e3dd",
+    "$description": "Text inside overlays, preloader and mobile layout; focus outline colour.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "982",
+      "tag": "pointer-events-none absolute inset-0 z-20 text-[#e7e3dd]"
+     },
+     {
+      "root": "project",
+      "file": "src/engine/chunks/924.js",
+      "lines": "965",
+      "tag": "bg-[#0e100c] text-[#e7e3dd]"
+     }
+    ]
+   }
+  },
+  "neutral": {
+   "white": {
+    "$type": "color",
+    "$value": "#ffffff",
+    "$description": "Hover-title follower (blended with difference), cursor label, 404 copy.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "856",
+      "tag": "tracking-[0.005em] text-white mix-blend-difference"
+     },
+     {
+      "root": "project",
+      "file": "src/components/NotFound.jsx",
+      "lines": "18",
+      "tag": "text-white transition-opacity"
+     }
+    ]
+   },
+   "black": {
+    "$type": "color",
+    "$value": "#000000",
+    "$description": "Letterbox behind inline video (mobile project media).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/924.js",
+      "lines": "492",
+      "tag": "pointer-events-none block h-auto w-full bg-black"
+     }
+    ]
+   }
+  },
+  "toast": {
+   "surface": {
+    "$type": "color",
+    "$value": "#ecebeb",
+    "$description": "Toast surface (copy-email confirmation).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/App.jsx",
+      "lines": "19",
+      "tag": "background: '#ecebeb'"
+     }
+    ]
+   },
+   "text": {
+    "$type": "color",
+    "$value": "#1c1a17",
+    "$description": "Toast text.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/App.jsx",
+      "lines": "20",
+      "tag": "color: '#1c1a17'"
+     }
+    ]
+   }
+  },
+  "gl": {
+   "transition-a": {
+    "$type": "color",
+    "$value": "#2f302d",
+    "$description": "WebGL page-transition shader mix colour A (lerped 52% into a supplied colour).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/layout.js",
+      "lines": "283",
+      "tag": "e = new c.Q1f(\"#2f302d\")"
+     }
+    ],
+    "restricted": "internal-shader-only"
+   },
+   "transition-b": {
+    "$type": "color",
+    "$value": "#4a4944",
+    "$description": "WebGL page-transition shader mix colour B (lerped 38%).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/layout.js",
+      "lines": "284",
+      "tag": "r = new c.Q1f(\"#4a4944\")"
+     }
+    ],
+    "restricted": "internal-shader-only"
+   },
+   "transition-detail-a": {
+    "$type": "color",
+    "$value": "#11130f",
+    "$description": "Transition colour A when entering a project detail.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/layout.js",
+      "lines": "291",
+      "tag": "{ a: new c.Q1f(\"#11130f\"), b: new c.Q1f(\"#1e211c\") }"
+     }
+    ],
+    "restricted": "internal-shader-only"
+   },
+   "transition-detail-b": {
+    "$type": "color",
+    "$value": "#1e211c",
+    "$description": "Transition colour B when entering a project detail.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/layout.js",
+      "lines": "291",
+      "tag": "{ a: new c.Q1f(\"#11130f\"), b: new c.Q1f(\"#1e211c\") }"
+     }
+    ],
+    "restricted": "internal-shader-only"
+   },
+   "transition-default-a": {
+    "$type": "color",
+    "$value": "#31362f",
+    "$description": "Transition colour A for other destinations.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/layout.js",
+      "lines": "292",
+      "tag": "{ a: new c.Q1f(\"#31362f\"), b: new c.Q1f(\"#545c51\") }"
+     }
+    ],
+    "restricted": "internal-shader-only"
+   },
+   "transition-default-b": {
+    "$type": "color",
+    "$value": "#545c51",
+    "$description": "Transition colour B for other destinations.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/layout.js",
+      "lines": "292",
+      "tag": "{ a: new c.Q1f(\"#31362f\"), b: new c.Q1f(\"#545c51\") }"
+     }
+    ],
+    "restricted": "internal-shader-only"
+   },
+   "plane-alpha-background": {
+    "$type": "color",
+    "$value": "vec3(0.88, 0.871, 0.871)",
+    "$description": "Shader constant ALPHA_BACKGROUND that transparent texels of gallery planes are mixed toward. Written as-is it is #e0dede; read as linear and encoded to sRGB it is #f1f0f0. Kept as the raw shader value.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "16",
+      "tag": "uniform sampler2D uTexture;",
+      "note": "fragment shader string (single long line); contains ALPHA_BACKGROUND = vec3(0.88, 0.871, 0.871)"
+     }
+    ],
+    "restricted": "internal-shader-only"
+   }
+  }
+ }
+}

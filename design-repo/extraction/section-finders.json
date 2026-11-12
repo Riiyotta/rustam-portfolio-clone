@@ -1,0 +1,23 @@
+{
+ "note": "Structural DOM finders shared by measure_sections.mjs and parity/parity.mjs. Each expression runs in the page and returns an array of elements whose union box is the section. Keyed on layout structure, never on visible copy.",
+ "finders": {
+  "shell.navbar": "[...document.querySelectorAll('nav')].filter(n => getComputedStyle(n).position === 'fixed').slice(0,1)",
+  "hero.intro": "(() => { const h = document.querySelector('main section h1'); if (!h) { const m = document.querySelector('main main section h1'); return m ? [m.closest('section')] : []; } const btn = [...document.querySelectorAll('main section > button')].find(b => b.className.includes('aspect-[4/5]')); return [h.parentElement, btn].filter(Boolean); })()",
+  "content.intro-note": "[...document.querySelectorAll('main section p')].filter(p => p.closest('div[class*=\"lg:-translate-x-[55%]\"]')).map(p => p.parentElement)",
+  "portfolio.work-index": "(() => { const m = document.querySelector('section[aria-labelledby]'); if (m) return [m.parentElement]; const c = document.querySelector('main section div[class*=\"!inset-0\"]'); return c ? [c] : []; })()",
+  "shell.footer-contact": "[...document.querySelectorAll('footer')]",
+  "about.profile-header": "(() => { const d = document.querySelector('div[class*=\"lg:top-[27%]\"][class*=\"lg:w-[21%]\"]'); if (d) return [d]; const a = document.querySelector('main main article'); if (!a) return []; return [...a.children].slice(0,2); })()",
+  "about.media-stage": "(() => { const a = document.querySelector('main main article'); if (a) return []; const c = document.querySelector('main section div[class*=\"!inset-0\"]'); return c ? [c] : []; })()",
+  "about.discipline-list": "(() => { const d = document.querySelector('div[class*=\"bottom-[5%]\"][class*=\"right-[3.1%]\"]'); if (d) return [d]; const a = document.querySelector('main main article'); return a && a.children[2] ? [a.children[2]] : []; })()",
+  "about.footer-meta": "[...document.querySelectorAll('div[class*=\"bottom-[4%]\"][class*=\"grid-cols-2\"]')]",
+  "project.header": "(() => { const d = document.querySelector('div[class*=\"md:top-[27%]\"][class*=\"md:w-[20.5%]\"]'); if (d) return [d]; const h = document.querySelector('main main article > header'); return h ? [h] : []; })()",
+  "project.media-stage": "(() => { const s = document.querySelector('main main article > div.space-y-3'); if (s) return [s]; const c = document.querySelector('main section div[class*=\"!inset-0\"]'); return c ? [c] : []; })()",
+  "project.meta": "(() => { const d = document.querySelector('div[class*=\"bottom-[26%]\"][class*=\"right-[3.8%]\"]'); if (d && d.getBoundingClientRect().height > 0) return [d]; const g = document.querySelector('main main article > div[class*=\"grid-cols-2\"]'); return g ? [g] : []; })()",
+  "project.footer-bar": "[...document.querySelectorAll('div[class*=\"bottom-[3.5%]\"]')]",
+  "notfound.message": "[...document.querySelectorAll('main > section')]",
+  "notfound.digits-scene": "[...document.querySelectorAll('main > div')].filter(d => d.querySelector('canvas'))",
+  "utility.overlay-backdrop": "[...document.querySelectorAll('div[class*=\"backdrop-blur\"]')]",
+  "utility.hover-title": "[...document.querySelectorAll('div[class*=\"mix-blend-difference\"]')]",
+  "utility.kinetic-cursor": "[...document.querySelectorAll('div[class*=\"-translate-x-1/2\"][class*=\"-translate-y-1/2\"]')].slice(0,1)"
+ }
+}

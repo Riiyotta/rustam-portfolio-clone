@@ -1,0 +1,347 @@
+{
+ "version": "1.0.0",
+ "availabilityEnum": [
+  "reference-only",
+  "generation-safe",
+  "blocked-for-generation"
+ ],
+ "generationPolicyEnum": [
+  "may-generate-new",
+  "must-reuse-exact",
+  "must-not-fabricate",
+  "must-not-reuse"
+ ],
+ "srcSchemes": {
+  "reference": "site-relative path into the source's public/ folder (evidence only)",
+  "generated": [
+   "placeholder://",
+   "generated://",
+   "user-supplied://"
+  ]
+ },
+ "note": "The source is the live portfolio of a real designer: his photographs, studio wordmark and project media are blocked or reference-only. Availability is pinned in code (PINNED_AVAILABILITY in extraction/verify_all.py and schema/semantic_validate.py), so editing this registry alone cannot loosen it.",
+ "roles": {
+  "person.portrait-source": {
+   "availability": "blocked-for-generation",
+   "generationPolicy": "must-not-reuse",
+   "description": "Photographs of the site owner (a real person). Reference evidence only; never reproduced, altered or imitated in generated output.",
+   "sourceExamples": [
+    "/rk-portrait.jpg",
+    "/rk-about.jpg"
+   ],
+   "generationSafeSubstitutes": [
+    "person.portrait-fictional",
+    "media.placeholder"
+   ],
+   "licensing": "A real person's likeness: no reuse, no look-alike generation.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1485",
+     "tag": "{ src: \"/rk-portrait.jpg\", discipline: null },"
+    },
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "571",
+     "tag": "src: \"/rk-about.jpg\","
+    }
+   ]
+  },
+  "brand.wordmark-source": {
+   "availability": "blocked-for-generation",
+   "generationPolicy": "must-not-reuse",
+   "description": "The owner's studio wordmark as set in the preloader. Never must-reuse-exact in generated mode.",
+   "sourceExamples": [
+    "preloader wordmark text"
+   ],
+   "generationSafeSubstitutes": [
+    "brand.wordmark-placeholder"
+   ],
+   "licensing": "Personal brand identity of a real designer.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "975",
+     "tag": "children: \"KERIMOV DESIGNS\","
+    }
+   ]
+  },
+  "brand.favicon-source": {
+   "availability": "blocked-for-generation",
+   "generationPolicy": "must-not-reuse",
+   "description": "Site favicon.",
+   "sourceExamples": [
+    "/favicon.ico"
+   ],
+   "generationSafeSubstitutes": [
+    "brand.wordmark-placeholder"
+   ],
+   "licensing": "Personal brand identity.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "index.html",
+     "lines": "8",
+     "tag": "href=\"/favicon.ico\" type=\"image/x-icon\""
+    }
+   ]
+  },
+  "project.cover-source": {
+   "availability": "reference-only",
+   "generationPolicy": "must-not-reuse",
+   "description": "Cover image of a real portfolio project (gallery plane texture / mobile card).",
+   "sourceExamples": [
+    "/projects/<hash> (10 covers)"
+   ],
+   "generationSafeSubstitutes": [
+    "project.cover-generated",
+    "media.placeholder"
+   ],
+   "licensing": "Proprietary client and personal work of the designer.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/data/projects.json",
+     "lines": "14",
+     "tag": "\"src\": \"/projects/"
+    }
+   ]
+  },
+  "project.gallery-source": {
+   "availability": "reference-only",
+   "generationPolicy": "must-not-reuse",
+   "description": "Additional images of a real project shown in the media stage.",
+   "sourceExamples": [
+    "/projects/<hash> (53 gallery images)"
+   ],
+   "generationSafeSubstitutes": [
+    "project.gallery-generated",
+    "media.placeholder"
+   ],
+   "licensing": "Proprietary work.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/data/projects.json",
+     "lines": "15",
+     "tag": "\"images\": ["
+    }
+   ]
+  },
+  "project.video-source": {
+   "availability": "reference-only",
+   "generationPolicy": "must-not-reuse",
+   "description": "Motion piece of a real project (looped, muted).",
+   "sourceExamples": [
+    "/projects/videos/<hash>.mp4 (8 files)"
+   ],
+   "generationSafeSubstitutes": [
+    "project.video-generated",
+    "media.placeholder"
+   ],
+   "licensing": "Proprietary work.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/data/projects.json",
+     "lines": "21",
+     "tag": "\"srcVideo\": \"/projects/videos/"
+    }
+   ]
+  },
+  "discipline.media-source": {
+   "availability": "reference-only",
+   "generationPolicy": "must-not-reuse",
+   "description": "Images/video illustrating each discipline on the About page (taken from the designer's own projects).",
+   "sourceExamples": [
+    "/visual-identity.jpg",
+    "/logo-design.jpg",
+    "/art-direction.jpg",
+    "/editorial-design.jpg",
+    "/bylarm-new.mp4"
+   ],
+   "generationSafeSubstitutes": [
+    "discipline.media-generated",
+    "media.placeholder"
+   ],
+   "licensing": "Proprietary work.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1489",
+     "tag": "{ src: \"/bylarm-new.mp4\", discipline: \"Motion & Animation\" },"
+    }
+   ]
+  },
+  "scene.procedural-digits": {
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Digits drawn at runtime onto a canvas texture (404 scene). Procedural, no source imagery.",
+   "sourceExamples": [
+    "canvas texture, Arial 900"
+   ],
+   "licensing": "Procedural.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/notfound.js",
+     "lines": "60",
+     "tag": "let a = [\"4\", \"0\", \"4\"];"
+    }
+   ]
+  },
+  "brand.wordmark-placeholder": {
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Placeholder, user-supplied or newly generated wordmark text for a fictional or client brand.",
+   "licensing": "Must be original to the requesting party.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "975",
+     "tag": "children: \"KERIMOV DESIGNS\",",
+     "note": "the slot this role fills"
+    }
+   ]
+  },
+  "person.portrait-fictional": {
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Portrait of a fictional person or one supplied by the page's real owner (user-supplied://).",
+   "licensing": "Generated people must not resemble the source owner.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "420",
+     "tag": "alt: \"Portrait of Rustam Kerimov\",",
+     "note": "the slot this role fills"
+    }
+   ]
+  },
+  "project.cover-generated": {
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Generated or user-supplied cover for a fictional/new project.",
+   "licensing": "Original work only.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "374",
+     "tag": "src: e.src,",
+     "note": "the slot this role fills"
+    }
+   ]
+  },
+  "project.gallery-generated": {
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Generated or user-supplied gallery image.",
+   "licensing": "Original work only.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "481",
+     "tag": "alt: \"\".concat(m.title, \" — work \").concat(t + 1),",
+     "note": "the slot this role fills"
+    }
+   ]
+  },
+  "project.video-generated": {
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Generated or user-supplied looping muted video.",
+   "licensing": "Original work only.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "500",
+     "tag": "children: (0, r.jsx)(\"source\", { src: m.srcVideo }),",
+     "note": "the slot this role fills"
+    }
+   ]
+  },
+  "discipline.media-generated": {
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Generated or user-supplied media illustrating a discipline.",
+   "licensing": "Original work only.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "134",
+     "tag": "src: \"/visual-identity.jpg\",",
+     "note": "the slot this role fills"
+    }
+   ]
+  },
+  "media.placeholder": {
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Neutral placeholder media (solid surface.media-placeholder fill) for any image/video slot.",
+   "licensing": "None needed.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "372",
+     "tag": "relative aspect-[4/3] w-full overflow-hidden bg-[#1e211b]"
+    }
+   ]
+  },
+  "link.placeholder-url": {
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Placeholder links on reserved domains only (*.example, *.invalid, example.com/.net/.org) or site-relative paths.",
+   "licensing": "Reserved for documentation (RFC 2606).",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/layout.js",
+     "lines": "186",
+     "tag": "href: \"https://www.instagram.com/kerimov.designs/\",",
+     "note": "the slot this role fills"
+    }
+   ]
+  },
+  "copy.original": {
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Newly written copy. Must not reuse source phrasing (checked by 5-word shingles).",
+   "licensing": "Original.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "2418",
+     "tag": "text: \"CRAFTING VISUAL IDENTITIES,\",",
+     "note": "the slot this role fills"
+    }
+   ]
+  },
+  "rating.placeholder": {
+   "availability": "generation-safe",
+   "generationPolicy": "may-generate-new",
+   "description": "Placeholder rating. The source has no reviews, ratings or testimonials and the PageSpec schema has no rating field, so no section uses this role; it exists so a generator has a declared safe target.",
+   "licensing": "Fictional only.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/App.jsx",
+     "lines": "30",
+     "tag": "const isKnownRoute",
+     "note": "route table: no review/testimonial page exists"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "effect": {
+  "backdrop-blur": {
+   "$type": "dimension",
+   "$value": "24px",
+   "$description": "Backdrop blur behind overlays.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "845",
+     "tag": "backdrop-blur-[24px]"
+    }
+   ]
+  },
+  "reveal-blur": {
+   "$type": "dimension",
+   "$value": "3px",
+   "$description": "Initial blur of words in the word-reveal pattern.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "878",
+     "tag": "hidden: { y: \"115%\", opacity: 0, filter: \"blur(3px)\" },"
+    }
+   ]
+  },
+  "unfocused-plane-darken": {
+   "$type": "number",
+   "$value": 0.6,
+   "$description": "Non-hovered gallery planes blur and darken by 60% while one plane is hovered.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "536-540",
+     "tag": "let x = l || R || !ep || s ? 0 : 1;"
+    }
+   ]
+  }
+ }
+}

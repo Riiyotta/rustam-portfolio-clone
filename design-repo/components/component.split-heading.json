@@ -1,0 +1,20 @@
+{
+ "id": "component.split-heading",
+ "kind": "component",
+ "version": "1.0.0",
+ "description": "Multi-line display heading built from word-reveal lines.",
+ "composes": [
+  "primitive.word-reveal-text"
+ ],
+ "props": [
+  "lines"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/272.js",
+   "lines": "2410-2412",
+   "tag": "text: \"GRAPHIC DESIGNER\","
+  }
+ ]
+}

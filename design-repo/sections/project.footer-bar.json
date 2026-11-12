@@ -1,0 +1,90 @@
+{
+ "id": "project.footer-bar",
+ "version": "1.0.0",
+ "title": "Project footer bar",
+ "source": {
+  "id": "module-5272:fn-N-footer",
+  "root": "project",
+  "file": "src/engine/chunks/272.js",
+  "lines": "1090-1150",
+  "tag": "\"absolute bottom-[3.5%] left-[5%] right-[5%] grid"
+ },
+ "semantic": {
+  "id": "project.footer-bar",
+  "category": "NAVIGATION",
+  "purpose": "Bottom bar of the detail view: interaction hint, tags, and media pagination."
+ },
+ "retrievalEligible": true,
+ "content": {
+  "fields": {
+   "hint": {
+    "type": "text",
+    "maxWords": 5,
+    "required": true
+   },
+   "tags": {
+    "type": "list",
+    "of": {
+     "type": "text",
+     "maxWords": 2
+    },
+    "maxItems": 5
+   },
+   "mediaCount": {
+    "type": "integer",
+    "min": 1,
+    "max": 11,
+    "required": true
+   }
+  }
+ },
+ "constraints": {
+  "onePerPage": true
+ },
+ "responsive": {
+  "desktop": "3 equal columns at bottom 5%: hint (10px caps, 80%), tags joined ' / ' centred (truncated), numbered media buttons right-aligned (30% -> 100%).",
+  "mobile": "Not rendered in the mobile article layout (tags move into the header; media is stacked, so no pagination).",
+  "breakpoint": "{breakpoint.lg}"
+ },
+ "motion": {
+  "patterns": [
+   "opacity-hover"
+  ],
+  "default": "opacity-hover",
+  "reducedMotionFallback": "opacity-hover",
+  "sourceImplementsFallback": true
+ },
+ "generatedAssetRoles": [
+  "copy.original"
+ ],
+ "referenceAssetRoles": [],
+ "tokens": [
+  "typography.size.micro",
+  "typography.size.pagination",
+  "typography.tracking.label-wide",
+  "component.overlay.pagination-inactive-opacity"
+ ],
+ "composes": [
+  "component.media-pagination",
+  "primitive.micro-label"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/272.js",
+   "lines": "1098",
+   "tag": "children: \"Scroll or click to explore\","
+  }
+ ],
+ "measured": {
+  "1440x900": {
+   "heightPx": 33,
+   "widthPx": 1306,
+   "inFlow": false,
+   "position": "absolute"
+  },
+  "390x844": {
+   "present": false
+  }
+ }
+}

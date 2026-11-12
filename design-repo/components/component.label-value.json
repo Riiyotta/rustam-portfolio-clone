@@ -1,0 +1,22 @@
+{
+ "id": "component.label-value",
+ "kind": "component",
+ "version": "1.0.0",
+ "description": "A small label above a value (navbar columns, Year/Tools).",
+ "composes": [
+  "primitive.micro-label",
+  "primitive.word-reveal-text"
+ ],
+ "props": [
+  "label",
+  "value"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/272.js",
+   "lines": "929-955",
+   "tag": "function S(e) {"
+  }
+ ]
+}

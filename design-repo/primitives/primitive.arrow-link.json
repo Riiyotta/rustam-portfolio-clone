@@ -1,0 +1,21 @@
+{
+ "id": "primitive.arrow-link",
+ "kind": "primitive",
+ "version": "1.0.0",
+ "description": "Heavy uppercase link with a drawn arrow whose head scales in on hover (0.5s reveal curve).",
+ "props": [
+  "label",
+  "href"
+ ],
+ "motionPatterns": [
+  "opacity-hover"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/components/NotFound.jsx",
+   "lines": "31",
+   "tag": "className=\"origin-[14px_12px] scale-0 transition-transform duration-500"
+  }
+ ]
+}

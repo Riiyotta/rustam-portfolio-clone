@@ -1,0 +1,309 @@
+{
+ "version": "1.0.0",
+ "note": "Single registry of source-identity patterns, harvested by extraction/build_repo.py from the real source (navbar, preloader, About copy, project data, 404 page). Used by schema/semantic_validate.py in generated mode only; reference mode may contain all of it.",
+ "brand": {
+  "patterns": [
+   "\\brustam\\b",
+   "\\bkerimov\\b",
+   "kerimov\\s*designs",
+   "kerimovdesigns",
+   "kerimov\\.designs",
+   "rustam-kerimov"
+  ],
+  "evidence": [
+   {
+    "root": "project",
+    "file": "src/engine/chunks/924.js",
+    "lines": "975",
+    "tag": "children: \"KERIMOV DESIGNS\","
+   },
+   {
+    "root": "project",
+    "file": "index.html",
+    "lines": "6",
+    "tag": "<title>Rustam Kerimov | Portfolio</title>"
+   }
+  ]
+ },
+ "person": {
+  "patterns": [
+   "rustam\\s+kerimov",
+   "jonas\\s*nygaard",
+   "\\bcaiman\\b",
+   "yayoi\\s+kusama",
+   "dana\\s+schutz",
+   "cory\\s+arcangel",
+   "cipe\\s+pineles",
+   "keith\\s+haring",
+   "rustam\\-98@hotmail\\.com",
+   "rustam-98",
+   "age:\\s*27"
+  ],
+  "evidence": [
+   {
+    "root": "project",
+    "file": "src/engine/chunks/924.js",
+    "lines": "340",
+    "tag": "children: \"Jonas Nygaard\","
+   },
+   {
+    "root": "project",
+    "file": "src/engine/chunks/924.js",
+    "lines": "257",
+    "tag": "await navigator.clipboard.writeText("
+   },
+   {
+    "root": "project",
+    "file": "src/engine/chunks/272.js",
+    "lines": "2242",
+    "tag": "text: \"Age: 27\","
+   }
+  ]
+ },
+ "project": {
+  "titles": [
+   "MORI",
+   "Kistefos museum",
+   "AURELIS CAPITAL",
+   "Posters Bundle #1",
+   "Art Exhibition",
+   "Drømmenes Melodi",
+   "Echo Festival",
+   "Breen Bygg & Service",
+   "i-D Magazine",
+   "Maltesers Package"
+  ],
+  "ids": [
+   "6aefb39eda2cd8ea85237d26",
+   "6a873e144aea474cdeae7a76",
+   "6a873ba44aea474cdeae7a75",
+   "6a738fe5c50ff327148b02f9",
+   "6930b50f931d3caa254b3237",
+   "69300cd7a94f6af6c6b7d9d8",
+   "692fa8ade953917a4953f016",
+   "692fa503b4aaa1dd44f7665c",
+   "692f9a5d6a4755436ddef92b",
+   "692f8cfc17ad2ca258e981de"
+  ],
+  "patterns": [
+   "\\bmori\\b",
+   "kistefos",
+   "aurelis",
+   "posters\\s+bundle",
+   "dr[øo]mmenes\\s+melodi",
+   "echo\\s+festival",
+   "breens?\\s+bygg",
+   "\\bi-d\\s+magazine\\b",
+   "maltesers",
+   "bylarm",
+   "by:larm"
+  ],
+  "evidence": [
+   {
+    "root": "project",
+    "file": "src/data/projects.json",
+    "lines": "4",
+    "tag": "\"title\": \"MORI\","
+   },
+   {
+    "root": "project",
+    "file": "src/engine/chunks/272.js",
+    "lines": "1489",
+    "tag": "{ src: \"/bylarm-new.mp4\", discipline: \"Motion & Animation\" },"
+   }
+  ]
+ },
+ "location": {
+  "patterns": [
+   "oslo,?\\s*norway"
+  ],
+  "evidence": [
+   {
+    "root": "project",
+    "file": "src/engine/chunks/layout.js",
+    "lines": "155",
+    "tag": "\"Oslo, Norway\","
+   }
+  ]
+ },
+ "url": {
+  "domains": [
+   "kerimovdesigns.com",
+   "instagram.com/kerimov.designs",
+   "linkedin.com/in/rustam-kerimov-75bb5a331",
+   "jonasnygaard.com",
+   "hotmail.com",
+   "ufs.sh",
+   "utfs.io"
+  ],
+  "observedLinks": [
+   "https://www.instagram.com/kerimov.designs/",
+   "https://www.jonasnygaard.com",
+   "https://www.linkedin.com/in/rustam-kerimov-75bb5a331/"
+  ],
+  "reservedPlaceholderDomains": [
+   ".example",
+   ".invalid",
+   "example.com",
+   "example.org",
+   "example.net"
+  ],
+  "evidence": [
+   {
+    "root": "project",
+    "file": "src/engine/chunks/layout.js",
+    "lines": "194",
+    "tag": "href: \"https://www.linkedin.com/in/rustam-kerimov-75bb5a331/\","
+   },
+   {
+    "root": "project",
+    "file": "src/engine/chunks/924.js",
+    "lines": "335",
+    "tag": "href: \"https://www.jonasnygaard.com\","
+   }
+  ]
+ },
+ "cta": {
+  "strings": [
+   "Copy Email",
+   "Copy email address",
+   "Copied!",
+   "Copy failed",
+   "Back to portfolio",
+   "Back to work",
+   "Scroll or click to explore",
+   "About me",
+   "Selected Work:",
+   "About the project:",
+   "Design / Development:",
+   "RETURN",
+   "NEXT"
+  ],
+  "evidence": [
+   {
+    "root": "project",
+    "file": "src/engine/chunks/layout.js",
+    "lines": "182",
+    "tag": ": \"Copy Email\","
+   },
+   {
+    "root": "project",
+    "file": "src/components/NotFound.jsx",
+    "lines": "35",
+    "tag": "<span>Back to portfolio</span>"
+   },
+   {
+    "root": "project",
+    "file": "src/engine/chunks/272.js",
+    "lines": "1168",
+    "tag": "[h, m] = (0, o.useState)(\"RETURN\"),"
+   }
+  ]
+ },
+ "assetFilenames": {
+  "patterns": [
+   "rk-portrait",
+   "rk-about",
+   "bylarm-new",
+   "visual-identity\\.jpg",
+   "logo-design\\.jpg",
+   "art-direction\\.jpg",
+   "editorial-design\\.jpg",
+   "/projects/",
+   "hhEReYBoKW7E",
+   "favicon\\.ico"
+  ],
+  "evidence": [
+   {
+    "root": "project",
+    "file": "src/engine/chunks/272.js",
+    "lines": "1486",
+    "tag": "{ src: \"/visual-identity.jpg\", discipline: \"Visual Identities\" },"
+   }
+  ]
+ },
+ "copy": {
+  "shingleSize": 5,
+  "equalityMinWords": 3,
+  "strings": [
+   "GRAPHIC DESIGNER",
+   "CRAFTING VISUAL IDENTITIES,",
+   "TYPOGRAPHY AND MOTION.",
+   "GRAPHIC DESIGNER CRAFTING VISUAL IDENTITIES, TYPOGRAPHY AND MOTION.",
+   "Take a look at my selected projects below to see what I've been working on. I'm always open to new projects, fresh ideas and creative collaborations, so feel free to get in touch.",
+   "This page got lost.",
+   "The page you’re looking for doesn’t exist, but my portfolio is still right where it should be.",
+   "Behind The Work.",
+   "A graphic designer exploring visual identities, typography and motion.",
+   "Creating distinctive visual experiences across branding, editorial design, art direction and animation.",
+   "A graphic designer exploring visual identities, typography, art direction and motion.",
+   "Building distinctive visual systems that give brands a clear and recognizable voice.",
+   "From typography and color to composition and visual direction, every element works together to create a cohesive identity.",
+   "Creating distinctive visual identities through typography, color and considered design systems.",
+   "Creating memorable marks that turn ideas into recognizable visual signatures.",
+   "Exploring shape, proportion and typography to develop logos that feel purposeful, distinctive and versatile.",
+   "Creating distinctive and memorable logos through shape, typography and visual exploration.",
+   "Shaping visual experiences through a clear creative perspective.",
+   "Connecting imagery, typography and composition to establish a distinctive direction and bring creative ideas together.",
+   "Shaping creative ideas through imagery, typography and a considered visual direction.",
+   "Bringing graphic design to life through movement, rhythm and timing.",
+   "Exploring how motion can add character, energy and an entirely new dimension to visual communication.",
+   "Bringing design to life through movement, rhythm, animation and visual storytelling.",
+   "Exploring the relationship between typography, imagery and space.",
+   "Creating expressive editorial layouts that balance visual structure, storytelling and experimental design.",
+   "Creating expressive editorial experiences through typography, imagery and considered composition.",
+   "Building distinctive visual systems that give brands a clear and recognizable voice. From typography and color to composition and visual direction.",
+   "Creating memorable marks that turn ideas into recognizable visual signatures through shape, proportion and typography.",
+   "Shaping visual experiences through a clear creative perspective, connecting imagery, typography and composition.",
+   "Bringing graphic design to life through movement, rhythm and timing. Exploring how motion adds character and energy to visual communication.",
+   "Exploring the relationship between typography, imagery and space to create expressive editorial layouts.",
+   "MORI is a fictional scented candle brand exploring bold, minimalist packaging and a distinctive visual identity.",
+   "A dark foundation, expressive typography, and vibrant colors give each scent its own personality while keeping the collection visually cohesive.",
+   "Morning, Golden Hour, and Midnight each have a unique color and mood, creating a recognizable collection with strong shelf presence.",
+   "A fictional personal project exploring visual identity for the museum kistefos through motion and graphic design.",
+   "I brought three sculptures from Yayoi Kusama, Dana Schutz and Cory Arcangel to life through animation, giving the works a new visual dimension. The project extends across posters, postcards and a tote bag, creating a fictional campaign and identity application for the museum.",
+   "AURELIS CAPITAL is a fictional investment company built around strength, confidence, and long-term vision.",
+   "Inspired by the mythical griffin, the logo combines the power of a lion with the elegance of an eagle, symbolizing trust and leadership.",
+   "The visual identity balances bold symbolism with a refined, sophisticated aesthetic.",
+   "A poster design centered on typography, emphasizing visual hierarchy, balance, and expressive type as the primary design element.",
+   "I collaborated with my friend, the artist Caiman, to create a cohesive visual identity for his first art exhibition.",
+   "The project included personal and exhibition logos, brochure-maps, promotional posters, social media content, and animated visuals.",
+   "I also created a looping video using elements from his paintings and helped plan the exhibition space, bringing the visual identity and physical experience together.",
+   "Drømmenes Melodi is an album identity created in collaboration with a musician for my final graphic design exam.",
+   "With no external imagery allowed, I built a dreamlike visual world through photo manipulation and digital illustration, reflecting the album's blend of rap and pop.",
+   "The identity brings together album artwork, Spotify assets, social media content, merchandise, and an animated logo into one cohesive visual universe.",
+   "This personal project explores a bold, modern visual identity for a fictional music and arts festival.",
+   "The design combines a vibrant blue palette with a dynamic logo and distinctive glass effects, capturing the energy and creativity of the festival.",
+   "The identity extends across posters, artist announcements, merchandise, social media, and stage visuals, creating a cohesive festival experience.",
+   "Breens Bygg & Service is a construction brand with a modern, timeless visual identity built around simplicity and professionalism.",
+   "Using the initials BBS, I created a cube-inspired symbol that reflects building blocks without relying on traditional construction imagery.",
+   "The result is a clean, versatile identity that communicates reliability and confidence across different applications.",
+   "This school project explored editorial design through the unconventional visual style of graphic designer Cipe Pineles.",
+   "Inspired by her playful compositions and unexpected layouts, I experimented with typography, alignment, and structure to challenge traditional magazine design.",
+   "The result is a visually expressive publication that balances creative freedom with readability and intentional design.",
+   "This school project explored maximalist packaging design through a bold redesign of Maltesers, inspired by the energetic artwork of Keith Haring.",
+   "Working within a fixed layout, I combined playful illustrations with small window cutouts that reveal the product inside.",
+   "The concept also includes a purple limited edition for white chocolate Maltesers, balancing expressive design with practical packaging requirements."
+  ],
+  "evidence": [
+   {
+    "root": "project",
+    "file": "src/engine/chunks/272.js",
+    "lines": "2527",
+    "tag": "text: \"Take a look at my selected projects below"
+   },
+   {
+    "root": "project",
+    "file": "src/engine/chunks/272.js",
+    "lines": "1901-1963",
+    "tag": "      let D = ["
+   },
+   {
+    "root": "project",
+    "file": "src/data/projects.json",
+    "lines": "5",
+    "tag": "\"description\": \"MORI is a fictional"
+   }
+  ]
+ }
+}

@@ -1,0 +1,200 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "reference",
+ "template": "project-detail",
+ "route": "/project/6aefb39eda2cd8ea85237d26",
+ "theme": "dark",
+ "meta": {
+  "title": "Rustam Kerimov | Portfolio",
+  "description": "Graphic designer, Rustam Kerimov's portfolio"
+ },
+ "runtimeLayers": [
+  "utility.preloader",
+  "utility.page-transition",
+  "utility.overlay-backdrop",
+  "utility.kinetic-cursor",
+  "utility.toast"
+ ],
+ "nodes": [
+  {
+   "section": "shell.navbar",
+   "content": {
+    "ownerName": "Rustam Kerimov",
+    "occupation": "Graphic Designer",
+    "location": "Oslo, Norway",
+    "contactLinks": [
+     {
+      "label": "Copy Email",
+      "href": "mailto:rustam-98@hotmail.com",
+      "kind": "copy-email"
+     },
+     {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/kerimov.designs/",
+      "kind": "social"
+     },
+     {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/rustam-kerimov-75bb5a331/",
+      "kind": "social"
+     }
+    ],
+    "profileLinkLabel": "About me"
+   },
+   "motion": {
+    "pattern": "staggered-fade-up",
+    "reducedMotionFallback": "opacity-fade"
+   }
+  },
+  {
+   "section": "project.header",
+   "content": {
+    "title": "MORI",
+    "description": "MORI is a fictional scented candle brand exploring bold, minimalist packaging and a distinctive visual identity.\n\nA dark foundation, expressive typography, and vibrant colors give each scent its own personality while keeping the collection visually cohesive.\n\nMorning, Golden Hour, and Midnight each have a unique color and mood, creating a recognizable collection with strong shelf presence.",
+    "tags": [
+     "visual-identities",
+     "motion",
+     "branding",
+     "packaging"
+    ]
+   },
+   "motion": {
+    "pattern": "word-reveal",
+    "reducedMotionFallback": "opacity-fade"
+   },
+   "tokens": {
+    "textColor": "text.overlay",
+    "typeScale": "typography.size.project-title"
+   }
+  },
+  {
+   "section": "project.media-stage",
+   "content": {
+    "media": [
+     {
+      "asset": {
+       "assetRole": "project.cover-source",
+       "src": "/projects/hhEReYBoKW7E5BE4kTgAVnR4kGt6IMCgHSD7P03iBYhv8WpU",
+       "alt": "MORI — work 1"
+      },
+      "kind": "image"
+     },
+     {
+      "asset": {
+       "assetRole": "project.gallery-source",
+       "src": "/projects/hhEReYBoKW7Ey97dAYv2vdzcKtgOLjfp15Ml8ZxTWbJsFnGe",
+       "alt": "MORI — work 2"
+      },
+      "kind": "image"
+     },
+     {
+      "asset": {
+       "assetRole": "project.gallery-source",
+       "src": "/projects/hhEReYBoKW7EOSjoULXLzG9P86p0Yqnl1Iu4UTbKSNwW2aJy",
+       "alt": "MORI — work 3"
+      },
+      "kind": "image"
+     },
+     {
+      "asset": {
+       "assetRole": "project.gallery-source",
+       "src": "/projects/hhEReYBoKW7EeijEgPZ5gCqJkE84vWOluha6FXztZrDLKP2N",
+       "alt": "MORI — work 4"
+      },
+      "kind": "image"
+     },
+     {
+      "asset": {
+       "assetRole": "project.gallery-source",
+       "src": "/projects/hhEReYBoKW7EoFOM3pY1y7vik8lSxn0wXIPg26OcKoU5Dj9t",
+       "alt": "MORI — work 5"
+      },
+      "kind": "image"
+     },
+     {
+      "asset": {
+       "assetRole": "project.video-source",
+       "src": "/projects/videos/hhEReYBoKW7ERrThgMtwlh6JCLoKVqaQF7GDNYjf824cSO5z.mp4",
+       "alt": "MORI video"
+      },
+      "kind": "video"
+     }
+    ]
+   },
+   "motion": {
+    "pattern": "plane-focus-stage",
+    "reducedMotionFallback": "crossfade-stage"
+   }
+  },
+  {
+   "section": "project.meta",
+   "content": {
+    "yearLabel": "Year:",
+    "year": "2026",
+    "toolsLabel": "Tools:",
+    "tools": "Adobe CC"
+   },
+   "motion": {
+    "pattern": "word-reveal",
+    "reducedMotionFallback": "opacity-fade"
+   }
+  },
+  {
+   "section": "project.footer-bar",
+   "content": {
+    "hint": "Scroll or click to explore",
+    "tags": [
+     "visual-identities",
+     "motion",
+     "branding",
+     "packaging"
+    ],
+    "mediaCount": 6
+   },
+   "motion": {
+    "pattern": "opacity-hover",
+    "reducedMotionFallback": "opacity-hover"
+   }
+  },
+  {
+   "section": "shell.footer-contact",
+   "content": {
+    "servicesHeading": "Services:",
+    "services": [
+     "Visual Identities",
+     "Logo Design",
+     "Art Direction",
+     "Motion & Animation",
+     "Editorial Design"
+    ],
+    "connectHeading": "Connect:",
+    "contactLinks": [
+     {
+      "label": "Copy Email",
+      "href": "mailto:rustam-98@hotmail.com",
+      "kind": "copy-email"
+     },
+     {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/kerimov.designs/",
+      "kind": "social"
+     },
+     {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/rustam-kerimov-75bb5a331/",
+      "kind": "social"
+     }
+    ],
+    "creditLabel": "Design / Development:",
+    "credit": {
+     "label": "Jonas Nygaard",
+     "href": "https://www.jonasnygaard.com"
+    }
+   },
+   "motion": {
+    "pattern": "opacity-hover",
+    "reducedMotionFallback": "opacity-hover"
+   }
+  }
+ ]
+}

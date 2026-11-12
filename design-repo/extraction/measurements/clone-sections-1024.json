@@ -1,0 +1,351 @@
+{
+ "tool": "extraction/measure_sections.mjs",
+ "baseUrl": "http://localhost:5190",
+ "measuredAt": "2026-11-12",
+ "viewports": {
+  "1024x768": {
+   "home": {
+    "route": "/",
+    "sections": {
+     "shell.navbar": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 91,
+      "position": "fixed",
+      "inFlow": false
+     },
+     "hero.intro": {
+      "present": true,
+      "x": 32,
+      "y": 150,
+      "width": 961,
+      "height": 188,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "content.intro-note": {
+      "present": true,
+      "x": 644,
+      "y": 476,
+      "width": 360,
+      "height": 99,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "portfolio.work-index": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 768,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "shell.footer-contact": {
+      "present": false
+     },
+     "utility.overlay-backdrop": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 768,
+      "position": "fixed",
+      "inFlow": false
+     },
+     "utility.hover-title": {
+      "present": false
+     }
+    },
+    "documentHeight": 768,
+    "histogram": {
+     "textColor": {
+      "rgb(235, 232, 228)": 53
+     },
+     "background": {
+      "rgb(14, 16, 12)": 1,
+      "oklab(0.159862 0.00102171 0.00248303 / 0.97)": 1
+     },
+     "fontFamily": {
+      "Satoshi, Arial, Helvetica, sans-serif": 53
+     },
+     "fontSize": {
+      "14px": 5,
+      "15px": 7,
+      "17px": 33,
+      "25px": 8
+     },
+     "fontWeight": {
+      "400": 33,
+      "500": 12,
+      "700": 8
+     }
+    }
+   },
+   "about": {
+    "route": "/about",
+    "sections": {
+     "shell.navbar": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 91,
+      "position": "fixed",
+      "inFlow": false
+     },
+     "about.profile-header": {
+      "present": true,
+      "x": 36,
+      "y": 207,
+      "width": 215,
+      "height": 228,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "about.media-stage": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 768,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "about.discipline-list": {
+      "present": true,
+      "x": 767,
+      "y": 595,
+      "width": 225,
+      "height": 134,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "about.footer-meta": {
+      "present": true,
+      "x": 54,
+      "y": 716,
+      "width": 403,
+      "height": 14,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "shell.footer-contact": {
+      "present": false
+     },
+     "utility.overlay-backdrop": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 768,
+      "position": "fixed",
+      "inFlow": false
+     },
+     "utility.kinetic-cursor": {
+      "present": true,
+      "x": -233,
+      "y": -207,
+      "width": 66,
+      "height": 14,
+      "position": "absolute",
+      "inFlow": false
+     }
+    },
+    "documentHeight": 768,
+    "histogram": {
+     "textColor": {
+      "rgb(235, 232, 228)": 12,
+      "rgb(231, 227, 221)": 14,
+      "oklab(0.917283 0.00186393 0.008986 / 0.8)": 31
+     },
+     "background": {
+      "rgb(14, 16, 12)": 1,
+      "oklab(0.159862 0.00102171 0.00248303 / 0.97)": 1
+     },
+     "fontFamily": {
+      "Satoshi, Arial, Helvetica, sans-serif": 47,
+      "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"": 10
+     },
+     "fontSize": {
+      "14px": 5,
+      "15px": 28,
+      "20px": 2,
+      "16px": 12,
+      "10px": 10
+     },
+     "fontWeight": {
+      "400": 21,
+      "500": 34,
+      "700": 2
+     }
+    }
+   },
+   "project-detail": {
+    "route": "/project/6aefb39eda2cd8ea85237d26",
+    "sections": {
+     "shell.navbar": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 91,
+      "position": "fixed",
+      "inFlow": false
+     },
+     "project.header": {
+      "present": true,
+      "x": 36,
+      "y": 207,
+      "width": 210,
+      "height": 396,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "project.media-stage": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 768,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "project.meta": {
+      "present": true,
+      "x": 796,
+      "y": 449,
+      "width": 189,
+      "height": 120,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "project.footer-bar": {
+      "present": true,
+      "x": 54,
+      "y": 699,
+      "width": 929,
+      "height": 31,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "shell.footer-contact": {
+      "present": false
+     },
+     "utility.overlay-backdrop": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 768,
+      "position": "fixed",
+      "inFlow": false
+     },
+     "utility.kinetic-cursor": {
+      "present": true,
+      "x": -233,
+      "y": -207,
+      "width": 66,
+      "height": 14,
+      "position": "absolute",
+      "inFlow": false
+     }
+    },
+    "documentHeight": 768,
+    "histogram": {
+     "textColor": {
+      "rgb(235, 232, 228)": 12,
+      "rgb(255, 255, 255)": 1,
+      "rgb(231, 227, 221)": 9,
+      "oklab(0.917283 0.00186393 0.008986 / 0.78)": 56,
+      "oklab(0.917283 0.00186393 0.008986 / 0.9)": 3,
+      "oklab(0.917283 0.00186393 0.008986 / 0.8)": 2
+     },
+     "background": {
+      "rgb(14, 16, 12)": 1,
+      "oklab(0.159862 0.00102171 0.00248303 / 0.97)": 1
+     },
+     "fontFamily": {
+      "Satoshi, Arial, Helvetica, sans-serif": 80,
+      "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"": 3
+     },
+     "fontSize": {
+      "14px": 5,
+      "15px": 69,
+      "11px": 1,
+      "22px": 1,
+      "10px": 4,
+      "16px": 3
+     },
+     "fontWeight": {
+      "400": 56,
+      "500": 25,
+      "700": 2
+     }
+    }
+   },
+   "not-found": {
+    "route": "/this-route-does-not-exist",
+    "sections": {
+     "shell.navbar": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 91,
+      "position": "fixed",
+      "inFlow": false
+     },
+     "notfound.digits-scene": {
+      "present": true,
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 768,
+      "position": "absolute",
+      "inFlow": false
+     },
+     "notfound.message": {
+      "present": true,
+      "x": 40,
+      "y": 518,
+      "width": 576,
+      "height": 226,
+      "position": "absolute",
+      "inFlow": false
+     }
+    },
+    "documentHeight": 768,
+    "histogram": {
+     "textColor": {
+      "rgb(235, 232, 228)": 14,
+      "oklab(0.999994 0.0000455677 0.0000200868 / 0.6)": 1,
+      "rgb(255, 255, 255)": 1
+     },
+     "background": {
+      "rgb(14, 16, 12)": 1
+     },
+     "fontFamily": {
+      "Satoshi, Arial, Helvetica, sans-serif": 16
+     },
+     "fontSize": {
+      "14px": 5,
+      "15px": 7,
+      "16px": 1,
+      "48px": 1,
+      "20px": 1,
+      "18px": 1
+     },
+     "fontWeight": {
+      "400": 2,
+      "500": 12,
+      "600": 1,
+      "900": 1
+     }
+    }
+   }
+  }
+ }
+}

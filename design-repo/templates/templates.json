@@ -1,0 +1,228 @@
+{
+ "version": "1.0.0",
+ "note": "One template per page shape. Desktop and mobile are responsive variants of the same templates (the clone switches layout at 1024px), not separate templates. Node order is the reading order; on desktop the sections are layers of one viewport.",
+ "templates": {
+  "home": {
+   "family": "home",
+   "routePattern": "^/$",
+   "homeRouteOnly": true,
+   "description": "Landing view: identity opener plus the full work index.",
+   "nodes": [
+    {
+     "section": "shell.navbar",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "hero.intro",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "content.intro-note",
+     "required": false,
+     "repeatable": false
+    },
+    {
+     "section": "portfolio.work-index",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer-contact",
+     "required": false,
+     "repeatable": false
+    }
+   ],
+   "runtimeLayers": [
+    "utility.preloader",
+    "utility.page-transition",
+    "utility.toast",
+    "utility.overlay-backdrop",
+    "utility.hover-title"
+   ],
+   "composition": "Desktop (>=1024px): one 100svh stage with no document scroll; every section is a layer over the WebGL work strip. Mobile: in-flow list (opener, selected work grid, contact footer).",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "3421",
+     "tag": "            (0, r.jsx)(ei, { visible: J && !ek && !eL && !P }),"
+    },
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "769",
+     "tag": "(0, r.jsx)(b, { projects: n, navigate: c }),"
+    }
+   ]
+  },
+  "about": {
+   "family": "profile",
+   "routePattern": "^/about$",
+   "homeRouteOnly": false,
+   "description": "The designer's profile and disciplines.",
+   "nodes": [
+    {
+     "section": "shell.navbar",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "about.profile-header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "about.media-stage",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "about.discipline-list",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "about.footer-meta",
+     "required": false,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer-contact",
+     "required": false,
+     "repeatable": false
+    }
+   ],
+   "runtimeLayers": [
+    "utility.preloader",
+    "utility.page-transition",
+    "utility.toast",
+    "utility.overlay-backdrop",
+    "utility.kinetic-cursor"
+   ],
+   "composition": "Desktop: an overlay opened over the home stage (the work strip stays underneath, blurred by the backdrop); /about loaded directly opens it after the preloader. Mobile: its own scrolling article.",
+   "underlay": "home",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "3471",
+     "tag": "(0, r.jsx)(V, {"
+    },
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "717",
+     "tag": "u = \"/about\" === i,"
+    }
+   ]
+  },
+  "project-detail": {
+   "family": "content-detail",
+   "routePattern": "^/project/[^/]+$",
+   "homeRouteOnly": false,
+   "description": "One project: header, media, facts and the media pagination bar.",
+   "nodes": [
+    {
+     "section": "shell.navbar",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "project.header",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "project.media-stage",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "project.meta",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "project.footer-bar",
+     "required": false,
+     "repeatable": false
+    },
+    {
+     "section": "shell.footer-contact",
+     "required": false,
+     "repeatable": false
+    }
+   ],
+   "runtimeLayers": [
+    "utility.preloader",
+    "utility.page-transition",
+    "utility.toast",
+    "utility.overlay-backdrop",
+    "utility.kinetic-cursor"
+   ],
+   "composition": "Desktop: overlay over the home stage, the clicked plane becomes the media stage. Mobile: scrolling article (header, stacked media, facts, footer).",
+   "underlay": "home",
+   "stateVariants": {
+    "unknownId": "An id not in the project list renders a 'not found' notice with a link back to the index (mobile layout); the route itself still answers 200 on the live site."
+   },
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "2541-2544",
+     "tag": "function ed(e) {"
+    },
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "759",
+     "tag": "children: \"Project not found\","
+    }
+   ]
+  },
+  "not-found": {
+   "family": "utility-page",
+   "routePattern": "*",
+   "homeRouteOnly": false,
+   "description": "Fallback for every unknown path.",
+   "nodes": [
+    {
+     "section": "shell.navbar",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "notfound.digits-scene",
+     "required": true,
+     "repeatable": false
+    },
+    {
+     "section": "notfound.message",
+     "required": true,
+     "repeatable": false
+    }
+   ],
+   "runtimeLayers": [
+    "utility.page-transition",
+    "utility.toast"
+   ],
+   "composition": "Full-viewport digits scene with the message anchored bottom-left; same at every width.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/App.jsx",
+     "lines": "45-47",
+     "tag": ") : ("
+    },
+    {
+     "root": "project",
+     "file": "src/components/NotFound.jsx",
+     "lines": "6",
+     "tag": "export default function NotFound() {"
+    }
+   ]
+  }
+ }
+}

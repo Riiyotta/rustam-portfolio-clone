@@ -1,0 +1,17 @@
+# dependencies & build output
+node_modules/
+dist/
+
+# saved copy of the original site (reference only, not part of the clone)
+_reference/
+
+# design-repo package is a build artefact — regenerate it, never commit it
+design-repo.zip
+
+# OS / tooling junk
+.DS_Store
+Thumbs.db
+__MACOSX/
+__pycache__/
+*.pyc
+.playwright-mcp/

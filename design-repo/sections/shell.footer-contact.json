@@ -1,0 +1,125 @@
+{
+ "id": "shell.footer-contact",
+ "version": "1.0.0",
+ "title": "Contact footer (mobile)",
+ "source": {
+  "id": "module-4656:fn-h-footer",
+  "root": "project",
+  "file": "src/engine/chunks/924.js",
+  "lines": "246-347",
+  "tag": "      function h() {"
+ },
+ "semantic": {
+  "id": "shell.footer-contact",
+  "category": "SHELL",
+  "purpose": "Closing contact block: services list, contact links and the design/development credit."
+ },
+ "retrievalEligible": true,
+ "content": {
+  "fields": {
+   "servicesHeading": {
+    "type": "text",
+    "maxWords": 2
+   },
+   "services": {
+    "type": "list",
+    "of": {
+     "type": "text",
+     "maxWords": 3
+    },
+    "maxItems": 6
+   },
+   "connectHeading": {
+    "type": "text",
+    "maxWords": 2
+   },
+   "contactLinks": {
+    "type": "list",
+    "of": {
+     "label": {
+      "type": "text",
+      "maxWords": 2
+     },
+     "href": {
+      "type": "link"
+     },
+     "kind": {
+      "type": "enum",
+      "values": [
+       "copy-email",
+       "social",
+       "external",
+       "internal"
+      ]
+     }
+    },
+    "maxItems": 3
+   },
+   "creditLabel": {
+    "type": "text",
+    "maxWords": 3
+   },
+   "credit": {
+    "type": "object",
+    "of": {
+     "label": {
+      "type": "text",
+      "maxWords": 3
+     },
+     "href": {
+      "type": "link"
+     }
+    }
+   }
+  }
+ },
+ "constraints": {
+  "onePerPage": true,
+  "mustBeLast": true
+ },
+ "responsive": {
+  "desktop": "Not rendered at >=1024px (the navbar carries the contact links).",
+  "mobile": "In-flow footer after the page content: 2-column grid (services | connect), 15px medium, credit line below.",
+  "breakpoint": "{breakpoint.lg}"
+ },
+ "motion": {
+  "patterns": [
+   "opacity-hover"
+  ],
+  "default": "opacity-hover",
+  "reducedMotionFallback": "opacity-hover",
+  "sourceImplementsFallback": true
+ },
+ "generatedAssetRoles": [
+  "link.placeholder-url",
+  "copy.original"
+ ],
+ "referenceAssetRoles": [],
+ "tokens": [
+  "typography.size.mobile-footer",
+  "text.overlay"
+ ],
+ "composes": [
+  "primitive.copy-button",
+  "primitive.text-link"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/924.js",
+   "lines": "332",
+   "tag": "children: \"Design / Development:\","
+  }
+ ],
+ "measured": {
+  "1440x900": {
+   "present": false
+  },
+  "390x844": {
+   "heightPx": 345,
+   "widthPx": 351,
+   "inFlow": true,
+   "position": "static"
+  }
+ }
+}

@@ -1,0 +1,70 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "reference",
+ "template": "not-found",
+ "route": "/this-route-does-not-exist",
+ "theme": "dark",
+ "meta": {
+  "title": "Rustam Kerimov | Portfolio",
+  "description": "Graphic designer, Rustam Kerimov's portfolio"
+ },
+ "runtimeLayers": [
+  "utility.page-transition",
+  "utility.toast"
+ ],
+ "nodes": [
+  {
+   "section": "shell.navbar",
+   "content": {
+    "ownerName": "Rustam Kerimov",
+    "occupation": "Graphic Designer",
+    "location": "Oslo, Norway",
+    "contactLinks": [
+     {
+      "label": "Copy Email",
+      "href": "mailto:rustam-98@hotmail.com",
+      "kind": "copy-email"
+     },
+     {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/kerimov.designs/",
+      "kind": "social"
+     },
+     {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/rustam-kerimov-75bb5a331/",
+      "kind": "social"
+     }
+    ],
+    "profileLinkLabel": "About me"
+   },
+   "motion": {
+    "pattern": "staggered-fade-up",
+    "reducedMotionFallback": "opacity-fade"
+   }
+  },
+  {
+   "section": "notfound.digits-scene",
+   "content": {
+    "digits": "404"
+   },
+   "motion": {
+    "pattern": "floating-digits",
+    "reducedMotionFallback": "static-digits"
+   }
+  },
+  {
+   "section": "notfound.message",
+   "content": {
+    "heading": "This page got lost.",
+    "body": "The page you’re looking for doesn’t exist, but my portfolio is still right where it should be.",
+    "backLinkLabel": "Back to portfolio",
+    "backHref": "/"
+   },
+   "motion": {
+    "pattern": "opacity-hover",
+    "reducedMotionFallback": "opacity-hover"
+   }
+  }
+ ]
+}

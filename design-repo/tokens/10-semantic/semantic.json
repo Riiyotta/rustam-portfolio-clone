@@ -1,0 +1,183 @@
+{
+ "text": {
+  "primary": {
+   "$type": "color",
+   "$value": "{color.paper.100}",
+   "$description": "Text on the page surface.",
+   "evidence": [
+    {
+     "root": "repo",
+     "file": "extraction/evidence/site.pretty.css",
+     "lines": "45",
+     "tag": ".text-color {"
+    }
+   ]
+  },
+  "overlay": {
+   "$type": "color",
+   "$value": "{color.paper.200}",
+   "$description": "Text inside overlays and the mobile layout.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "982",
+     "tag": "pointer-events-none absolute inset-0 z-20 text-[#e7e3dd]"
+    }
+   ]
+  },
+  "overlay-muted": {
+   "$type": "color",
+   "$value": "{color.paper.200}",
+   "opacity": "{opacity.80}",
+   "$description": "Overlay body copy and micro labels.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "2102",
+     "tag": "leading-[1.55] text-[#e7e3dd]/80 lg:block"
+    }
+   ]
+  },
+  "overlay-subtle": {
+   "$type": "color",
+   "$value": "{color.paper.200}",
+   "opacity": "{opacity.55}",
+   "$description": "Quiet labels.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1071",
+     "tag": "tracking-[0.2em] text-[#e7e3dd]/55"
+    }
+   ]
+  },
+  "inverse-blend": {
+   "$type": "color",
+   "$value": "{color.neutral.white}",
+   "$description": "White text rendered with difference blending over imagery (hover title).",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "856",
+     "tag": "text-white mix-blend-difference"
+    }
+   ]
+  },
+  "on-toast": {
+   "$type": "color",
+   "$value": "{color.toast.text}",
+   "$description": "Toast text.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/App.jsx",
+     "lines": "20",
+     "tag": "color: '#1c1a17'"
+    }
+   ]
+  }
+ },
+ "surface": {
+  "page": {
+   "$type": "color",
+   "$value": "{color.ink.900}",
+   "$description": "Desktop page / preloader.",
+   "evidence": [
+    {
+     "root": "repo",
+     "file": "extraction/evidence/site.pretty.css",
+     "lines": "42",
+     "tag": ".bg-dark {"
+    }
+   ]
+  },
+  "page-mobile": {
+   "$type": "color",
+   "$value": "{color.ink.950}",
+   "$description": "Mobile layout surface; loading cover.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "740",
+     "tag": "bg-[#0b0c09] text-[#e7e3dd]"
+    }
+   ]
+  },
+  "backdrop": {
+   "$type": "color",
+   "$value": "{color.ink.850}",
+   "opacity": "{opacity.97}",
+   "$description": "Overlay backdrop (with 24px blur).",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "845",
+     "tag": "bg-[#0e0d0c]/97"
+    }
+   ]
+  },
+  "media-placeholder": {
+   "$type": "color",
+   "$value": "{color.ink.800}",
+   "$description": "Behind media while loading.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "372",
+     "tag": "overflow-hidden bg-[#1e211b]"
+    }
+   ]
+  },
+  "toast": {
+   "$type": "color",
+   "$value": "{color.toast.surface}",
+   "$description": "Toast surface.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/App.jsx",
+     "lines": "19",
+     "tag": "background: '#ecebeb'"
+    }
+   ]
+  }
+ },
+ "border": {
+  "hairline": {
+   "$type": "color",
+   "$value": "{color.paper.200}",
+   "opacity": "{opacity.20}",
+   "$description": "Divider above mobile project meta.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/924.js",
+     "lines": "509",
+     "tag": "border-t border-[#e7e3dd]/20"
+    }
+   ]
+  }
+ },
+ "focus": {
+  "outline": {
+   "$type": "color",
+   "$value": "{color.paper.200}",
+   "$description": "1px focus-visible outline on overlay buttons.",
+   "evidence": [
+    {
+     "root": "project",
+     "file": "src/engine/chunks/272.js",
+     "lines": "1136",
+     "tag": "focus-visible:outline-[#e7e3dd]"
+    }
+   ]
+  }
+ }
+}

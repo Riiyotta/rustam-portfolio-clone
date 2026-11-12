@@ -1,0 +1,22 @@
+{
+ "id": "primitive.media-plane",
+ "kind": "primitive",
+ "version": "1.0.0",
+ "description": "Textured WebGL plane (image or video texture) with hover, blur, bend and morph uniforms.",
+ "props": [
+  "assetRole",
+  "src"
+ ],
+ "motionPatterns": [
+  "gallery-strip-scroll",
+  "hover-focus-blur"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/272.js",
+   "lines": "806",
+   "tag": "uniform float uTime, uHover, uWorldScale, uEdgeBend"
+  }
+ ]
+}

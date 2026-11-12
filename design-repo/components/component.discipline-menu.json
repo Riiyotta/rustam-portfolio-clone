@@ -1,0 +1,21 @@
+{
+ "id": "component.discipline-menu",
+ "kind": "component",
+ "version": "1.0.0",
+ "description": "Vertical list of discipline buttons, right-aligned, inactive at 30% opacity, 500ms transition.",
+ "composes": [
+  "primitive.word-reveal-text"
+ ],
+ "props": [
+  "items",
+  "current"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/272.js",
+   "lines": "2140-2166",
+   "tag": "children: D.map((e, t) =>"
+  }
+ ]
+}

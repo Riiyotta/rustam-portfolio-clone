@@ -1,0 +1,104 @@
+{
+ "id": "hero.intro",
+ "version": "1.0.0",
+ "title": "Home opener",
+ "source": {
+  "id": "module-5272:fn-ei",
+  "root": "project",
+  "file": "src/engine/chunks/272.js",
+  "lines": "2379-2452",
+  "tag": "function ei(e) {"
+ },
+ "semantic": {
+  "id": "hero.intro",
+  "category": "HERO",
+  "purpose": "Page-opening statement of who the designer is, with the portrait thumbnail that opens the profile."
+ },
+ "retrievalEligible": true,
+ "content": {
+  "fields": {
+   "headingLines": {
+    "type": "list",
+    "of": {
+     "type": "text",
+     "maxWords": 4
+    },
+    "minItems": 1,
+    "maxItems": 3,
+    "required": true
+   },
+   "portrait": {
+    "type": "asset",
+    "required": true,
+    "aspectRatio": "4:5"
+   },
+   "profileHref": {
+    "type": "link",
+    "required": true
+   }
+  }
+ },
+ "constraints": {
+  "onePerPage": true,
+  "homeOnly": true
+ },
+ "responsive": {
+  "desktop": "Heading at left 3.1%, top 32%, width 70%, one line per row (no wrap), clamp(25px,2.15vw,38px) bold, leading 1.1; portrait thumbnail at right 3.1%, top 150px, width clamp(150px,12vw,210px), 4:5; both overlay the gallery.",
+  "mobile": "In-flow block: heading clamp(28px,7.3vw,46px) bold uppercase leading 1.04, portrait below right-aligned at 48% width (max 240px) linking to /about.",
+  "breakpoint": "{breakpoint.lg}"
+ },
+ "motion": {
+  "patterns": [
+   "word-reveal"
+  ],
+  "default": "word-reveal",
+  "reducedMotionFallback": "opacity-fade",
+  "sourceImplementsFallback": true
+ },
+ "generatedAssetRoles": [
+  "person.portrait-fictional",
+  "media.placeholder",
+  "copy.original"
+ ],
+ "referenceAssetRoles": [
+  "person.portrait-source"
+ ],
+ "tokens": [
+  "typography.size.hero-display",
+  "typography.weight.bold",
+  "typography.lineHeight.display-110",
+  "typography.tracking.display-tight",
+  "text.primary"
+ ],
+ "composes": [
+  "component.split-heading"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/924.js",
+   "lines": "406",
+   "tag": "text: \"Graphic Designer\\nCrafting Visual Identities,\\nTypography and Motion.\","
+  },
+  {
+   "root": "project",
+   "file": "src/engine/chunks/272.js",
+   "lines": "3427",
+   "tag": "\"aria-label\": \"Open Rustam Kerimov profile\","
+  }
+ ],
+ "measured": {
+  "1440x900": {
+   "heightPx": 240,
+   "widthPx": 1351,
+   "inFlow": false,
+   "position": "absolute"
+  },
+  "390x844": {
+   "heightPx": 459,
+   "widthPx": 351,
+   "inFlow": true,
+   "position": "static"
+  }
+ }
+}

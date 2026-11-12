@@ -1,0 +1,716 @@
+{
+ "typography": {
+  "family": {
+   "display": {
+    "$type": "fontFamily",
+    "$value": [
+     "Satoshi",
+     "Arial",
+     "Helvetica",
+     "sans-serif"
+    ],
+    "$description": "Page font for everything not explicitly set to the UI stack. Elements tagged with the source's `font-bueno` class resolve here too: that class is not defined in the stylesheet, so they inherit the html family.",
+    "evidence": [
+     {
+      "root": "repo",
+      "file": "extraction/evidence/site.pretty.css",
+      "lines": "35",
+      "tag": "html {"
+     },
+     {
+      "root": "repo",
+      "file": "extraction/evidence/site.pretty.css",
+      "lines": "40",
+      "tag": "font-family:Satoshi,Arial"
+     }
+    ]
+   },
+   "ui": {
+    "$type": "fontFamily",
+    "$value": [
+     "ui-sans-serif",
+     "system-ui",
+     "sans-serif",
+     "Apple Color Emoji",
+     "Segoe UI Emoji",
+     "Segoe UI Symbol",
+     "Noto Color Emoji"
+    ],
+    "$description": "System UI stack for micro labels, tags, year/tools labels and the cursor label.",
+    "evidence": [
+     {
+      "root": "repo",
+      "file": "extraction/evidence/site.pretty.css",
+      "lines": "57",
+      "tag": "--font-sans:"
+     },
+     {
+      "root": "repo",
+      "file": "extraction/evidence/site.pretty.css",
+      "lines": "48",
+      "tag": ".font-sans {"
+     }
+    ]
+   },
+   "digits": {
+    "$type": "fontFamily",
+    "$value": [
+     "Arial",
+     "Helvetica",
+     "sans-serif"
+    ],
+    "$description": "Canvas font of the 404 floating digits (weight 900, 380px texture).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/notfound.js",
+      "lines": "103",
+      "tag": "(n.font = \"900 380px Arial, Helvetica, sans-serif\")"
+     }
+    ]
+   }
+  },
+  "weight": {
+   "regular": {
+    "$type": "fontWeight",
+    "$value": 400,
+    "$description": "Body copy.",
+    "evidence": [
+     {
+      "root": "repo",
+      "file": "extraction/evidence/site.pretty.css",
+      "lines": "10",
+      "tag": "font-weight:400"
+     }
+    ]
+   },
+   "medium": {
+    "$type": "fontWeight",
+    "$value": 500,
+    "$description": "Navbar, meta values, menus, preloader wordmark.",
+    "evidence": [
+     {
+      "root": "repo",
+      "file": "extraction/evidence/site.pretty.css",
+      "lines": "67",
+      "tag": "--font-weight-medium:500"
+     }
+    ]
+   },
+   "semibold": {
+    "$type": "fontWeight",
+    "$value": 600,
+    "$description": "Cursor label, 404 heading.",
+    "evidence": [
+     {
+      "root": "repo",
+      "file": "extraction/evidence/site.pretty.css",
+      "lines": "68",
+      "tag": "--font-weight-semibold:600"
+     },
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "1454",
+      "tag": "text-[14px] font-semibold uppercase leading-none tracking-[0.11em]"
+     }
+    ]
+   },
+   "bold": {
+    "$type": "fontWeight",
+    "$value": 700,
+    "$description": "Display headings (hero, project and about titles).",
+    "evidence": [
+     {
+      "root": "repo",
+      "file": "extraction/evidence/site.pretty.css",
+      "lines": "69",
+      "tag": "--font-weight-bold:700"
+     }
+    ]
+   },
+   "black": {
+    "$type": "fontWeight",
+    "$value": 900,
+    "$description": "404 back link; 404 digits.",
+    "evidence": [
+     {
+      "root": "repo",
+      "file": "extraction/evidence/site.pretty.css",
+      "lines": "70",
+      "tag": "--font-weight-black:900"
+     },
+     {
+      "root": "project",
+      "file": "src/components/NotFound.jsx",
+      "lines": "18",
+      "tag": "font-black uppercase"
+     }
+    ]
+   }
+  },
+  "size": {
+   "hero-display": {
+    "$type": "fontSize",
+    "$value": "clamp(25px, 2.15vw, 38px)",
+    "$description": "Hero heading, desktop (>=1024px). Below 1024px the overlay uses clamp(22px, 4.2vw, 32px).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "2405",
+      "tag": "text-[clamp(22px,4.2vw,32px)] font-bold leading-[1.1] tracking-[-0.035em] lg:text-[clamp(25px,2.15vw,38px)]"
+     }
+    ]
+   },
+   "hero-display-mobile": {
+    "$type": "fontSize",
+    "$value": "clamp(28px, 7.3vw, 46px)",
+    "$description": "Hero heading in the mobile list layout (<1024px).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/924.js",
+      "lines": "404",
+      "tag": "max-w-[560px] font-bueno text-[clamp(28px,7.3vw,46px)]"
+     }
+    ]
+   },
+   "project-title": {
+    "$type": "fontSize",
+    "$value": "clamp(22px, 1.45vw, 27px)",
+    "$description": "Project title in the detail overlay (>=768px); clamp(21px, 4.5vw, 28px) below.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "991",
+      "tag": "md:text-[clamp(22px,1.45vw,27px)]"
+     }
+    ]
+   },
+   "project-title-mobile": {
+    "$type": "fontSize",
+    "$value": "clamp(31px, 8vw, 54px)",
+    "$description": "Project title in the mobile article layout.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/924.js",
+      "lines": "458",
+      "tag": "max-w-[580px] font-bueno text-[clamp(31px,8vw,54px)]"
+     }
+    ]
+   },
+   "about-title": {
+    "$type": "fontSize",
+    "$value": "clamp(20px, 1.7vw, 32px)",
+    "$description": "About discipline title (titles longer than 15 characters use clamp(15px, 1.35vw, 24px)).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "2053-2054",
+      "tag": "\"text-[clamp(15px,1.35vw,24px)]\""
+     }
+    ]
+   },
+   "body-overlay": {
+    "$type": "fontSize",
+    "$value": "clamp(15px, 1.05vw, 18px)",
+    "$description": "Project description in the overlay (15px below 800px viewport height, 14px below 650px).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "1007",
+      "tag": "break-words font-bueno text-[clamp(15px,1.05vw,18px)]"
+     }
+    ]
+   },
+   "body-about": {
+    "$type": "fontSize",
+    "$value": "clamp(15px, 1.08vw, 19px)",
+    "$description": "About intro/description in the overlay.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "2102",
+      "tag": "mt-5 hidden font-bueno text-[clamp(15px,1.08vw,19px)]"
+     }
+    ]
+   },
+   "nav-value": {
+    "$type": "fontSize",
+    "$value": "clamp(15px, 1.1vw, 20px)",
+    "$description": "Navbar values (15px below 1024px).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/layout.js",
+      "lines": "101",
+      "tag": "font-bueno text-[15px] font-medium leading-[1.18] tracking-[-0.025em] lg:text-[clamp(15px,1.1vw,20px)]"
+     }
+    ]
+   },
+   "menu-item": {
+    "$type": "fontSize",
+    "$value": "clamp(16px, 1.1vw, 19px)",
+    "$description": "About discipline menu items and meta values.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "2139",
+      "tag": "flex flex-col items-end font-bueno text-[clamp(16px,1.1vw,19px)]"
+     }
+    ]
+   },
+   "pagination": {
+    "$type": "fontSize",
+    "$value": "clamp(15px, 1.15vw, 19px)",
+    "$description": "Project media pagination numbers.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "1118",
+      "tag": "font-bueno text-[clamp(15px,1.15vw,19px)] font-medium tabular-nums"
+     }
+    ]
+   },
+   "intro-note": {
+    "$type": "fontSize",
+    "$value": "17px",
+    "$description": "Intro note paragraph on the home page (14px below 1024px).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "2525",
+      "tag": "text-[14px] leading-[1.45] tracking-[-0.025em] text-color lg:text-[17px]"
+     }
+    ]
+   },
+   "nav-label": {
+    "$type": "fontSize",
+    "$value": "0.875rem",
+    "$description": "Navbar column labels (text-sm, 14px).",
+    "evidence": [
+     {
+      "root": "repo",
+      "file": "extraction/evidence/site.pretty.css",
+      "lines": "59",
+      "tag": "--text-sm:.875rem"
+     },
+     {
+      "root": "project",
+      "file": "src/engine/chunks/layout.js",
+      "lines": "117",
+      "tag": "className: \"text-sm\","
+     }
+    ]
+   },
+   "cursor-label": {
+    "$type": "fontSize",
+    "$value": "14px",
+    "$description": "Kinetic cursor label.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "1454",
+      "tag": "whitespace-nowrap font-sans text-[14px] font-semibold uppercase"
+     }
+    ]
+   },
+   "micro": {
+    "$type": "fontSize",
+    "$value": "10px",
+    "$description": "Micro labels (scroll hint, year/tools labels, tags) at >=768px; 9px below (tags 8px).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "1097",
+      "tag": "text-[9px] font-medium uppercase leading-[1.4] tracking-[0.16em] text-[#e7e3dd]/80 md:text-[10px]"
+     }
+    ]
+   },
+   "preloader-wordmark": {
+    "$type": "fontSize",
+    "$value": "1.25rem",
+    "$description": "Preloader wordmark (text-xl, 20px).",
+    "evidence": [
+     {
+      "root": "repo",
+      "file": "extraction/evidence/site.pretty.css",
+      "lines": "62",
+      "tag": "--text-xl:1.25rem"
+     },
+     {
+      "root": "project",
+      "file": "src/engine/chunks/924.js",
+      "lines": "971",
+      "tag": "font-bueno text-xl font-medium uppercase leading-none tracking-[0.22em]"
+     }
+    ]
+   },
+   "notfound-heading": {
+    "$type": "fontSize",
+    "$value": "3rem",
+    "$description": "404 heading at >=768px (text-5xl); 1.875rem below.",
+    "evidence": [
+     {
+      "root": "repo",
+      "file": "extraction/evidence/site.pretty.css",
+      "lines": "65",
+      "tag": "--text-5xl:3rem"
+     },
+     {
+      "root": "project",
+      "file": "src/components/NotFound.jsx",
+      "lines": "12",
+      "tag": "md:text-5xl"
+     }
+    ]
+   },
+   "notfound-body": {
+    "$type": "fontSize",
+    "$value": "1.25rem",
+    "$description": "404 body at >=768px (text-xl); 1.125rem below.",
+    "evidence": [
+     {
+      "root": "repo",
+      "file": "extraction/evidence/site.pretty.css",
+      "lines": "61",
+      "tag": "--text-lg:1.125rem"
+     },
+     {
+      "root": "project",
+      "file": "src/components/NotFound.jsx",
+      "lines": "13",
+      "tag": "md:text-xl"
+     }
+    ]
+   },
+   "hover-title": {
+    "$type": "fontSize",
+    "$value": "clamp(11px, 0.048 * plane-width, 16px)",
+    "$description": "Hover-title follower size, computed per frame from the projected plane width.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "33",
+      "tag": "p = c.cj9.clamp(0.048 * d, 11, 16);"
+     }
+    ]
+   },
+   "mobile-body": {
+    "$type": "fontSize",
+    "$value": "17px",
+    "$description": "Mobile project description and mobile footer-adjacent body copy.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/924.js",
+      "lines": "522",
+      "tag": "whitespace-pre-line font-bueno text-[17px] leading-[1.45]"
+     }
+    ]
+   },
+   "mobile-about-body": {
+    "$type": "fontSize",
+    "$value": "clamp(19px, 5vw, 24px)",
+    "$description": "Mobile about bio.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/924.js",
+      "lines": "597",
+      "tag": "max-w-[500px] space-y-7  text-[clamp(19px,5vw,24px)]"
+     }
+    ]
+   },
+   "mobile-card-title": {
+    "$type": "fontSize",
+    "$value": "12px",
+    "$description": "Mobile work card title (14px from 640px).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/924.js",
+      "lines": "383",
+      "tag": "mt-2.5 font-bueno text-[12px] font-medium uppercase leading-[1.25] sm:text-[14px]"
+     }
+    ]
+   },
+   "mobile-footer": {
+    "$type": "fontSize",
+    "$value": "15px",
+    "$description": "Mobile footer columns.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/924.js",
+      "lines": "272",
+      "tag": "grid grid-cols-2 gap-x-6 text-[15px] font-medium leading-[1.25]"
+     }
+    ]
+   }
+  },
+  "lineHeight": {
+   "tight-085": {
+    "$type": "lineHeight",
+    "$value": 0.85,
+    "$description": "Mobile about display heading.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/924.js",
+      "lines": "579",
+      "tag": "leading-[0.85] tracking-[-0.045em]"
+     }
+    ]
+   },
+   "display-102": {
+    "$type": "lineHeight",
+    "$value": 1.02,
+    "$description": "Hover title; mobile project title.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "856",
+      "tag": "uppercase leading-[1.02] tracking-[0.005em]"
+     }
+    ]
+   },
+   "display-104": {
+    "$type": "lineHeight",
+    "$value": 1.04,
+    "$description": "Mobile hero heading.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/924.js",
+      "lines": "404",
+      "tag": "font-bold uppercase leading-[1.04] tracking-[-0.035em]"
+     }
+    ]
+   },
+   "display-105": {
+    "$type": "lineHeight",
+    "$value": 1.05,
+    "$description": "About title.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "2090",
+      "tag": "font-bold uppercase leading-[1.05] tracking-[-0.025em]"
+     }
+    ]
+   },
+   "display-108": {
+    "$type": "lineHeight",
+    "$value": 1.08,
+    "$description": "Project title.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "991",
+      "tag": "font-bold uppercase leading-[1.08] tracking-[-0.012em]"
+     }
+    ]
+   },
+   "display-110": {
+    "$type": "lineHeight",
+    "$value": 1.1,
+    "$description": "Hero heading.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "2405",
+      "tag": "font-bold leading-[1.1] tracking-[-0.035em]"
+     }
+    ]
+   },
+   "ui-118": {
+    "$type": "lineHeight",
+    "$value": 1.18,
+    "$description": "Navbar.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/layout.js",
+      "lines": "101",
+      "tag": "leading-[1.18]"
+     }
+    ]
+   },
+   "ui-130": {
+    "$type": "lineHeight",
+    "$value": 1.3,
+    "$description": "Meta values.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "1045",
+      "tag": "font-medium leading-[1.3]"
+     }
+    ]
+   },
+   "ui-140": {
+    "$type": "lineHeight",
+    "$value": 1.4,
+    "$description": "Micro labels; discipline menu.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "2139",
+      "tag": "font-medium leading-[1.4]\","
+     }
+    ]
+   },
+   "body-145": {
+    "$type": "lineHeight",
+    "$value": 1.45,
+    "$description": "Intro note; mobile body.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "2525",
+      "tag": "text-[14px] leading-[1.45]"
+     }
+    ]
+   },
+   "body-155": {
+    "$type": "lineHeight",
+    "$value": 1.55,
+    "$description": "Overlay body copy.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "1007",
+      "tag": "leading-[1.55] text-[#e7e3dd]/78"
+     }
+    ]
+   }
+  },
+  "tracking": {
+   "display-tight": {
+    "$type": "letterSpacing",
+    "$value": "-0.035em",
+    "$description": "Hero and mobile display headings.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "2405",
+      "tag": "leading-[1.1] tracking-[-0.035em]"
+     }
+    ]
+   },
+   "ui-tight": {
+    "$type": "letterSpacing",
+    "$value": "-0.025em",
+    "$description": "Navbar, intro note, about title.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/layout.js",
+      "lines": "101",
+      "tag": "tracking-[-0.025em]"
+     }
+    ]
+   },
+   "title-tight": {
+    "$type": "letterSpacing",
+    "$value": "-0.012em",
+    "$description": "Project title.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "991",
+      "tag": "tracking-[-0.012em]"
+     }
+    ]
+   },
+   "hover-title": {
+    "$type": "letterSpacing",
+    "$value": "0.005em",
+    "$description": "Hover-title follower.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "856",
+      "tag": "tracking-[0.005em]"
+     }
+    ]
+   },
+   "label-wide": {
+    "$type": "letterSpacing",
+    "$value": "0.16em",
+    "$description": "Micro labels (scroll hint, tags).",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "1097",
+      "tag": "leading-[1.4] tracking-[0.16em]"
+     }
+    ]
+   },
+   "label-wider": {
+    "$type": "letterSpacing",
+    "$value": "0.18em",
+    "$description": "Year/Tools labels.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "1043",
+      "tag": "font-medium  tracking-[0.18em]"
+     }
+    ]
+   },
+   "cursor": {
+    "$type": "letterSpacing",
+    "$value": "0.11em",
+    "$description": "Cursor label.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/272.js",
+      "lines": "1454",
+      "tag": "leading-none tracking-[0.11em]"
+     }
+    ]
+   },
+   "wordmark": {
+    "$type": "letterSpacing",
+    "$value": "0.22em",
+    "$description": "Preloader wordmark.",
+    "evidence": [
+     {
+      "root": "project",
+      "file": "src/engine/chunks/924.js",
+      "lines": "971",
+      "tag": "tracking-[0.22em]"
+     }
+    ]
+   }
+  }
+ }
+}

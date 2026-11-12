@@ -1,0 +1,23 @@
+{
+ "id": "primitive.image-frame",
+ "kind": "primitive",
+ "version": "1.0.0",
+ "description": "Image block with the media-placeholder surface behind it, no radius.",
+ "props": [
+  "assetRole",
+  "src",
+  "alt",
+  "aspectRatio"
+ ],
+ "motionPatterns": [
+  "none"
+ ],
+ "evidence": [
+  {
+   "root": "project",
+   "file": "src/engine/chunks/924.js",
+   "lines": "482",
+   "tag": "className: \"block h-auto w-full bg-[#1e211b]\","
+  }
+ ]
+}

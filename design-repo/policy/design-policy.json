@@ -1,0 +1,69 @@
+{
+ "policyId": "n0-design-constraints-common",
+ "policyVersion": "0.1.0",
+ "commonIrVersion": "0.5",
+ "enforcementMode": "hard-and-soft",
+ "classification": {
+  "category": "portfolio",
+  "domain": "personal-graphic-design-portfolio",
+  "decidedFrom": [
+   "three page shapes plus a 404: a work index (10 projects), one detail view per project and a profile of one graphic designer",
+   "no pricing, plans, sign-up, trial, account, dashboard, checkout or integrations anywhere in src/",
+   "the only conversion is contacting the designer (copy email, two social profiles)",
+   "content is one person's projects, disciplines and biography"
+  ],
+  "evidence": [
+   {
+    "root": "project",
+    "file": "src/App.jsx",
+    "lines": "30",
+    "tag": "const isKnownRoute"
+   },
+   {
+    "root": "project",
+    "file": "src/data/projects.json",
+    "lines": "4",
+    "tag": "\"title\": \"MORI\","
+   }
+  ],
+  "approval": {
+   "status": "defined-pending-architecture-review",
+   "architectureDecisionRecorded": false,
+   "proposedBy": "agent (design-repo extraction); not ratified by the owner",
+   "ratifiedBy": null,
+   "ratifiedAt": null
+  }
+ },
+ "generationRules": {
+  "modes": "PageSpec.mode is reference (faithful reconstruction; evidence only) or generated (a new page for someone else).",
+  "generated": [
+   "no source person, brand, project, client, location or contact detail (GENERATED_MODE_PERSON / BRAND / PROJECT)",
+   "no source copy or interaction labels (GENERATED_MODE_COPY / CTA; registry policy/source-brand.json)",
+   "no portrait of the owner, wordmark, favicon or project/discipline media; only generation-safe roles with placeholder://, generated:// or user-supplied:// sources (GENERATED_MODE_ASSET / LOGO)",
+   "links only site-relative or on reserved placeholder domains (GENERATED_MODE_URL)"
+  ],
+  "always": [
+   "node sequences match their template; copy within measured budgets; tokens from the catalog under the token policy",
+   "runtime UI (preloader, cursor, transition, backdrop, hover title, toast) is never retrievable and never a node",
+   "every motion pattern carries its pinned reduced-motion fallback"
+  ]
+ },
+ "localExtension": {
+  "id": "portfolio-local-1",
+  "rules": [
+   "dark theme only",
+   "desktop pages are single-viewport stages: sections are layers, not a scroll sequence; mobile is the scrolling variant of the same templates",
+   "WebGL scene budget: one scene pattern per page (warn)",
+   "a real person's photographs are blocked for generation, never only reference-only"
+  ]
+ },
+ "enforcedBy": {
+  "files": [
+   "compatibility/graph.json",
+   "schema/pagespec.schema.json",
+   "schema/semantic_validate.py",
+   "tokens/llm/token-policy.json"
+  ],
+  "contentHash": "sha256:76aa62aefe7c8b99b3c481fe694c10a7e11fd2626c78d131f0d37c611eb8b6a0"
+ }
+}

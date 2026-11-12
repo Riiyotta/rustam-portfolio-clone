@@ -1,0 +1,64 @@
+{
+ "pageSpecVersion": "1.0.0",
+ "mode": "generated",
+ "template": "not-found",
+ "route": "/missing-page",
+ "theme": "dark",
+ "meta": {
+  "title": "Nothing drawn here",
+  "description": "This address has no page."
+ },
+ "runtimeLayers": [
+  "utility.page-transition"
+ ],
+ "nodes": [
+  {
+   "section": "shell.navbar",
+   "content": {
+    "ownerName": "Mara Lindqvist",
+    "occupation": "Type Illustrator",
+    "location": "Harbor City",
+    "contactLinks": [
+     {
+      "label": "Email me",
+      "href": "mailto:hello@studio.example",
+      "kind": "copy-email"
+     },
+     {
+      "label": "Sketchbook",
+      "href": "https://sketchbook.example/mara",
+      "kind": "social"
+     }
+    ],
+    "profileLinkLabel": "Profile"
+   },
+   "motion": {
+    "pattern": "staggered-fade-up",
+    "reducedMotionFallback": "opacity-fade"
+   }
+  },
+  {
+   "section": "notfound.digits-scene",
+   "content": {
+    "digits": "404"
+   },
+   "motion": {
+    "pattern": "floating-digits",
+    "reducedMotionFallback": "static-digits"
+   }
+  },
+  {
+   "section": "notfound.message",
+   "content": {
+    "heading": "No sketch at this address.",
+    "body": "The link may be old. Every finished drawing is still on the front page.",
+    "backLinkLabel": "Return home",
+    "backHref": "/"
+   },
+   "motion": {
+    "pattern": "opacity-hover",
+    "reducedMotionFallback": "opacity-hover"
+   }
+  }
+ ]
+}
